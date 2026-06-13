@@ -1,33 +1,16 @@
 #!/usr/bin/env python3
 
+from flask import Flask, request, jsonify
 import requests
 import time
-import sys
-import os
-import re
 import random
 import string
-import asyncio
-from telegram import Update
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+import os
+
+app = Flask(__name__)
 
 TOKEN = "8816064734:AAGoIdwfZLYyku8VfyxLqmMaCtVnv3ShBws"
-
-def print_banner():
-    print("\033[91m" + "=" * 70 + "\033[0m")
-    print("\033[91m" + """
- █████╗ ██████╗  █████╗ ███████╗ █████╗ ████████╗
-██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗╚══██╔══╝
-███████║██████╔╝███████║█████╗  ███████║   ██║   
-██╔══██║██╔══██╗██╔══██║██╔══╝  ██╔══██║   ██║   
-██║  ██║██║  ██║██║  ██║██║     ██║  ██║   ██║   
-╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝   ╚═╝   
-    """ + "\033[0m")
-    print("\033[93m" + " " * 20 + "FB 2.0" + " " * 20 + "\033[0m")
-    print("\033[92m" + "~" * 70 + "\033[0m")
-    print("\033[96m" + " " * 22 + "TG: @Flase_ARAFAT" + " " * 22 + "\033[0m")
-    print("\033[91m" + "=" * 70 + "\033[0m")
-    print()
+WEBHOOK_URL = "https://your-domain.com/webhook"
 
 def random_name():
     first = ['Rakib', 'Rafiq', 'Jahid', 'Shakib', 'Tamim', 'Riyad', 'Sakib', 'Mehedi', 'Nayeem', 'Shahin']
@@ -119,7 +102,7 @@ def create_account(phone):
         response = requests.post(url, headers=headers, data=data, timeout=30)
         elapsed_time = time.time() - start_time
         
-        if response.status_code == 200 and elapsed_time >= 3:
+        if response.status_code == 200:
             return True
         else:
             return False
@@ -127,55 +110,44 @@ def create_account(phone):
     except Exception as e:
         return False
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
-        "🔵 FB CREATE AUTO 2.0\n\n"
-        "Send numbers:\n"
-        "+8801836283617\n"
-        "+8801817559946"
-    )
-
-async def handle_numbers(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_input = update.message.text
-    numbers = [line.strip() for line in user_input.split('\n') if line.strip()]
-    
-    if not numbers:
-        await update.message.reply_text("No numbers")
-        return
-    
-    total = len(numbers)
-    
-    for i, num in enumerate(numbers, 1):
-        await update.message.reply_text(f"🟡 [{i}/{total}] {num}")
-        
-        result = await asyncio.to_thread(create_account, num)
-        
-        if result:
-            await update.message.reply_text(f"🟢 {num}")
-        else:
-            await update.message.reply_text(f"🔴 {num}")
-
-async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
-        "/start - Start\n"
-        "Send numbers line by line"
-    )
-
-def main():
-    print_banner()
-    print("✅ BOT STARTED...")
-    
-    app = Application.builder().token(TOKEN).build()
-    
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("help", help_command))
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_numbers))
-    
-    app.run_polling()
-
-if __name__ == "__main__":
+def send_message(chat_id, text):
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+    data = {
+        'chat_id': chat_id,
+        'text': text,
+        'parse_mode': 'HTML'
+    }
     try:
-        main()
-    except KeyboardInterrupt:
-        print("\n❌ Bot stopped!")
-        sys.exit(0)
+        requests.post(url, data=data, timeout=10)
+    except:
+        pass
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    data = request.get_json()
+    
+    if 'message' in data:
+        msg = data['message']
+        chat_id = msg['chat']['id']
+        text = msg.get('text', '')
+        
+        if text == '/start':
+            send_message(chat_id, "🔵 FB CREATE AUTO 2.0\n\nSend numbers:\n+8801836283617")
+        elif text:
+            numbers = [line.strip() for line in text.split('\n') if line.strip()]
+            total = len(numbers)
+            
+            for i, num in enumerate(numbers, 1):
+                send_message(chat_id, f"🟡 [{i}/{total}] {num}")
+                
+                result = create_account(num)
+                
+                if result:
+                    send_message(chat_id, f"🟢 {num}")
+                else:
+                    send_message(chat_id, f"🔴 {num}")
+    
+    return jsonify({'status': 'ok'})
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
