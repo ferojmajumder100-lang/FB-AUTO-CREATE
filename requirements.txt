@@ -1,11 +1,3 @@
 requests
 python-telegram-bot
 pysocks
-asyncio
-datetime
-random
-string
-re
-os
-sys
-time
