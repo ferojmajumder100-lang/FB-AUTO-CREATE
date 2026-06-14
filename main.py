@@ -1,16 +1,34 @@
 #!/usr/bin/env python3
 
-from flask import Flask, request, jsonify
 import requests
 import time
+import sys
+import os
+import re
 import random
 import string
-import os
+import asyncio
+from datetime import datetime
+from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
+from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-app = Flask(__name__)
+TOKEN = "8880280543:AAHCoMHUepS5VjEcTNpHh_kTZQJygBQ_9Vw"
 
-TOKEN = "8816064734:AAGoIdwfZLYyku8VfyxLqmMaCtVnv3ShBws"
-WEBHOOK_URL = "https://your-domain.com/webhook"
+def print_banner():
+    print("\033[91m" + "=" * 70 + "\033[0m")
+    print("\033[91m" + """
+ █████╗ ██████╗  █████╗ ███████╗ █████╗ ████████╗
+██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗╚══██╔══╝
+███████║██████╔╝███████║█████╗  ███████║   ██║   
+██╔══██║██╔══██╗██╔══██║██╔══╝  ██╔══██║   ██║   
+██║  ██║██║  ██║██║  ██║██║     ██║  ██║   ██║   
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝   ╚═╝   
+    """ + "\033[0m")
+    print("\033[93m" + " " * 20 + "FB 2.0" + " " * 20 + "\033[0m")
+    print("\033[92m" + "~" * 70 + "\033[0m")
+    print("\033[96m" + " " * 22 + "TG: @Flase_ARAFAT" + " " * 22 + "\033[0m")
+    print("\033[91m" + "=" * 70 + "\033[0m")
+    print()
 
 def random_name():
     first = ['Rakib', 'Rafiq', 'Jahid', 'Shakib', 'Tamim', 'Riyad', 'Sakib', 'Mehedi', 'Nayeem', 'Shahin']
@@ -23,7 +41,11 @@ def random_birth():
     year = random.randint(1980, 2005)
     return day, month, year
 
-def create_account(phone):
+def get_time():
+    now = datetime.now()
+    return now.strftime("%I:%M %p").lstrip('0')
+
+def create_account(phone, language):
     fname, lname = random_name()
     day, month, year = random_birth()
     
@@ -43,7 +65,7 @@ def create_account(phone):
         'sec-fetch-mode': 'cors',
         'sec-fetch-dest': 'empty',
         'referer': 'https://limited.facebook.com/reg/?is_two_steps_login=0&cid=103&refsrc=deprecated&soft=hjk',
-        'accept-language': 'bn-BD',
+        'accept-language': language,
         'priority': 'u=1, i'
     }
     
@@ -102,52 +124,197 @@ def create_account(phone):
         response = requests.post(url, headers=headers, data=data, timeout=30)
         elapsed_time = time.time() - start_time
         
-        if response.status_code == 200:
-            return True
+        if response.status_code == 200 and elapsed_time >= 3:
+            cookies_dict = response.cookies.get_dict()
+            
+            if 'c_user' in cookies_dict:
+                uid = cookies_dict['c_user']
+                current_time = get_time()
+                
+                cookie_parts = []
+                
+                if 'datr' in cookies_dict:
+                    cookie_parts.append(f"datr={cookies_dict['datr'].replace(' ', '')}")
+                if 'sb' in cookies_dict:
+                    cookie_parts.append(f"sb={cookies_dict['sb'].replace(' ', '')}")
+                if 'ps_l' in cookies_dict:
+                    cookie_parts.append(f"ps_l={cookies_dict['ps_l'].replace(' ', '')}")
+                if 'ps_n' in cookies_dict:
+                    cookie_parts.append(f"ps_n={cookies_dict['ps_n'].replace(' ', '')}")
+                if 'm_pixel_ratio' in cookies_dict:
+                    cookie_parts.append(f"m_pixel_ratio={cookies_dict['m_pixel_ratio'].replace(' ', '')}")
+                if 'wd' in cookies_dict:
+                    cookie_parts.append(f"wd={cookies_dict['wd'].replace(' ', '')}")
+                if 'c_user' in cookies_dict:
+                    cookie_parts.append(f"c_user={cookies_dict['c_user'].replace(' ', '')}")
+                if 'fr' in cookies_dict:
+                    cookie_parts.append(f"fr={cookies_dict['fr'].replace(' ', '')}")
+                if 'xs' in cookies_dict:
+                    cookie_parts.append(f"xs={cookies_dict['xs'].replace(' ', '')}")
+                
+                cookie_string = "; ".join(cookie_parts)
+                
+                return {
+                    'phone': phone, 
+                    'success': True, 
+                    'uid': uid, 
+                    'cookies': cookie_string, 
+                    'time': current_time
+                }
+            else:
+                return {'phone': phone, 'success': False}
         else:
-            return False
+            return {'phone': phone, 'success': False}
             
     except Exception as e:
-        return False
+        return {'phone': phone, 'success': False}
 
-def send_message(chat_id, text):
-    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
-    data = {
-        'chat_id': chat_id,
-        'text': text,
-        'parse_mode': 'HTML'
-    }
-    try:
-        requests.post(url, data=data, timeout=10)
-    except:
-        pass
-
-@app.route('/webhook', methods=['POST'])
-def webhook():
-    data = request.get_json()
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    keyboard = [
+        [KeyboardButton("🌐 LANGUAGE")],
+        [KeyboardButton("📖 HELP")]
+    ]
+    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
     
-    if 'message' in data:
-        msg = data['message']
-        chat_id = msg['chat']['id']
-        text = msg.get('text', '')
+    await update.message.reply_text(
+        "🤖 FB CREATE AUTO BOT 2.0\n\n"
+        "📌 Click LANGUAGE to select your language\n"
+        "📌 Send numbers line by line to create accounts\n\n"
+        "Example:\n"
+        "+8801836283617\n"
+        "+8801817559946",
+        reply_markup=reply_markup
+    )
+
+async def language_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    keyboard = [
+        [KeyboardButton("🇺🇸 ENGLISH (en-US)")],
+        [KeyboardButton("🇧🇩 BENGALI (bn-BD)")],
+        [KeyboardButton("🇫🇷 FRENCH (fr-FR)")],
+        [KeyboardButton("🔙 BACK")]
+    ]
+    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    
+    await update.message.reply_text(
+        "🌐 SELECT YOUR LANGUAGE:\n\n"
+        "🇺🇸 English (en-US)\n"
+        "🇧🇩 Bengali (bn-BD)\n"
+        "🇫🇷 French (fr-FR)",
+        reply_markup=reply_markup
+    )
+
+async def set_language(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    text = update.message.text
+    
+    if "ENGLISH" in text:
+        context.user_data['language'] = 'en-US'
+        await update.message.reply_text("✅ Language set to ENGLISH (en-US)")
+    elif "BENGALI" in text:
+        context.user_data['language'] = 'bn-BD'
+        await update.message.reply_text("✅ ভাষা সেট করা হয়েছে বাংলা (bn-BD)")
+    elif "FRENCH" in text:
+        context.user_data['language'] = 'fr-FR'
+        await update.message.reply_text("✅ Langue définie sur FRANÇAIS (fr-FR)")
+    
+    keyboard = [
+        [KeyboardButton("🌐 LANGUAGE")],
+        [KeyboardButton("📖 HELP")]
+    ]
+    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    await update.message.reply_text("🔙 Main Menu", reply_markup=reply_markup)
+
+async def back_to_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    keyboard = [
+        [KeyboardButton("🌐 LANGUAGE")],
+        [KeyboardButton("📖 HELP")]
+    ]
+    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    await update.message.reply_text("🔙 Main Menu", reply_markup=reply_markup)
+
+async def handle_numbers(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_input = update.message.text
+    
+    # Check if it's a button
+    if user_input in ["🌐 LANGUAGE", "📖 HELP", "🔙 BACK", "🇺🇸 ENGLISH (en-US)", "🇧🇩 BENGALI (bn-BD)", "🇫🇷 FRENCH (fr-FR)"]:
+        return
+    
+    numbers = [line.strip() for line in user_input.split('\n') if line.strip()]
+    
+    if not numbers:
+        await update.message.reply_text("❌ No numbers found!")
+        return
+    
+    # Check language
+    if 'language' not in context.user_data:
+        await update.message.reply_text("❌ Please select language first using LANGUAGE button")
+        return
+    
+    language = context.user_data['language']
+    total = len(numbers)
+    
+    for i, num in enumerate(numbers, 1):
+        await update.message.reply_text(f"🟡 [{i}/{total}] {num}")
         
-        if text == '/start':
-            send_message(chat_id, "🔵 FB CREATE AUTO 2.0\n\nSend numbers:\n+8801836283617")
-        elif text:
-            numbers = [line.strip() for line in text.split('\n') if line.strip()]
-            total = len(numbers)
-            
-            for i, num in enumerate(numbers, 1):
-                send_message(chat_id, f"🟡 [{i}/{total}] {num}")
-                
-                result = create_account(num)
-                
-                if result:
-                    send_message(chat_id, f"🟢 {num}")
-                else:
-                    send_message(chat_id, f"🔴 {num}")
-    
-    return jsonify({'status': 'ok'})
+        result = await asyncio.to_thread(create_account, num, language)
+        
+        if result['success']:
+            # Single message with all info in monospace
+            message = (
+                f"✅ `{result['phone']} {result['time']}`\n\n"
+                f"🆔 `UID {result['uid']}`\n\n"
+                f"🍪 `{result['cookies']}`"
+            )
+            await update.message.reply_text(message, parse_mode='Markdown')
+        else:
+            await update.message.reply_text(f"❌ `{num}`", parse_mode='Markdown')
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+async def help_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    keyboard = [
+        [KeyboardButton("🔙 BACK")]
+    ]
+    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    
+    await update.message.reply_text(
+        "📖 HELP\n\n"
+        "1️⃣ Click LANGUAGE to select your language\n"
+        "2️⃣ Send numbers line by line\n"
+        "3️⃣ Bot will create Facebook accounts\n\n"
+        "Example:\n"
+        "`+8801836283617`\n"
+        "`+8801817559946`",
+        parse_mode='Markdown',
+        reply_markup=reply_markup
+    )
+
+async def handle_buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    text = update.message.text
+    
+    if text == "🌐 LANGUAGE":
+        await language_menu(update, context)
+    elif text == "📖 HELP":
+        await help_menu(update, context)
+    elif text == "🔙 BACK":
+        await back_to_menu(update, context)
+    elif text in ["🇺🇸 ENGLISH (en-US)", "🇧🇩 BENGALI (bn-BD)", "🇫🇷 FRENCH (fr-FR)"]:
+        await set_language(update, context)
+    else:
+        await handle_numbers(update, context)
+
+def main():
+    print_banner()
+    print("✅ BOT STARTED...")
+    
+    app = Application.builder().token(TOKEN).build()
+    
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("help", help_menu))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_buttons))
+    
+    app.run_polling()
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n❌ Bot stopped!")
+        sys.exit(0)
