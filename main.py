@@ -10,12 +10,12 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 import random
 
 # ==================== কনফিগারেশন ====================
-TELEGRAM_TOKEN = "8936835871:AAHzNnPQCPjiWPxEks8PYiPjOt5KKWywWIs"
+TELEGRAM_TOKEN = "8964436102:AAFBZGQet52TrBvH2tUpzsrgviGLafuNn6w"
 ADMIN_ID = 7787612625
 
 XULTRA_BASE_URL = "https://x.mnitnetwork.com"
-LOG_GROUP_ID = "-1003538330629"
-OTP_GROUP_URL = "https://t.me/power_otp_botx"
+LOG_GROUP_ID = "-1004485754663"
+OTP_GROUP_URL = "https://t.me/fyyyl677754"
 
 # ==================== লগইন তথ্য ====================
 LOGIN_EMAIL = "minhajurrahmanrabbi20@gmail.com"
@@ -677,9 +677,9 @@ def send_numbers_received_notification(chat_id, numbers, service_name, range_cod
     
     bot.send_message(chat_id, msg, parse_mode="Markdown", reply_markup=markup)
 
-# ==================== AUTO CREATE ফাংশন ====================
-def auto_create_accounts(chat_id, ranges_data, count, message_id=None):
-    """সিলেক্টেড রেঞ্জ থেকে কাঙ্খিত সংখ্যক নম্বর নিয়ে একাউন্ট তৈরি করে এবং অ্যাক্টিভ নম্বরে যোগ করে"""
+# ==================== AUTO CREATE ফাংশন (সরাসরি 2টি একাউন্ট) ====================
+def auto_create_accounts(chat_id, ranges_data, message_id=None):
+    """সিলেক্টেড রেঞ্জ থেকে 2টি নম্বর নিয়ে একাউন্ট তৈরি করে এবং অ্যাক্টিভ নম্বরে যোগ করে"""
     if not ranges_data:
         bot.send_message(chat_id, "❌ No ranges available!")
         return
@@ -689,14 +689,14 @@ def auto_create_accounts(chat_id, ranges_data, count, message_id=None):
     
     # প্রগ্রেস মেসেজ আপডেট
     if message_id:
-        bot.edit_message_text(f"🔄 Selected Range: {selected_range_display}\n⏳ Fetching {count} number(s)...", chat_id, message_id)
+        bot.edit_message_text(f"🔄 Selected Range: {selected_range_display}\n⏳ Fetching 2 numbers...", chat_id, message_id)
     else:
-        msg = bot.send_message(chat_id, f"🔄 Selected Range: {selected_range_display}\n⏳ Fetching {count} number(s)...")
+        msg = bot.send_message(chat_id, f"🔄 Selected Range: {selected_range_display}\n⏳ Fetching 2 numbers...")
         message_id = msg.message_id
     
-    # কাঙ্খিত সংখ্যক নম্বর ফেচ করুন এবং অ্যাক্টিভে যোগ করুন
+    # 2টি নম্বর ফেচ করুন এবং অ্যাক্টিভে যোগ করুন
     numbers_found = []
-    for i in range(count):
+    for i in range(2):
         number = xultra_fetch_number(selected_range_raw)
         if number:
             numbers_found.append(number)
@@ -738,28 +738,12 @@ def auto_create_accounts(chat_id, ranges_data, count, message_id=None):
             message = f"❌ ACCOUNT #{idx} FAILED: `{result['phone']}`"
             bot.send_message(chat_id, message, parse_mode='Markdown')
         
-        # প্রতিটি একাউন্টের পর সামান্য ডিলে (IP ব্লক এড়ানোর জন্য)
+        # প্রতিটি একাউন্টের পর 1 সেকেন্ড ডিলে
         time.sleep(1)
     
     # সম্পন্ন হওয়ার মেসেজ
     summary = f"✅ AUTO CREATE COMPLETED!\n━━━━━━━━━━━━━━━━━━━━\n✅ Success: {success_count}/{len(numbers_found)}\n🌍 Range: {selected_range_display}\n🌐 Language: French (fr-FR)\n\n💡 OTP will appear here automatically when received!"
     bot.edit_message_text(summary, chat_id, message_id)
-
-# ==================== AUTO CREATE কীবোর্ড ====================
-def get_auto_create_keyboard():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, row_width=4)
-    buttons = [
-        KeyboardButton("2️⃣"),
-        KeyboardButton("3️⃣"),
-        KeyboardButton("5️⃣"),
-        KeyboardButton("8️⃣"),
-        KeyboardButton("1️⃣2️⃣"),
-        KeyboardButton("1️⃣5️⃣"),
-        KeyboardButton("2️⃣0️⃣"),
-        KeyboardButton("🔙 BACK")
-    ]
-    markup.add(*buttons)
-    return markup
 
 # ==================== কীবোর্ড ====================
 def get_main_keyboard(user_id):
@@ -798,10 +782,10 @@ bot = telebot.TeleBot(TELEGRAM_TOKEN)
 def start(message):
     add_user(message.chat.id)
     if message.from_user.id == ADMIN_ID:
-        bot.send_message(message.chat.id, "👋 Welcome Admin!\n🌍 Panel: X ULTRA\n✅ Service: Facebook + Instagram\n✅ 2 Numbers per request\n✅ Auto Create Account (2-20) - French Language\n✅ Session cleared after each account\n✅ Country flags on ranges", reply_markup=get_admin_keyboard())
+        bot.send_message(message.chat.id, "👋 Welcome Admin!\n🌍 Panel: X ULTRA\n✅ Service: Facebook + Instagram\n✅ 2 Numbers per request\n✅ Auto Create (2 accounts) - French Language\n✅ Session cleared after each account\n✅ 1 sec delay between accounts\n✅ Country flags on ranges", reply_markup=get_admin_keyboard())
     else:
         bot.send_message(message.chat.id, 
-            f"✨ Welcome {message.from_user.first_name}! ✨\n\n🌍 Panel: X ULTRA\n✅ Service: Facebook + Instagram\n✅ 2 Numbers per request\n✅ Auto Create Account (2-20) - French Language\n✅ Country flags on ranges",
+            f"✨ Welcome {message.from_user.first_name}! ✨\n\n🌍 Panel: X ULTRA\n✅ Service: Facebook + Instagram\n✅ 2 Numbers per request\n✅ Auto Create (2 accounts) - French Language\n✅ Country flags on ranges",
             reply_markup=get_main_keyboard(message.chat.id))
 
 @bot.message_handler(func=lambda m: m.text == "🎲 GET NUMBER")
@@ -822,51 +806,12 @@ def handle_auto_create(message):
         bot.send_message(chat_id, "❌ No ranges available! Please try again later.")
         return
     
-    # রেঞ্জ সংরক্ষণ করুন ইউজার ডাটাতে
-    bot.send_message(chat_id, "📊 SELECT HOW MANY:", reply_markup=get_auto_create_keyboard())
-    
-    # টেম্পোরারি ডাটা সেভ করুন
-    if not hasattr(bot, 'temp_ranges'):
-        bot.temp_ranges = {}
-    bot.temp_ranges[chat_id] = ranges_data
-
-@bot.message_handler(func=lambda m: m.text in ["2️⃣", "3️⃣", "5️⃣", "8️⃣", "1️⃣2️⃣", "1️⃣5️⃣", "2️⃣0️⃣", "🔙 BACK"])
-def handle_auto_create_count(message):
-    chat_id = message.chat.id
-    
-    if message.text == "🔙 BACK":
-        bot.send_message(chat_id, "🏠 Main Menu", reply_markup=get_main_keyboard(chat_id))
-        return
-    
-    # সংখ্যা পার্স করুন
-    count_map = {
-        "2️⃣": 2,
-        "3️⃣": 3,
-        "5️⃣": 5,
-        "8️⃣": 8,
-        "1️⃣2️⃣": 12,
-        "1️⃣5️⃣": 15,
-        "2️⃣0️⃣": 20
-    }
-    
-    count = count_map.get(message.text, 2)
-    
-    # রেঞ্জ ডাটা রিট্রিভ করুন
-    if not hasattr(bot, 'temp_ranges') or chat_id not in bot.temp_ranges:
-        bot.send_message(chat_id, "❌ Please click AUTO CREATE first!", reply_markup=get_main_keyboard(chat_id))
-        return
-    
-    ranges_data = bot.temp_ranges[chat_id]
-    
     # মেইন কীবোর্ড রিস্টোর করুন
-    bot.send_message(chat_id, f"⚡ Starting creation of {count} account(s) in French language...\n🔄 Each account uses fresh session", reply_markup=get_main_keyboard(chat_id))
+    bot.send_message(chat_id, f"⚡ Starting creation of 2 account(s) in French language...\n🔄 Each account uses fresh session\n⏱️ 1 sec delay between accounts", reply_markup=get_main_keyboard(chat_id))
     
     # ব্যাকগ্রাউন্ড থ্রেডে একাউন্ট ক্রিয়েট করুন
     msg = bot.send_message(chat_id, "⏳ Initializing...")
-    threading.Thread(target=auto_create_accounts, args=(chat_id, ranges_data, count, msg.message_id), daemon=True).start()
-    
-    # টেম্প ডাটা ক্লিয়ার করুন
-    del bot.temp_ranges[chat_id]
+    threading.Thread(target=auto_create_accounts, args=(chat_id, ranges_data, msg.message_id), daemon=True).start()
 
 @bot.message_handler(func=lambda m: m.text == "🔙 BACK")
 def back_main(message):
@@ -1043,8 +988,9 @@ if __name__ == "__main__":
     print("✅ Countries: All 240+ countries supported")
     print("✅ Auto-detect country from range prefix")
     print("✅ 2 Numbers per request")
-    print("✅ Auto Create Facebook Account (2-20) - French Language")
+    print("✅ Auto Create (2 accounts) - French Language")
     print("✅ Fresh Session for each account (cookies cleared)")
+    print("✅ 1 sec delay between accounts")
     print("✅ Random User Agent for each request")
     print("✅ OTP Notification for Auto Created Accounts")
     print("=" * 50)
