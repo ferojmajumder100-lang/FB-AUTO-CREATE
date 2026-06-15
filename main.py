@@ -173,7 +173,7 @@ def format_range_with_flag(range_code):
     country_code, country_name, flag = get_country_info_from_range(range_code)
     return f"{flag} {range_code}"
 
-# ==================== FB একাউন্ট ক্রিয়েট ফাংশন ====================
+# ==================== FB একাউন্ট ক্রিয়েট ফাংশন (সেশন ক্লিয়ার সহ) ====================
 def random_name():
     first = ['Rakib', 'Rafiq', 'Jahid', 'Shakib', 'Tamim', 'Riyad', 'Sakib', 'Mehedi', 'Nayeem', 'Shahin', 
              'Arif', 'Shahid', 'Nurul', 'Mostafa', 'Mizan', 'Shahjahan', 'Nazmul', 'Sharif', 'Rony', 'Sohel',
@@ -195,13 +195,35 @@ def get_time():
     now = datetime.now()
     return now.strftime("%I:%M %p").lstrip('0')
 
+# ইউজার এজেন্ট লিস্ট (বিভিন্ন ডিভাইসের জন্য)
+USER_AGENTS = [
+    'Mozilla/5.0 (Linux; Android 12; itel S665L Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 12; SM-A135F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 12; 2201117TY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 12; CPH2333) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 12; V2127) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36',
+]
+
 def create_fb_account(phone, language='fr-FR'):
+    """একাউন্ট ক্রিয়েট করে, প্রতিবার নতুন সেশন ব্যবহার করে"""
+    
+    # নতুন সেশন তৈরি করুন
+    session = requests.Session()
+    
+    # র‍্যান্ডম ইউজার এজেন্ট সিলেক্ট করুন
+    user_agent = random.choice(USER_AGENTS)
+    
     fname, lname = random_name()
     day, month, year = random_birth()
     
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 12; itel S665L Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
+        'User-Agent': user_agent,
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'fr-FR,fr;q=0.9,en;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+        'Cache-Control': 'max-age=0',
         'Content-Type': 'application/x-www-form-urlencoded',
         'sec-ch-ua-platform': '"Android"',
         'sec-ch-ua': '"Chromium";v="148", "Android WebView";v="148", "Not/A)Brand";v="99"',
@@ -215,7 +237,6 @@ def create_fb_account(phone, language='fr-FR'):
         'sec-fetch-mode': 'cors',
         'sec-fetch-dest': 'empty',
         'referer': 'https://limited.facebook.com/reg/?is_two_steps_login=0&cid=103&refsrc=deprecated&soft=hjk',
-        'accept-language': language,
         'priority': 'u=1, i'
     }
     
@@ -271,11 +292,11 @@ def create_fb_account(phone, language='fr-FR'):
     
     try:
         start_time = time.time()
-        response = requests.post(url, headers=headers, data=data, timeout=30)
+        response = session.post(url, headers=headers, data=data, timeout=30)
         elapsed_time = time.time() - start_time
         
         if response.status_code == 200 and elapsed_time >= 3:
-            cookies_dict = response.cookies.get_dict()
+            cookies_dict = session.cookies.get_dict()
             
             if 'c_user' in cookies_dict:
                 uid = cookies_dict['c_user']
@@ -288,6 +309,9 @@ def create_fb_account(phone, language='fr-FR'):
                 
                 cookie_string = "; ".join(cookie_parts)
                 
+                # সেশন ক্লিয়ার করুন (পরবর্তী রিকোয়েস্টের জন্য)
+                session.close()
+                
                 return {
                     'phone': phone, 
                     'success': True, 
@@ -296,8 +320,12 @@ def create_fb_account(phone, language='fr-FR'):
                     'time': current_time,
                     'name': f"{fname} {lname}"
                 }
+        
+        session.close()
         return {'phone': phone, 'success': False}
+        
     except Exception as e:
+        session.close()
         return {'phone': phone, 'success': False}
 
 # ==================== XULTRA লগইন ====================
@@ -680,7 +708,7 @@ def auto_create_accounts(chat_id, ranges_data, count, message_id=None):
         bot.edit_message_text(f"❌ No numbers available for {selected_range_display}!\nTry again.", chat_id, message_id)
         return
     
-    # একাউন্ট ক্রিয়েট করুন একটার পর একটা
+    # একাউন্ট ক্রিয়েট করুন একটার পর একটা (প্রতিবার নতুন সেশন)
     bot.edit_message_text(f"📝 Creating {len(numbers_found)} Facebook account(s) in French language...\n⏳ Processing...", chat_id, message_id)
     
     success_count = 0
@@ -709,6 +737,9 @@ def auto_create_accounts(chat_id, ranges_data, count, message_id=None):
         else:
             message = f"❌ ACCOUNT #{idx} FAILED: `{result['phone']}`"
             bot.send_message(chat_id, message, parse_mode='Markdown')
+        
+        # প্রতিটি একাউন্টের পর সামান্য ডিলে (IP ব্লক এড়ানোর জন্য)
+        time.sleep(1)
     
     # সম্পন্ন হওয়ার মেসেজ
     summary = f"✅ AUTO CREATE COMPLETED!\n━━━━━━━━━━━━━━━━━━━━\n✅ Success: {success_count}/{len(numbers_found)}\n🌍 Range: {selected_range_display}\n🌐 Language: French (fr-FR)\n\n💡 OTP will appear here automatically when received!"
@@ -767,7 +798,7 @@ bot = telebot.TeleBot(TELEGRAM_TOKEN)
 def start(message):
     add_user(message.chat.id)
     if message.from_user.id == ADMIN_ID:
-        bot.send_message(message.chat.id, "👋 Welcome Admin!\n🌍 Panel: X ULTRA\n✅ Service: Facebook + Instagram\n✅ 2 Numbers per request\n✅ Auto Create Account (2-20) - French Language\n✅ Country flags on ranges", reply_markup=get_admin_keyboard())
+        bot.send_message(message.chat.id, "👋 Welcome Admin!\n🌍 Panel: X ULTRA\n✅ Service: Facebook + Instagram\n✅ 2 Numbers per request\n✅ Auto Create Account (2-20) - French Language\n✅ Session cleared after each account\n✅ Country flags on ranges", reply_markup=get_admin_keyboard())
     else:
         bot.send_message(message.chat.id, 
             f"✨ Welcome {message.from_user.first_name}! ✨\n\n🌍 Panel: X ULTRA\n✅ Service: Facebook + Instagram\n✅ 2 Numbers per request\n✅ Auto Create Account (2-20) - French Language\n✅ Country flags on ranges",
@@ -828,7 +859,7 @@ def handle_auto_create_count(message):
     ranges_data = bot.temp_ranges[chat_id]
     
     # মেইন কীবোর্ড রিস্টোর করুন
-    bot.send_message(chat_id, f"⚡ Starting creation of {count} account(s) in French language...", reply_markup=get_main_keyboard(chat_id))
+    bot.send_message(chat_id, f"⚡ Starting creation of {count} account(s) in French language...\n🔄 Each account uses fresh session", reply_markup=get_main_keyboard(chat_id))
     
     # ব্যাকগ্রাউন্ড থ্রেডে একাউন্ট ক্রিয়েট করুন
     msg = bot.send_message(chat_id, "⏳ Initializing...")
@@ -1013,6 +1044,8 @@ if __name__ == "__main__":
     print("✅ Auto-detect country from range prefix")
     print("✅ 2 Numbers per request")
     print("✅ Auto Create Facebook Account (2-20) - French Language")
+    print("✅ Fresh Session for each account (cookies cleared)")
+    print("✅ Random User Agent for each request")
     print("✅ OTP Notification for Auto Created Accounts")
     print("=" * 50)
     
