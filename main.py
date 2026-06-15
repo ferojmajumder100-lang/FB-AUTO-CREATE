@@ -10,7 +10,7 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 import random
 
 # ==================== কনফিগারেশন ====================
-TELEGRAM_TOKEN = "8785487544:AAHps5wun-ixfYcOBvlA4EjW56JJ2XS3f_E"
+TELEGRAM_TOKEN = "8936835871:AAHzNnPQCPjiWPxEks8PYiPjOt5KKWywWIs"
 ADMIN_ID = 7787612625
 
 XULTRA_BASE_URL = "https://x.mnitnetwork.com"
