@@ -8,29 +8,37 @@ import re
 import random
 import threading
 import hashlib
-import subprocess
+import uuid
 from datetime import datetime
 
 # ==================== ডিভাইস অ্যাক্টিভেশন সিস্টেম ====================
 DEVICE_CHECK_URL = "https://raw.githubusercontent.com/ferojmajumder100-lang/FB-AUTO-CREATE/main/device.json"
 
 def get_device_id():
-    """ইউনিক ডিভাইস আইডি তৈরি করুন"""
+    """ইউনিক ডিভাইস আইডি তৈরি করুন - Termux এর জন্য স্পেশাল"""
     try:
-        # অ্যান্ড্রয়েড আইডি
-        result = subprocess.run(['settings', 'get', 'secure', 'android_id'], capture_output=True, text=True)
-        if result.stdout and result.stdout.strip():
-            return result.stdout.strip()
-    except:
-        pass
-    
-    try:
-        # ব্যাকআপ: হোস্টনেম + ইউজার হোম ব্যবহার করে আইডি তৈরি
+        # প্রথমে Termux এর ফাইল সিস্টেম ব্যবহার করে আইডি তৈরি
+        id_file = os.path.expanduser("~/.device_id")
+        if os.path.exists(id_file):
+            with open(id_file, 'r') as f:
+                device_id = f.read().strip()
+                if device_id:
+                    return device_id
+        
+        # নতুন আইডি তৈরি
+        # মেশিনের তথ্য ব্যবহার করে
         hostname = os.uname().nodename
         home = os.path.expanduser("~")
-        return hashlib.md5(f"{hostname}{home}".encode()).hexdigest()[:16]
+        combined = f"{hostname}{home}{os.getpid()}"
+        device_id = hashlib.md5(combined.encode()).hexdigest()[:16]
+        
+        # আইডি সেভ করে রাখুন
+        with open(id_file, 'w') as f:
+            f.write(device_id)
+        
+        return device_id
     except:
-        return hashlib.md5(os.path.expanduser("~").encode()).hexdigest()[:16]
+        return hashlib.md5(str(uuid.getnode()).encode()).hexdigest()[:16]
 
 def check_device_activation():
     """ডিভাইস অ্যাক্টিভেটেড কিনা চেক করুন"""
@@ -452,7 +460,6 @@ def main():
             })
         else:
             failed_list.append(num)
-        # কোন ডিলে নেই - একটার পর একটা সাথে সাথে ক্রিয়েট হবে
     
     print(f"\n\033[92m✓ {len(success_list)} created\033[0m")
     
