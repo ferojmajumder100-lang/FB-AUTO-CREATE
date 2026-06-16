@@ -1,1 +1,34 @@
 
+{
+    "activated_devices": [
+        "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+        "b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7",
+        "c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8",
+        "d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9",
+        "e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0",
+        "f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1",
+        "g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2",
+        "h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3",
+        "i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4",
+        "j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5",
+        "k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+        "l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7",
+        "m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8",
+        "n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9",
+        "o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0",
+        "p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1",
+        "q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2",
+        "r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3",
+        "s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4",
+        "t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5",
+        "u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6",
+        "v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7",
+        "w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8",
+        "x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9",
+        "y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0",
+        "z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1"
+    ],
+    "admin": "ferojmajumder100",
+    "total_devices": 26,
+    "last_updated": "2026-06-16T12:00:00"
+}
