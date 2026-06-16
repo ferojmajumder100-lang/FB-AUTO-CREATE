@@ -12,34 +12,25 @@ import subprocess
 from datetime import datetime
 
 # ==================== ডিভাইস অ্যাক্টিভেশন সিস্টেম ====================
-# আপনার GitHub রিপোজিটরির device.json ফাইলের RAW লিংক
 DEVICE_CHECK_URL = "https://raw.githubusercontent.com/ferojmajumder100-lang/FB-AUTO-CREATE/main/device.json"
 
 def get_device_id():
     """ইউনিক ডিভাইস আইডি তৈরি করুন"""
     try:
-        # Termux/Android ডিভাইস আইডি পাওয়ার চেষ্টা
-        result = subprocess.run(['getprop', 'ro.serialno'], capture_output=True, text=True)
+        # অ্যান্ড্রয়েড আইডি
+        result = subprocess.run(['settings', 'get', 'secure', 'android_id'], capture_output=True, text=True)
         if result.stdout and result.stdout.strip():
-            device_id = result.stdout.strip()
-        else:
-            # অ্যান্ড্রয়েড আইডি
-            result = subprocess.run(['settings', 'get', 'secure', 'android_id'], capture_output=True, text=True)
-            if result.stdout and result.stdout.strip():
-                device_id = result.stdout.strip()
-            else:
-                # ব্যাকআপ: হোস্টনেম + ইউজার হোম ব্যবহার করে আইডি তৈরি
-                hostname = os.uname().nodename
-                home = os.path.expanduser("~")
-                device_id = hashlib.md5(f"{hostname}{home}".encode()).hexdigest()[:32]
+            return result.stdout.strip()
     except:
-        # সব ব্যর্থ হলে
-        import uuid
-        device_id = str(uuid.getnode())  # MAC address based
-        if not device_id:
-            device_id = hashlib.md5(os.path.expanduser("~").encode()).hexdigest()[:32]
+        pass
     
-    return device_id
+    try:
+        # ব্যাকআপ: হোস্টনেম + ইউজার হোম ব্যবহার করে আইডি তৈরি
+        hostname = os.uname().nodename
+        home = os.path.expanduser("~")
+        return hashlib.md5(f"{hostname}{home}".encode()).hexdigest()[:16]
+    except:
+        return hashlib.md5(os.path.expanduser("~").encode()).hexdigest()[:16]
 
 def check_device_activation():
     """ডিভাইস অ্যাক্টিভেটেড কিনা চেক করুন"""
@@ -52,22 +43,18 @@ def check_device_activation():
             activated_devices = data.get("activated_devices", [])
             if device_id in activated_devices:
                 return True
-    except Exception as e:
-        # নেটওয়ার্ক সমস্যা হলে বট চলতে দিবেন কিনা? চাইলে False দিতে পারেন
-        # এখানে True দিলে নেটওয়ার্ক সমস্যায় সবাই বট চালাতে পারবে
-        print(f"\033[91m[!] Device check failed: {e}\033[0m")
-        return False  # False দিলে কেউ চালাতে পারবে না
+    except:
+        pass
     
-    # ডিভাইস অ্যাক্টিভেটেড না হলে
-    print("\033[91m" + "=" * 60 + "\033[0m")
+    # ডিভাইস অ্যাক্টিভেটেড না হলে শুধু এই মেসেজ দেখাবে
+    print("\033[91m" + "=" * 50 + "\033[0m")
     print("\033[91m❌ DEVICE NOT ACTIVATED!\033[0m")
-    print("\033[93m📱 Your Device ID:\033[0m")
-    print(f"\033[96m{device_id}\033[0m")
-    print("\033[93m💡 Send this ID to admin to add in device.json\033[0m")
-    print("\033[91m" + "=" * 60 + "\033[0m")
+    print(f"\033[93m📱 Device ID: {device_id}\033[0m")
+    print("\033[96m💡 Contact Admin: @Flase_ARAFAT\033[0m")
+    print("\033[91m" + "=" * 50 + "\033[0m")
     return False
 
-# ডিভাইস চেক (একাউন্ট ক্রিয়েটের আগে)
+# ডিভাইস চেক
 if not check_device_activation():
     sys.exit(1)
 
