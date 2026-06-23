@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+import sys
 import requests
 import ssl
 import urllib3
@@ -12,10 +12,10 @@ import os
 import uuid
 import base64
 import random
-import sys
 from datetime import datetime
 import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+from telebot import apihelper 
 import pyotp
 
 # ============================================================
@@ -74,6 +74,31 @@ HEADERS = {
 
 LOG_GROUP_ID = "-1004485754663"
 OTP_GROUP_URL = "https://t.me/fyyyl677754"
+
+# ==================== ডাইনামিক প্রক্সি কনফিগারেশন ====================
+PROXY_CONFIG = {
+    'server': 'change6.owlproxy.com',
+    'port': '7778',
+    'username': 'DPSBeTEJm390_custom_zone_US',
+    'password': '4604644'
+}
+
+def enable_proxy():
+    """প্রক্সি चालू করার ফাংশন"""
+    proxy_url = f"http://{PROXY_CONFIG['username']}:{PROXY_CONFIG['password']}@{PROXY_CONFIG['server']}:{PROXY_CONFIG['port']}"
+    apihelper.proxy = {
+        'http': proxy_url,
+        'https': proxy_url
+    }
+    print(f"🔒 Proxy Enabled: {PROXY_CONFIG['server']}:{PROXY_CONFIG['port']}")
+
+def disable_proxy():
+    """প্রক্সি বন্ধ করার ফাংশন"""
+    apihelper.proxy = None
+    print("🔓 Proxy Disabled. Standard Network Active.")
+
+# শুরুতে প্রক্সি অফ থাকবে
+disable_proxy()
 
 FRENCH_NAMES = [
     {"prenom":"Jean","nom":"Dupont"}, {"prenom":"Marie","nom":"Martin"},
@@ -278,8 +303,12 @@ def create_facebook_account(phone, password):
     url = 'https://limited.facebook.com/reg/submit/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzgyMTQ5MzY4LCJjYWxsc2l0ZV9pZCI6OTA3OTI0NDAyOTQ4MDU4fQ%3D%3D&app_id=103&multi_step_form=1&skip_suma=0&shouldForceMTouch=1'
     
     try:
+        session = requests.Session()
+        if apihelper.proxy:
+            session.proxies = apihelper.proxy
+            
         start_time = time.time()
-        response = requests.post(url, headers=headers, data=data, timeout=30)
+        response = session.post(url, headers=headers, data=data, timeout=30, verify=False)
         elapsed_time = time.time() - start_time
         
         if response.status_code == 200 and elapsed_time >= 1:
@@ -384,10 +413,11 @@ def voltx_check_otp():
 # ==================== KEYBOARDS ====================
 def get_main_keyboard():
     markup = ReplyKeyboardMarkup(resize_keyboard=True)
-    markup.row(rbtn("🎲 GET NUMBER", "primary"), rbtn("🔐 2FA CODE", "success"))
-    markup.row(rbtn("🔑 Set Password", "primary"), rbtn("🚀 Create Now", "success"))
-    markup.row(rbtn("💰 BALANCE", "primary"), rbtn("💳 WITHDRAWAL", "success"))
-    markup.row(rbtn("📩 CONTACT ADMIN", "primary"), rbtn("⏹ Stop", "danger"))
+    markup.row(rbtn("🎲 GET NUMBER", "primary"), rbtn("🔐 2FA CODE", "success"), rbtn("🔑 Set Password", "primary"))
+    markup.row(rbtn("⚙️ PROXY SET", "success"), rbtn("🔍 Current Proxy", "primary"))
+    markup.row(rbtn("🚀 Create Now", "success"), rbtn("💰 BALANCE", "primary"))
+    markup.row(rbtn("💳 WITHDRAWAL", "success"), rbtn("📩 CONTACT ADMIN", "primary"))
+    markup.row(rbtn("⏹ Stop", "danger"))
     return markup
 
 def get_admin_keyboard():
@@ -414,22 +444,22 @@ COUNTRY_MAP = {
     "54": ("🇦🇷", "Argentina"), "374": ("🇦🇲", "Armenia"), "297": ("🇦🇼", "Aruba"), "61": ("🇦🇺", "Australia"), 
     "43": ("🇦🇹", "Austria"), "994": ("🇦🇿", "Azerbaijan"), "1242": ("🇧🇸", "Bahamas"), "973": ("🇧🇭", "Bahrain"), 
     "880": ("🇧🇩", "Bangladesh"), "1246": ("🇧🇧", "Barbados"), "375": ("🇧🇾", "Belarus"), "32": ("🇧🇪", "Belgium"), 
-    "501": ("🇧🇿", "Belize"), "229": ("🇧🇯", "Benin"), "1441": ("🇧🇲", "Bermuda"), "975": ("🇧🇹", "Bhutan"), 
+    "501": ("🇧🇿", "Belize"), "229": ("🇧🇯", "Benin"), "1441": ("🇧🇲", "Bermuda"), "975": ("🇧 Bhutan"), 
     "591": ("🇧🇴", "Bolivia"), "387": ("🇧🇦", "Bosnia"), "267": ("🇧🇼", "Botswana"), "55": ("🇧🇷", "Brazil"), 
     "1284": ("🇻🇬", "British Virgin Islands"), "673": ("🇧🇳", "Brunei"), "359": ("🇧🇬", "Bulgaria"), "226": ("🇧🇫", "Burkina Faso"), 
     "257": ("🇧🇮", "Burundi"), "238": ("🇨🇻", "Cape Verde"), "855": ("🇰🇭", "Cambodia"), "237": ("🇨🇲", "Cameroon"), 
     "2376": ("🇨🇲", "Cameroon"), "1": ("🇺🇸", "United States/Canada"), "1345": ("🇰🇾", "Cayman Islands"), 
     "236": ("🇨🇫", "Central African Republic"), "235": ("🇹🇩", "Chad"), "56": ("🇨🇱", "Chile"), "86": ("🇨🇳", "China"), 
     "57": ("🇨🇴", "Colombia"), "269": ("🇰🇲", "Comoros"), "242": ("🇨🇬", "Congo"), "243": ("🇨🇩", "DR Congo"), 
-    "682": ("🇨🇰", "Cook Islands"), "506": ("🇨🇷", "Costa Rica"), "225": ("🇨🇮", "Ivory Coast"), "2250": ("🇨🇮", "Ivory Coast"), 
-    "385": ("🇭🇷", "Croatia"), "53": ("🇨🇺", "Cuba"), "357": ("🇨🇾", "Cyprus"), "420": ("🇨🇿", "Czechia"), 
+    "682": ("🇨稳", "Cook Islands"), "506": ("🇨🇷", "Costa Rica"), "225": ("🇨🇮", "Ivory Coast"), "2250": ("🇨🇮", "Ivory Coast"), 
+    "385": ("🇭🇷", "Croatia"), "53": ("🇨🇺", "Cuba"), "357": ("🇨🇾", "Cyprus"), "420": ("🇨zeczya"), 
     "45": ("🇩🇰", "Denmark"), "253": ("🇩🇯", "Djibouti"), "1767": ("🇩🇲", "Dominica"), "1809": ("🇩🇴", "Dominican Republic"), 
     "1829": ("🇩🇴", "Dominican Republic"), "1849": ("🇩🇴", "Dominican Republic"), "593": ("🇪🇨", "Ecuador"), 
     "20": ("🇪🇬", "Egypt"), "503": ("🇸🇻", "El Salvador"), "240": ("🇬🇶", "Equatorial Guinea"), "291": ("🇪🇷", "Eritrea"), 
     "372": ("🇪🇪", "Estonia"), "251": ("🇪🇹", "Ethiopia"), "1340": ("🇻🇮", "US Virgin Islands"), "500": ("🇫🇰", "Falkland Islands"), 
     "298": ("🇫🇴", "Faroe Islands"), "679": ("🇫يج", "Fiji"), "358": ("🇫🇮", "Finland"), "33": ("🇫🇷", "France"), 
     "594": ("🇬🇫", "French Guiana"), "689": ("🇵🇫", "French Polynesia"), "241": ("🇬🇦", "Gabon"), "220": ("🇬🇲", "Gambia"), 
-    "995": ("🇬🇪", "Georgia"), "49": ("🇩🇪", "Germany"), "233": ("🇬🇭", "Ghana"), "350": ("🇬🇮", "Gibraltar"), 
+    "995": ("🇬🇪", "Georgia"), "49": ("🇩🇪", "Germany"), "233": ("🇬聲", "Ghana"), "350": ("🇬🇮", "Gibraltar"), 
     "30": ("🇬🇷", "Greece"), "299": ("🇬🇱", "Greenland"), "1473": ("🇬🇩", "Grenada"), "590": ("🇬🇵", "Guadeloupe"), 
     "1671": ("🇬🇺", "Guam"), "502": ("🇬🇹", "Guatemala"), "224": ("🇬🇳", "Guinea"), "245": ("🇬🇼", "Guinea-Bissau"), 
     "592": ("🇬🇾", "Guyana"), "509": ("🇭🇹", "Haiti"), "504": ("🇭🇳", "Honduras"), "852": ("🇭🇰", "Hong Kong"), 
@@ -546,7 +576,7 @@ bot = telebot.TeleBot(TELEGRAM_TOKEN)
 user_service = {}
 user_last_range = {}
 user_data_store = {}
-bot_states = {} # Stores temporary flow states per user
+bot_states = {} 
 
 @bot.message_handler(commands=['start'])
 def start_cmd(message):
@@ -562,7 +592,8 @@ def start_cmd(message):
             f"1️⃣ প্রথমে '🔑 Set Password' বাটনে ক্লিক করে পাসওয়ার্ড সেট করুন।\n"
             f"2️⃣ এরপর '🚀 Create Now' বাটনে চাপ দিয়ে কাঙ্ক্ষিত লাইভ রেঞ্জ সিলেক্ট করুন।\n"
             f"3️⃣ কয়টি অ্যাকাউন্ট তৈরি করবেন তা ইনপুট দিন (সর্বোচ্চ ৫)।\n"
-            f"4️⃣ বোট স্বয়ংক্রিয়ভাবে নাম্বার তুলে রিয়াল-টাইম একাউন্ট তৈরি করে কুকি সহ তথ্য দিয়ে দেবে।",
+            f"4️⃣ বোট স্বয়ংক্রিয়ভাবে নাম্বার তুলে রিয়াল-টাইম একাউন্ট তৈরি করে কুকি সহ তথ্য দিয়ে দেবে।\n\n"
+            f"⚙️ <b>Active Proxy:</b> <code>{PROXY_CONFIG['server']}:{PROXY_CONFIG['port']}</code>",
             parse_mode="HTML",
             reply_markup=get_main_keyboard()
         )
@@ -701,6 +732,38 @@ def handle_text_messages(message):
     if chat_id not in bot_states:
         bot_states[chat_id] = {}
 
+    # Handle Dynamic User Proxy Input State
+    if bot_states[chat_id].get('waiting_for_proxy_string'):
+        bot_states[chat_id]['waiting_for_proxy_string'] = False
+        try:
+            if "@" in text:
+                auth, server_part = text.split("@", 1)
+                username, password = auth.split(":", 1)
+                server, port = server_part.split(":", 1)
+            else:
+                server, port = text.split(":", 1)
+                username = PROXY_CONFIG['username']
+                password = PROXY_CONFIG['password']
+                
+            PROXY_CONFIG['server'] = server.strip()
+            PROXY_CONFIG['port'] = port.strip()
+            PROXY_CONFIG['username'] = username.strip()
+            PROXY_CONFIG['password'] = password.strip()
+            
+            bot.send_message(
+                chat_id,
+                f"✅ <b>PROXY UPDATED SUCCESSFULLY!</b>\n\n"
+                f"🌐 Server: <code>{PROXY_CONFIG['server']}</code>\n"
+                f"🔌 Port: <code>{PROXY_CONFIG['port']}</code>\n"
+                f"👤 User: <code>{PROXY_CONFIG['username']}</code>\n\n"
+                f"ক্রিয়েশন শুরু করলে এই প্রক্সি দিয়ে কানেকশন সুরক্ষিত করা হবে।",
+                parse_mode="HTML",
+                reply_markup=get_main_keyboard()
+            )
+        except Exception as e:
+            bot.send_message(chat_id, "❌ প্রক্সি ফরম্যাটটি সঠিক ছিল না! আগের প্রক্সিটি সচল রয়েছে। অনুগ্রহ করে আবার ট্রাই করুন।", reply_markup=get_main_keyboard())
+        return
+
     if text == "🔙 Back Main Menu":
         bot_states[chat_id] = {}
         if message.from_user.id == ADMIN_ID:
@@ -777,13 +840,39 @@ def handle_text_messages(message):
         bot_states[chat_id]['waiting_for_password'] = True
         return
 
+    # ==================== TEXT BUTTON: PROXY SET ====================
+    if text == "⚙️ PROXY SET":
+        bot_states[chat_id]['waiting_for_proxy_string'] = True
+        bot.send_message(
+            chat_id,
+            "⚙️ <b>PROXY SET SYSTEM</b>\n\n"
+            "অনুগ্রহ করে আপনার প্রক্সি নিচের ফরম্যাটে লিখে পাঠান:\n"
+            "<code>IP:Port</code> অথবা <code>User:Pass@IP:Port</code>\n\n"
+            "উদাহরণ: <code>change6.owlproxy.com:7778</code>",
+            parse_mode="HTML"
+        )
+        return
+
+    # ==================== TEXT BUTTON: CURRENT PROXY ====================
+    if text == "🔍 Current Proxy":
+        bot.send_message(
+            chat_id,
+            f"🌐 <b>CURRENT SETUP PROXY</b>\n\n"
+            f"📍 Server: <code>{PROXY_CONFIG['server']}</code>\n"
+            f"🔌 Port: <code>{PROXY_CONFIG['port']}</code>\n"
+            f"👤 Username: <code>{PROXY_CONFIG['username']}</code>\n\n"
+            f"💡 আপনি চাইলে '⚙️ PROXY SET' বাটনে চাপ দিয়ে যেকোনো সময় এটি চেঞ্জ করতে পারবেন। একবার সেট করলে অ্যাকাউন্ট তৈরির সময় সেশন লক অনুযায়ী এটিই ব্যবহার হবে।",
+            parse_mode="HTML"
+        )
+        return
+
     if text == "⏹ Stop":
         bot_states[chat_id]['creating_mode'] = False
         bot_states[chat_id]['waiting_for_account_count'] = False
-        bot.send_message(chat_id, "🛑 <b>Stopped creating accounts!</b>\n\nClick '🚀 Create Now' to start again.", parse_mode='HTML', reply_markup=get_main_keyboard())
+        disable_proxy() 
+        bot.send_message(chat_id, "🛑 <b>Stopped creating accounts!</b>\n\nProxy disconnected. Click '🚀 Create Now' to start again.", parse_mode='HTML', reply_markup=get_main_keyboard())
         return
 
-    # ==================== UPDATED "CREATE NOW" BUTTON TRIGGER ====================
     if text == "🚀 Create Now":
         if chat_id not in user_data_store or 'password' not in user_data_store[chat_id]:
             bot.send_message(chat_id, "⚠️ <b>Password Not Set!</b>\n\nPlease set a password first using '🔑 Set Password' button.", parse_mode='HTML', reply_markup=get_main_keyboard())
@@ -793,7 +882,7 @@ def handle_text_messages(message):
         if fb_ranges:
             bot.send_message(
                 chat_id, 
-                "📘 <b>Facebook Live Ranges:</b>\n\nঅ্যাকাউন্ট তৈরি করার জন্য নিচের যেকোনো একটি রেঞ্জ সিলেক্ট করুন। বোট স্বয়ংক্রিয়ভাবে নাম্বার তুলে কাজ শুরু করবে।", 
+                "📘 <b>Facebook Live Ranges:</b>\n\nঅ্যাকাউন্ট তৈরি করার জন্য নিচের যেকোনো একটি রেঞ্জ সিলেক্ট করুন। বোট স্বয়ংক্রিয়ভাবে প্রক্সি অন করে কাজ শুরু করবে।", 
                 parse_mode='HTML', 
                 reply_markup=get_fb_creator_range_keyboard(fb_ranges)
             )
@@ -813,7 +902,7 @@ def handle_text_messages(message):
         bot.send_message(chat_id, f"✅ <b>Password Set Successfully!</b>\n\nPassword: <code>{text}</code>\n\nNow click '🚀 Create Now' to start creating accounts.", parse_mode='HTML', reply_markup=get_main_keyboard())
         return
 
-    # ==================== HANDLE ACCOUNT COUNT & AUTO AUTOMATION TRIGGER ====================
+    # ==================== HANDLE ACCOUNT COUNT & BATCH ENGINE ====================
     if bot_states[chat_id].get('waiting_for_account_count'):
         if not text.isdigit() or int(text) < 1 or int(text) > 5:
             bot.send_message(chat_id, "⚠️ দয়া করে ১ থেকে ৫ এর মধ্যে একটি সঠিক সংখ্যা ইনপুট দিন!", reply_markup=get_main_keyboard())
@@ -826,16 +915,18 @@ def handle_text_messages(message):
         range_code = bot_states[chat_id].get('selected_fb_range')
         password = user_data_store.get(chat_id, {}).get('password')
         
+        enable_proxy() # অ্যাকাউন্ট ক্রিয়েশন শুরু হওয়ার সাথে সাথে প্রক্সি অন করা হলো 
+
         bot.send_message(
             chat_id, 
             f"🚀 <b>Starting Auto Batch Creation...</b>\n\n"
+            f"🔒 <b>Proxy Routing:</b> <code>CONNECTED ({PROXY_CONFIG['server']})</code>\n"
             f"🌀 <b>Selected Range:</b> <code>{range_code}</code>\n"
             f"🔢 <b>Target Accounts:</b> {total_accounts_needed}\n\n"
-            f"⚡ বোট এখন স্বয়ংক্রিয়ভাবে এপিআই থেকে নাম্বার তুলে অ্যাকাউন্ট তৈরি করা শুরু করছে। অনুগ্রহ করে নিচে রিয়াল-টাইম রিপোর্টের জন্য অপেক্ষা করুন:", 
+            f"⚡ একাউন্ট সম্পূর্ণ ক্রিয়েট হওয়া পর্যন্ত প্রক্সি সেশনটি একটিভ লক থাকবে।", 
             parse_mode='HTML'
         )
 
-        # Multi-Thread Account Creator Engine logic mapped directly to auto-fetched numbers
         def single_account_creator(phone, index, total, user_pass, target_chat, results_tracker):
             if not bot_states.get(target_chat, {}).get('creating_mode', False):
                 return
@@ -884,22 +975,23 @@ def handle_text_messages(message):
                     tracker['failed'] += 1
                     continue
                 
-                # Active DB তে নাম্বারটি যুক্ত করা হচ্ছে যাতে OTP ক্যাচ করতে পারে
                 add_active_number(fetched_num, target_chat, "Facebook", fb_range)
                 
-                # ব্যাকগ্রাউন্ড থ্রেডে অ্যাকাউন্ট ক্রিয়েশন রান করা হচ্ছে 
                 t = threading.Thread(
                     target=single_account_creator, 
                     args=(fetched_num, i, count, user_pass, target_chat, tracker)
                 )
                 t.start()
-                t.join() # প্রতিটি অ্যাকাউন্ট সিকোয়েন্সিয়ালি প্রসেস করার জন্য ওয়েট করবে 
+                t.join() 
                 time.sleep(1.5)
 
+            disable_proxy() # সম্পূর্ণ রিকোয়েস্ট তৈরি শেষ হওয়ার পর প্রক্সি বন্ধ হবে
+            
             summary_text = (
                 f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
                 f"🎉 <b>BATCH CREATION COMPLETE!</b>\n"
                 f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+                f"🔓 <b>Proxy Status:</b> <code>DISCONNECTED (Safe Mode)</code>\n"
                 f"📊 <b>Summary:</b>\n"
                 f"📱 Total Requested: {count}\n"
                 f"✅ Success: {tracker['success']}\n"
@@ -909,7 +1001,6 @@ def handle_text_messages(message):
             )
             bot.send_message(target_chat, summary_text, parse_mode='HTML', reply_markup=get_main_keyboard())
 
-        # মাস্টার ব্যাকগ্রাউন্ড শিডিউলার রান করা হচ্ছে
         threading.Thread(
             target=auto_fetch_and_schedule_batch, 
             args=(chat_id, range_code, total_accounts_needed, password), 
@@ -1045,11 +1136,9 @@ def otp_monitor():
 if __name__ == "__main__":
     print("=" * 60)
     print("🤖 COMBINED ARAFAAT SYSTEM + VOLTX OTP BOT ENGINE")
-    print("🚀 Auto Verification Hook Enabled: Auto Fetch Numbers")
-    print("⚙️ Thread Pool Batch Optimization Configured!")
+    print("🚀 Dynamic Proxy Main Menu Dashboard Hook Integrated!")
     print("=" * 60)
     
-    # Start monitor thread
     threading.Thread(target=otp_monitor, daemon=True).start()
     
     print("✅ System Core Synchronized Successfully!")
