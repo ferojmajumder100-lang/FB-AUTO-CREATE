@@ -1,4 +1,4 @@
-requests
-python-telegram-bot
-pysocks
-pyTelegramBotAPI
+pyTelegramBotAPI==4.26.0
+requests==2.32.3
+urllib3==2.3.0
+pyotp==2.9.0
