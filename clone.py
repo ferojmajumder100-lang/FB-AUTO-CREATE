@@ -1,2 +1,1056 @@
-import marshal
-exec(marshal.loads(b'\xe3\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0c\x00\x00\x00\x00\x00\x00\x00\xf3\x94\x05\x00\x00\x95\x00S\x00S\x01K\x00r\x00S\x00S\x01K\x01r\x01S\x00S\x01K\x02r\x02S\x00S\x01K\x03r\x03S\x00S\x01K\x04r\x04S\x00S\x01K\x05r\x05S\x00S\x01K\x06r\x06S\x00S\x01K\x07r\x07S\x00S\x01K\x08r\x08S\x00S\x01K\tr\tS\x00S\x01K\nr\nS\x00S\x02K\x0bJ\x0br\x0b \x00S\x00S\x03K\x0cJ\rr\rJ\x0er\x0eJ\x0fr\x0fJ\x10r\x10 \x00\\\r"\x00\\\x115\x01\x00\x00\x00\x00\x00\x00r\x12S\x04r\x13S\x05r\x14S\x06r\x15S\x07\x1a\x00r\x16S\x08\x1a\x00r\x17S\t\x1a\x00r\x18S\n\x1a\x00r\x19\\\x19"\x005\x00\x00\x00\x00\x00\x00\x00(\x00\x00\x00\x00\x00\x00\x00d\x12\x00\x00\\\x02R4\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00S\x0b5\x01\x00\x00\x00\x00\x00\x00 \x00S\x0cq\x1b/\x00q\x1cS\rq\x1dS\rq\x1eS\x0er\x1fS\x0br /\x00S\x0fS\x10S\x11S\x12.\x03P\x01S\x0fS\x10S\x13S\x12.\x03P\x01S\x14S\x15S\x16S\x12.\x03P\x01S\x14S\x15S\x17S\x12.\x03P\x01S\x18S\x19S\x1aS\x12.\x03P\x01S\x18S\x19S\x1bS\x12.\x03P\x01S\x1cS\x1dS\x1eS\x12.\x03P\x01S\x1cS\x1dS\x1fS\x12.\x03P\x01S S!S"S\x12.\x03P\x01S S!S#S\x12.\x03P\x01S$S%S&S\x12.\x03P\x01S$S%S\'S\x12.\x03P\x01S(S)S*S\x12.\x03P\x01S(S)S+S\x12.\x03P\x01S,S-S.S\x12.\x03P\x01S,S-S/S\x12.\x03P\x01S0S1S2S\x12.\x03P\x01S0S1S3S\x12.\x03P\x01S4S5S6S\x12.\x03P\x01S4S5S7S\x12.\x03P\x01S8S9S:S\x12.\x03P\x01S8S9S;S\x12.\x03P\x01S<S=S>S\x12.\x03P\x01S<S=S?S\x12.\x03P\x01S@SASBS\x12.\x03P\x01S@SASCS\x12.\x03P\x01SDSESFS\x12.\x03P\x01SDSESGS\x12.\x03P\x01SHSISJS\x12.\x03P\x01SHSISKS\x12.\x03P\x01SLSMSNS\x12.\x03P\x01SLSMSOS\x12.\x03P\x01SPSQSRS\x12.\x03P\x01SPSQSSS\x12.\x03P\x01STSUSVS\x12.\x03P\x01STSUSWS\x12.\x03P\x01SXSYSZS\x12.\x03P\x01SXSYS[S\x12.\x03P\x01S\\S]S^S\x12.\x03P\x01S\\S]S_S\x12.\x03P\x01S`SaSbS\x12.\x03P\x01S`SaScS\x12.\x03P\x01SdSeSfS\x12.\x03P\x01SdSeSgS\x12.\x03P\x01ShSiSjS\x12.\x03P\x01ShSiSkS\x12.\x03P\x01SlSmSnS\x12.\x03P\x01SlSmSoS\x12.\x03P\x01SpSqSrS\x12.\x03P\x01SpSqSsS\x12.\x03P\x01r!StSuSv.\x02SwSxSv.\x02SySzSv.\x02S{S|Sv.\x02S}S~Sv.\x02S\x7fS\x80Sv.\x02S\x81S\x82Sv.\x02S\x83S\x84Sv.\x02S\x85S\x86Sv.\x02S\x87S\x88Sv.\x02/\nr"S\x89S\x8aSv.\x02S\x8bS\x8cSv.\x02S\x8dS\x8eSv.\x02S\x8fS\x90Sv.\x02S\x91S\x92Sv.\x02S\x93S\x94Sv.\x02S\x95S\x96Sv.\x02S\x97S\x98Sv.\x02S\x99S\x9aSv.\x02S\x9bS\x9cSv.\x02/\nr#S\x9d\x1a\x00r$S\x9e\x1a\x00r%S\x9f\x1a\x00r&S\xa0\x1a\x00r\'S\xa1\x1a\x00r(S\xa2\x1a\x00r)S\xa3r*S\xa4r+\\\x12RY\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\xa5S\xa6/\x01S\xa79\x02S\xa8\x1a\x005\x00\x00\x00\x00\x00\x00\x00r-\\\x12RY\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\xa95\x01\x00\x00\x00\x00\x00\x00S\xaa\x1a\x005\x00\x00\x00\x00\x00\x00\x00r.\\\x12RY\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\xabS\xac/\x01S\xa79\x02S\xad\x1a\x005\x00\x00\x00\x00\x00\x00\x00r/\\\x12RY\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\xaeS\xac/\x01S\xa79\x02S\xaf\x1a\x005\x00\x00\x00\x00\x00\x00\x00r0\\\x12RY\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\xb0S\xa6/\x01S\xa79\x02S\xb1\x1a\x005\x00\x00\x00\x00\x00\x00\x00r1\\\x12RY\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\xb2S\xa6/\x01S\xa79\x02S\xb3\x1a\x005\x00\x00\x00\x00\x00\x00\x00r2S\xb4\x1a\x00r3\\\x11S\xb5:X\x00\x00a\x1b\x00\x00\\4"\x00S\xb65\x01\x00\x00\x00\x00\x00\x00 \x00\\\x12Rk\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\xb7S\xb8S\rS\xb9S\xba9\x04 \x00g\x01g\x01)\xbb\xe9\x00\x00\x00\x00N)\x01\xda\x08datetime)\x04\xda\x05Flask\xda\x16render_template_string\xda\x07request\xda\x07jsonifyzLhttps://raw.githubusercontent.com/ferojmajumder100-lang/FB-AUTO-CREATE/main/z\x0bconfig.jsonz\x0bdevice.jsonc\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x03\x00\x00\x00\xf3\x98\x00\x00\x00\x95\x00\x1e\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00[\x04\x00\x00\x00\x00\x00\x00\x00\x00\x0e\x00[\x06\x00\x00\x00\x00\x00\x00\x00\x00\x0e\x003\x02S\x01S\x029\x02n\x00U\x00R\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x03:X\x00\x00a\x10\x00\x00U\x00R\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00$\x00\x1e\x00g\x00!\x00 \x00\x1f\x00g\x00=\x03\x1f\x00f\x01)\x04N\xe9\n\x00\x00\x00\xa9\x01\xda\x07timeout\xe9\xc8\x00\x00\x00)\x06\xda\x08requests\xda\x03get\xda\x0eGITHUB_RAW_URL\xda\x0bCONFIG_FILE\xda\x0bstatus_code\xda\x04json)\x01\xda\x08responses\x01\x00\x00\x00 \xda\x07main.py\xda\x0bload_configr\x15\x00\x00\x00\x19\x00\x00\x00sR\x00\x00\x00\x80\x00\xf0\x02\x05\x05\r\xdc\x13\x1b\x97<\x92<\xa4>\xd0"2\xb4;\xb0-\xd0 @\xc8"\xd1\x13M\x88\x08\xd8\x0b\x13\xd7\x0b\x1f\xd1\x0b\x1f\xa03\xd3\x0b&\xd8\x13\x1b\x97=\x91=\x93?\xd0\x0c"\xf0\x03\x00\x0c\'\xf0\x08\x00\x0c\x10\xf8\xf0\x05\x01\x05\r\xd8\x08\x0c\xd8\x0b\x0f\xfas\x0c\x00\x00\x00\x82A\x00A\x05\x00\xc1\x05\x02A\t\x03c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x03\x00\x00\x00\xf3\xc0\x00\x00\x00\x95\x00\x1e\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00[\x04\x00\x00\x00\x00\x00\x00\x00\x00\x0e\x00[\x06\x00\x00\x00\x00\x00\x00\x00\x00\x0e\x003\x02S\x01S\x029\x02n\x00U\x00R\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x03:X\x00\x00a"\x00\x00U\x00R\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00n\x01U\x01R\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x04/\x005\x02\x00\x00\x00\x00\x00\x00$\x00\x1e\x00/\x00$\x00!\x00 \x00\x1f\x00/\x00$\x00=\x03\x1f\x00f\x01)\x05Nr\t\x00\x00\x00r\n\x00\x00\x00r\x0c\x00\x00\x00\xda\x11activated_devices)\x06r\r\x00\x00\x00r\x0e\x00\x00\x00r\x0f\x00\x00\x00\xda\x0bDEVICE_FILEr\x11\x00\x00\x00r\x12\x00\x00\x00)\x02r\x13\x00\x00\x00\xda\x04datas\x02\x00\x00\x00  r\x14\x00\x00\x00\xda\x0fload_device_idsr\x1a\x00\x00\x00"\x00\x00\x00sg\x00\x00\x00\x80\x00\xf0\x02\x06\x05\r\xdc\x13\x1b\x97<\x92<\xa4>\xd0"2\xb4;\xb0-\xd0 @\xc8"\xd1\x13M\x88\x08\xd8\x0b\x13\xd7\x0b\x1f\xd1\x0b\x1f\xa03\xd3\x0b&\xd8\x13\x1b\x97=\x91=\x93?\x88D\xd8\x13\x17\x978\x918\xd0\x1c/\xb0\x12\xd3\x134\xd0\x0c4\xf0\x05\x00\x0c\'\xf0\n\x00\x0c\x0e\x80I\xf8\xf0\x05\x01\x05\r\xd8\x08\x0c\xd8\x0b\r\x80I\xfas\x0c\x00\x00\x00\x82A\x12A\x18\x00\xc1\x18\x02A\x1d\x03c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00\x03\x00\x00\x00\xf3x\x03\x00\x00\x95\x00\x1e\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x015\x01\x00\x00\x00\x00\x00\x00n\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00U\x005\x01\x00\x00\x00\x00\x00\x00(\x00\x00\x00\x00\x00\x00\x00aF\x00\x00[\t\x00\x00\x00\x00\x00\x00\x00\x00U\x00S\x025\x02\x00\x00\x00\x00\x00\x00\x02\x00n\x01U\x01R\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00R\r\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00n\x02U\x02(\x00\x00\x00\x00\x00\x00\x00a\x0b\x00\x00U\x02s\x02S\x00S\x00S\x005\x02\x00\x00\x00\x00\x00\x00 \x00$\x00\x1e\x00S\x00S\x00S\x005\x02\x00\x00\x00\x00\x00\x00 \x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x0e\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x005\x00\x00\x00\x00\x00\x00\x00R\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00n\x03[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x035\x01\x00\x00\x00\x00\x00\x00n\x04U\x03\x0e\x00U\x04\x0e\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x12\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x005\x00\x00\x00\x00\x00\x00\x00\x0e\x003\x03n\x05[\x14\x00\x00\x00\x00\x00\x00\x00\x00R\x16\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00U\x05R\x19\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00R\x1b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00S\x00S\x04\x04\x00n\x02[\t\x00\x00\x00\x00\x00\x00\x00\x00U\x00S\x055\x02\x00\x00\x00\x00\x00\x00\x02\x00n\x01U\x01R\x1d\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00U\x025\x01\x00\x00\x00\x00\x00\x00 \x00S\x00S\x00S\x005\x02\x00\x00\x00\x00\x00\x00 \x00U\x02$\x00!\x00,\x00(\x00\x00\x00\x00\x00\x00\x00d\x01\x00\x00f\x02 \x00\x1f\x00 \x00 \x00N\xc4=\x03\x1f\x00f\x01!\x00,\x00(\x00\x00\x00\x00\x00\x00\x00d\x01\x00\x00f\x02 \x00\x1f\x00 \x00 \x00U\x02$\x00=\x03\x1f\x00f\x01!\x00 \x00[\x14\x00\x00\x00\x00\x00\x00\x00\x00R\x16\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00[\x1f\x00\x00\x00\x00\x00\x00\x00\x00[ \x00\x00\x00\x00\x00\x00\x00\x00R"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x005\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00R\x19\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00R\x1b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00S\x00S\x04\x04\x00s\x02\x1f\x00$\x00=\x03\x1f\x00f\x01)\x06Nz\x0c~/.device_id\xda\x01r\xda\x01~\xe9\x10\x00\x00\x00\xda\x01w)\x12\xda\x02os\xda\x04path\xda\nexpanduser\xda\x06exists\xda\x04open\xda\x04read\xda\x05strip\xda\x05uname\xda\x08nodename\xda\x06getpid\xda\x07hashlib\xda\x03md5\xda\x06encode\xda\thexdigest\xda\x05write\xda\x03str\xda\x04uuid\xda\x07getnode)\x06\xda\x07id_file\xda\x01f\xda\tdevice_id\xda\x08hostname\xda\x04home\xda\x08combineds\x06\x00\x00\x00      r\x14\x00\x00\x00\xda\rget_device_idr8\x00\x00\x00-\x00\x00\x00s@\x01\x00\x00\x80\x00\xf0\x02\x12\x05J\x01\xdc\x12\x14\x97\'\x91\'\xd7\x12$\xd1\x12$\xa0^\xd3\x124\x88\x07\xdc\x0b\r\x8f7\x897\x8f>\x89>\x98\'\xd7\x0b"\xd1\x0b"\xdc\x11\x15\x90g\x98s\xd4\x11#\xa0q\xd8\x1c\x1d\x9fF\x99F\x9bH\x9fN\x99N\xd3\x1c,\x90\t\xde\x13\x1c\xd8\x1b$\xf7\x07\x00\x12$\xd1\x11#\xe0\x13\x1c\xf7\x05\x00\x12$\xf4\n\x00\x14\x16\x978\x928\x93:\xd7\x13&\xd1\x13&\x88\x08\xdc\x0f\x11\x8fw\x89w\xd7\x0f!\xd1\x0f!\xa0#\xd3\x0f&\x88\x04\xd8\x16\x1e\x90Z\xa0\x04\x98v\xa4b\xa7i\xa2i\xa3k\xa0]\xd0\x133\x88\x08\xdc\x14\x1b\x97K\x92K\xa0\x08\xa7\x0f\xa1\x0f\xd3 1\xd3\x142\xd7\x14<\xd1\x14<\xd3\x14>\xb8s\xc0\x02\xd0\x14C\x88\t\xe4\r\x11\x90\'\x983\xd4\r\x1f\xa01\xd8\x0c\r\x8fG\x89G\x90I\xd4\x0c\x1e\xf7\x03\x00\x0e \xf0\x06\x00\x10\x19\xd0\x08\x18\xf7\x1b\x00\x12$\xd5\x11#\xfa\xf7\x14\x00\x0e \xd4\r\x1f\xf0\x06\x00\x10\x19\xd0\x08\x18\xfb\xf0\x02\x01\x05J\x01\xdc\x0f\x16\x8f{\x8a{\x9c3\x9ct\x9f|\x9a|\x9b~\xd3\x1b.\xd7\x1b5\xd1\x1b5\xd3\x1b7\xd3\x0f8\xd7\x0fB\xd1\x0fB\xd3\x0fD\xc0S\xc0b\xd0\x0fI\xd2\x08I\xfasJ\x00\x00\x00\x82A\x0fE$\x00\xc1\x11\'E\x01\x03\xc18\tE$\x00\xc2\x03B"E$\x00\xc4%\x12E\x12\x03\xc47\tE$\x00\xc5\x01\nE\x0f\x07\xc5\x0b\x07E$\x00\xc5\x12\nE!\x07\xc5\x1c\x04E$\x00\xc5!\x03E$\x00\xc5$A\x13F9\x03c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x03\x00\x00\x00\xf3\xae\x00\x00\x00\x95\x00[\x01\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00n\x00[\x03\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00n\x01X\x01;\x00\x00\x00a\x01\x00\x00g\x01[\x05\x00\x00\x00\x00\x00\x00\x00\x00S\x025\x01\x00\x00\x00\x00\x00\x00 \x00[\x05\x00\x00\x00\x00\x00\x00\x00\x00S\x035\x01\x00\x00\x00\x00\x00\x00 \x00[\x05\x00\x00\x00\x00\x00\x00\x00\x00S\x04U\x00\x0e\x00S\x053\x035\x01\x00\x00\x00\x00\x00\x00 \x00[\x05\x00\x00\x00\x00\x00\x00\x00\x00S\x065\x01\x00\x00\x00\x00\x00\x00 \x00[\x05\x00\x00\x00\x00\x00\x00\x00\x00S\x025\x01\x00\x00\x00\x00\x00\x00 \x00g\x07)\x08NTz;\x1b[91m==================================================\x1b[0mu"\x00\x00\x00\x1b[91m\xe2\x9d\x8c DEVICE NOT ACTIVATED!\x1b[0mu\x15\x00\x00\x00\x1b[93m\xf0\x9f\x93\xb1 Device ID: z\x04\x1b[0mu*\x00\x00\x00\x1b[96m\xf0\x9f\x92\xa1 Contact Admin: @Flase_ARAFAT\x1b[0mF)\x03r8\x00\x00\x00r\x1a\x00\x00\x00\xda\x05print)\x02r4\x00\x00\x00r\x17\x00\x00\x00s\x02\x00\x00\x00  r\x14\x00\x00\x00\xda\x17check_device_activationr;\x00\x00\x00B\x00\x00\x00sT\x00\x00\x00\x80\x00\xdc\x10\x1d\x93\x0f\x80I\xdc\x18\'\xd3\x18)\xd0\x04\x15\xe0\x07\x10\xd3\x07%\xd8\x0f\x13\xe4\x04\t\xd0\n+\xd4\x04,\xdc\x04\t\xd0\n4\xd4\x045\xdc\x04\t\xd0\x0c$\xa0Y\xa0K\xa8w\xd0\n7\xd4\x048\xdc\x04\t\xd0\n<\xd4\x04=\xdc\x04\t\xd0\n+\xd4\x04,\xd8\x0b\x10\xf3\x00\x00\x00\x00\xe9\x01\x00\x00\x00\xda\x00F\xe9\x14\x00\x00\x00z\x11iPhone 16 Pro Maxz\x08iOS 18.5z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1)\x03\xda\x06devicer \x00\x00\x00\xda\tuserAgentz\x89Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/133.0 Mobile/15E148 Safari/605.1.15z\tiPhone 16z\x08iOS 18.4z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1z\x8fMozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/133.0.6943.132 Mobile/15E148 Safari/604.1z\x11iPhone 15 Pro Maxz\x08iOS 18.3z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1z\x8eMozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/332.0.701234567 Mobile/15E148 Safari/604.1z\riPhone 15 Proz\x08iOS 18.2z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1z\x89Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/132.0 Mobile/15E148 Safari/605.1.15z\x0eiPhone 15 Plusz\x08iOS 18.1z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/604.1z\x8fMozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/132.0.6943.132 Mobile/15E148 Safari/604.1z\tiPhone 15z\x08iOS 18.0z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1z\x8eMozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/330.0.701234567 Mobile/15E148 Safari/604.1z\x11iPhone 14 Pro Maxz\x08iOS 17.6z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1z\x89Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/131.0 Mobile/15E148 Safari/605.1.15z\riPhone 14 Proz\x08iOS 17.5z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1z\x8fMozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/131.0.6943.132 Mobile/15E148 Safari/604.1z\x0eiPhone 14 Plusz\x08iOS 17.4z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1z\x8eMozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/329.0.701234567 Mobile/15E148 Safari/604.1z\tiPhone 14z\x08iOS 17.3z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Mobile/15E148 Safari/604.1z\x89Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/130.0 Mobile/15E148 Safari/605.1.15z\x11iPhone 13 Pro Maxz\x08iOS 17.2z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1z\x8fMozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/130.0.6943.132 Mobile/15E148 Safari/604.1z\riPhone 13 Proz\x08iOS 17.1z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Mobile/15E148 Safari/604.1z\x8eMozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/328.0.701234567 Mobile/15E148 Safari/604.1z\tiPhone 13z\x08iOS 17.0z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1z\x89Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/129.0 Mobile/15E148 Safari/605.1.15z\x0eiPhone 13 miniz\x08iOS 16.7z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 16_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.7 Mobile/15E148 Safari/604.1z\x8fMozilla/5.0 (iPhone; CPU iPhone OS 16_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/129.0.6943.132 Mobile/15E148 Safari/604.1z\x11iPhone 12 Pro Maxz\x08iOS 16.6z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1z\x8eMozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/327.0.701234567 Mobile/15E148 Safari/604.1z\riPhone 12 Proz\x08iOS 16.5z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Mobile/15E148 Safari/604.1z\x89Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/128.0 Mobile/15E148 Safari/605.1.15z\tiPhone 12z\x08iOS 16.4z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 16_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Mobile/15E148 Safari/604.1z\x8fMozilla/5.0 (iPhone; CPU iPhone OS 16_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/128.0.6943.132 Mobile/15E148 Safari/604.1z\x0eiPhone 12 miniz\x08iOS 16.3z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1z\x8eMozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/326.0.701234567 Mobile/15E148 Safari/604.1z\x11iPhone 11 Pro Maxz\x08iOS 16.2z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1z\x89Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/127.0 Mobile/15E148 Safari/605.1.15z\riPhone 11 Proz\x08iOS 16.1z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 16_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1z\x8fMozilla/5.0 (iPhone; CPU iPhone OS 16_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/127.0.6943.132 Mobile/15E148 Safari/604.1z\tiPhone 11z\x08iOS 16.0z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1z\x8eMozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/325.0.701234567 Mobile/15E148 Safari/604.1z\x13iPhone SE (3rd gen)z\x08iOS 15.8z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 15_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.8 Mobile/15E148 Safari/604.1z\x89Mozilla/5.0 (iPhone; CPU iPhone OS 15_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/126.0 Mobile/15E148 Safari/605.1.15z\riPhone XS Maxz\x08iOS 15.7z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 15_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.7 Mobile/15E148 Safari/604.1z\x8fMozilla/5.0 (iPhone; CPU iPhone OS 15_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/126.0.6943.132 Mobile/15E148 Safari/604.1z\tiPhone XSz\x08iOS 15.6z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Mobile/15E148 Safari/604.1z\x8eMozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/324.0.701234567 Mobile/15E148 Safari/604.1z\tiPhone XRz\x08iOS 15.5z\x87Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.5 Mobile/15E148 Safari/604.1z\x89Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/125.0 Mobile/15E148 Safari/605.1.15\xda\x04Jean\xda\x06Dupont)\x02\xda\x06prenom\xda\x03nom\xda\x05Marie\xda\x06Martin\xda\x06Pierre\xda\x06Durand\xda\x06Sophieu\x08\x00\x00\x00Lef\xc3\xa8vre\xda\x05Lucas\xda\x06Moreau\xda\x04Emma\xda\x05Petit\xda\x05Louis\xda\x04Rouxu\x06\x00\x00\x00Chlo\xc3\xa9\xda\x07Richard\xda\x04Hugo\xda\x05Simonu\x05\x00\x00\x00In\xc3\xa8s\xda\x07Laurentu\x06\x00\x00\x00\xd8\xac\xd8\xa7\xd9\x86u\n\x00\x00\x00\xd8\xaf\xd9\x8a\xd8\xa8\xd9\x88\xd9\x86u\x08\x00\x00\x00\xd9\x85\xd8\xa7\xd8\xb1\xd9\x8au\x0c\x00\x00\x00\xd9\x85\xd8\xa7\xd8\xb1\xd8\xaa\xd8\xa7\xd9\x86u\x08\x00\x00\x00\xd8\xa8\xd9\x8a\xd9\x8a\xd8\xb1u\n\x00\x00\x00\xd8\xaf\xd9\x88\xd8\xb1\xd8\xa7\xd9\x86u\x08\x00\x00\x00\xd8\xb5\xd9\x88\xd9\x81\xd9\x8au\x0c\x00\x00\x00\xd9\x84\xd9\x8a\xd9\x81\xd9\x8a\xd9\x81\xd8\xb1u\x08\x00\x00\x00\xd9\x84\xd9\x88\xd9\x83\xd8\xa7u\x08\x00\x00\x00\xd9\x85\xd9\x88\xd8\xb1\xd9\x88u\x08\x00\x00\x00\xd8\xa5\xd9\x8a\xd9\x85\xd8\xa7u\x08\x00\x00\x00\xd8\xa8\xd8\xaa\xd9\x8a\xd8\xaau\x08\x00\x00\x00\xd9\x84\xd9\x88\xd9\x8a\xd8\xb3u\x04\x00\x00\x00\xd8\xb1\xd9\x88u\x08\x00\x00\x00\xd9\x83\xd9\x84\xd9\x88\xd9\x8au\n\x00\x00\x00\xd8\xb1\xd9\x8a\xd8\xb4\xd8\xa7\xd8\xb1u\x08\x00\x00\x00\xd9\x87\xd9\x88\xd8\xba\xd9\x88u\n\x00\x00\x00\xd8\xb3\xd9\x8a\xd9\x85\xd9\x88\xd9\x86u\n\x00\x00\x00\xd8\xa5\xd9\x8a\xd9\x86\xd8\xa7\xd8\xb3u\n\x00\x00\x00\xd9\x84\xd9\x88\xd8\xb1\xd8\xa7\xd9\x86c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00\x03\x00\x00\x00\xf3$\x01\x00\x00\x95\x00/\x00S\x01Q\x01n\x00/\x00S\x02Q\x01n\x01/\x00S\x03Q\x01n\x02[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00U\x015\x01\x00\x00\x00\x00\x00\x00[\x05\x00\x00\x00\x00\x00\x00\x00\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00S\x04S\x055\x02\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00-\x00\x00\x00n\x03[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x005\x00\x00\x00\x00\x00\x00\x00S\x06:\x12\x00\x00a\x19\x00\x00U\x03[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00U\x025\x01\x00\x00\x00\x00\x00\x00-\r\x00\x00n\x03[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00U\x005\x01\x00\x00\x00\x00\x00\x00n\x04U\x03\x0e\x00U\x04\x0e\x003\x02$\x00)\x07N)\tz\n@gmail.comz\x07@uuf.mez\x08@mail.ruz\n@yandex.ruz\x0c@outlook.comz\x0c@hotmail.comz\n@yahoo.comz\x0f@protonmail.comz\x0b@icloud.com)\x0e\xda\x06arafat\xda\x05ashik\xda\x05rabbi\xda\x06minhaj\xda\x05sakib\xda\x05tamim\xda\x06musfiq\xda\x06shakib\xda\x05liton\xda\x06soumya\xda\x08mustafiz\xda\x06taskin\xda\x05rubel\xda\x05miraz)\x0c\xda\x03123\xda\x03007\xda\x041917\xda\x042024\xda\x042025\xda\x03786\xda\x03420\xda\x0219\xda\x0227\xda\x0245\xda\x0288\xda\x0299\xe9d\x00\x00\x00i\x0f\'\x00\x00g\x00\x00\x00\x00\x00\x00\xe0?)\x04\xda\x06random\xda\x06choicer/\x00\x00\x00\xda\x07randint)\x05\xda\x07domains\xda\x08prefixes\xda\x08suffixes\xda\x08username\xda\x06domains\x05\x00\x00\x00     r\x14\x00\x00\x00\xda\x15generate_random_emailry\x00\x00\x00\xad\x00\x00\x00sx\x00\x00\x00\x80\x00\xf2\x02\x01\x0fO\x01\x80G\xf2\x04\x01\x10T\x01\x80H\xe2\x0fa\x80H\xdc\x0f\x15\x8f}\x8a}\x98X\xd3\x0f&\xac\x13\xacV\xaf^\xaa^\xb8C\xc0\x14\xd3-F\xd3)G\xd1\x0fG\x80H\xdc\x07\r\x87}\x82}\x83\x7f\x98\x13\xd3\x07\x1c\xd8\x08\x10\x94F\x97M\x92M\xa0(\xd3\x14+\xd1\x08+\x88\x08\xdc\r\x13\x8f]\x8a]\x987\xd3\r#\x80F\xd8\x0e\x16\x88Z\x98\x06\x90x\xd0\x0b \xd0\x04 r<\x00\x00\x00c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\xf36\x00\x00\x00\x95\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00[\x04\x00\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00$\x00\xa9\x01N)\x03rq\x00\x00\x00rr\x00\x00\x00\xda\x0bUSER_AGENTS\xa9\x00r<\x00\x00\x00r\x14\x00\x00\x00\xda\x15get_random_user_agentr~\x00\x00\x00\xb9\x00\x00\x00s\x11\x00\x00\x00\x80\x00\xdc\x0b\x11\x8f=\x8a=\x9c\x1b\xd3\x0b%\xd0\x04%r<\x00\x00\x00c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\xf3\xc8\x00\x00\x00\x95\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x005\x00\x00\x00\x00\x00\x00\x00S\x01:\x12\x00\x00a%\x00\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00[\x04\x00\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00n\x00U\x00S\x02\x05\x00\x00\x00U\x00S\x03\x05\x00\x00\x00S\x044\x03$\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00[\x06\x00\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00n\x00U\x00S\x02\x05\x00\x00\x00U\x00S\x03\x05\x00\x00\x00S\x054\x03$\x00)\x06Ng\x00\x00\x00\x00\x00\x00\xe8?rD\x00\x00\x00rE\x00\x00\x00u\x10\x00\x00\x00\xf0\x9f\x87\xab\xf0\x9f\x87\xb7\xf0\x9f\x87\xa6\xf0\x9f\x87\xb7u\x08\x00\x00\x00\xf0\x9f\x87\xab\xf0\x9f\x87\xb7)\x04rq\x00\x00\x00rr\x00\x00\x00\xda\x13FRENCH_ARABIC_NAMES\xda\x0cFRENCH_NAMES)\x01\xda\x04names\x01\x00\x00\x00 r\x14\x00\x00\x00\xda\x14random_name_combinedr\x83\x00\x00\x00\xbc\x00\x00\x00sX\x00\x00\x00\x80\x00\xdc\x07\r\x87}\x82}\x83\x7f\x98\x14\xd3\x07\x1d\xdc\x0f\x15\x8f}\x8a}\xd4\x1d0\xd3\x0f1\x88\x04\xd8\x0f\x13\x90H\x89~\x98t\xa0E\x99{\xd0,>\xd0\x0f>\xd0\x08>\xe4\x0f\x15\x8f}\x8a}\x9c\\\xd3\x0f*\x88\x04\xd8\x0f\x13\x90H\x89~\x98t\xa0E\x99{\xa8J\xd0\x0f6\xd0\x086r<\x00\x00\x00c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x03\x00\x00\x00\xf3\x94\x00\x00\x00\x95\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00S\x01S\x025\x02\x00\x00\x00\x00\x00\x00n\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00S\x01S\x035\x02\x00\x00\x00\x00\x00\x00n\x01[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00S\x04S\x055\x02\x00\x00\x00\x00\x00\x00n\x02X\x01U\x024\x03$\x00)\x06Nr=\x00\x00\x00\xe9\x1c\x00\x00\x00\xe9\x0c\x00\x00\x00i\xbc\x07\x00\x00i\xd5\x07\x00\x00)\x02rq\x00\x00\x00rs\x00\x00\x00)\x03\xda\x03day\xda\x05month\xda\x04years\x03\x00\x00\x00   r\x14\x00\x00\x00\xda\x0crandom_birthr\x8a\x00\x00\x00\xc4\x00\x00\x00s=\x00\x00\x00\x80\x00\xdc\n\x10\x8f.\x8a.\x98\x11\x98B\xd3\n\x1f\x80C\xdc\x0c\x12\x8fN\x8aN\x981\x98b\xd3\x0c!\x80E\xdc\x0b\x11\x8f>\x8a>\x98$\xa0\x04\xd3\x0b%\x80D\xd8\x0b\x0e\x90t\xd0\x0b\x1b\xd0\x04\x1br<\x00\x00\x00c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\xf3l\x00\x00\x00\x95\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x005\x00\x00\x00\x00\x00\x00\x00n\x00U\x00R\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x015\x01\x00\x00\x00\x00\x00\x00R\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x025\x01\x00\x00\x00\x00\x00\x00$\x00)\x03Nz\x08%I:%M %p\xda\x010)\x04r\x03\x00\x00\x00\xda\x03now\xda\x08strftime\xda\x06lstrip)\x01r\x8d\x00\x00\x00s\x01\x00\x00\x00 r\x14\x00\x00\x00\xda\x08get_timer\x90\x00\x00\x00\xca\x00\x00\x00s\'\x00\x00\x00\x80\x00\xdc\n\x12\x8f,\x8a,\x8b.\x80C\xd8\x0b\x0e\x8f<\x89<\x98\n\xd3\x0b#\xd7\x0b*\xd1\x0b*\xa83\xd3\x0b/\xd0\x04/r<\x00\x00\x00c\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x03\x00\x00\x00\xf3\xbc\x00\x00\x00\x95\x00[\x01\x00\x00\x00\x00\x00\x00\x00\x00[\x02\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x005\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00n\x01[\x04\x00\x00\x00\x00\x00\x00\x00\x00R\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00U\x00\x0e\x00S\x01U\x01\x0e\x003\x03R\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00R\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00n\x02S\x02U\x01\x0e\x00S\x01U\x02\x0e\x003\x04$\x00)\x03N\xda\x01:z\x0f#PWD_BROWSER:5:)\x06\xda\x03int\xda\x04time\xda\x06base64\xda\tb64encoder,\x00\x00\x00\xda\x06decode)\x03\xda\x08password\xda\ttimestamp\xda\x07encodeds\x03\x00\x00\x00   r\x14\x00\x00\x00\xda\x10generate_encpassr\x9b\x00\x00\x00\xce\x00\x00\x00sR\x00\x00\x00\x80\x00\xdc\x10\x13\x94D\x97I\x92I\x93K\xd3\x10 \x80I\xdc\x0e\x14\xd7\x0e\x1e\xd2\x0e\x1e\xa0(\xa0\x1a\xa81\xa8Y\xa8K\xd0\x1f8\xd7\x1f?\xd1\x1f?\xd3\x1fA\xd3\x0eB\xd7\x0eI\xd1\x0eI\xd3\x0eK\x80G\xd8\r\x1c\x98Y\x98K\xa0q\xa8\x17\xa8\t\xd0\x0b2\xd0\x042r<\x00\x00\x00u\xbeZ\x00\x00\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">\n    <title>FB Creator</title>\n    <style>\n        * { margin: 0; padding: 0; box-sizing: border-box; }\n        body { \n            background: #0a0a0a; \n            color: #fff; \n            font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, sans-serif;\n            padding: 12px;\n            min-height: 100vh;\n            -webkit-tap-highlight-color: transparent;\n        }\n        .container { max-width: 600px; margin: 0 auto; }\n        \n        .header {\n            text-align: center;\n            padding: 15px 0;\n            border-bottom: 2px solid #ff0000;\n            margin-bottom: 20px;\n        }\n        .header h1 {\n            color: #ff0000;\n            font-size: 32px;\n            font-weight: 700;\n            text-shadow: 0 0 30px rgba(255,0,0,0.2);\n        }\n        .header .sub { \n            color: #ff6b6b; \n            font-size: 14px; \n            margin-top: 4px;\n            letter-spacing: 1px;\n        }\n        \n        .card {\n            background: #161616;\n            border: 1px solid #2a2a2a;\n            border-radius: 12px;\n            padding: 16px;\n            margin-bottom: 16px;\n        }\n        .card h3 { \n            color: #ff6b6b; \n            font-size: 16px; \n            margin-bottom: 12px;\n            font-weight: 600;\n        }\n        \n        label { \n            display: block; \n            color: #888; \n            margin-bottom: 4px; \n            font-size: 12px;\n            font-weight: 500;\n            text-transform: uppercase;\n            letter-spacing: 0.5px;\n        }\n        input, textarea, select {\n            width: 100%;\n            padding: 12px;\n            background: #0a0a0a;\n            border: 1px solid #2a2a2a;\n            color: #fff;\n            border-radius: 8px;\n            font-size: 14px;\n            margin-bottom: 12px;\n            -webkit-appearance: none;\n            appearance: none;\n        }\n        input:focus, textarea:focus, select:focus { \n            border-color: #ff0000; \n            outline: none;\n            box-shadow: 0 0 0 2px rgba(255,0,0,0.1);\n        }\n        textarea { \n            min-height: 100px; \n            resize: vertical;\n            font-size: 13px;\n        }\n        select {\n            background-image: url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'%3E%3Cpath fill=\'%23666\' d=\'M6 8L1 3h10z\'/%3E%3C/svg%3E");\n            background-repeat: no-repeat;\n            background-position: right 12px center;\n            padding-right: 36px;\n        }\n        \n        .btn {\n            padding: 14px 20px;\n            border: none;\n            border-radius: 8px;\n            cursor: pointer;\n            font-weight: 600;\n            font-size: 15px;\n            transition: all 0.2s;\n            width: 100%;\n            text-align: center;\n            -webkit-tap-highlight-color: transparent;\n        }\n        .btn:active { transform: scale(0.97); }\n        .btn-primary { background: #ff0000; color: #fff; }\n        .btn-primary:active { background: #cc0000; }\n        .btn-danger { background: #cc0000; color: #fff; }\n        .btn-danger:active { background: #990000; }\n        .btn-success { background: #00cc00; color: #fff; }\n        .btn-success:active { background: #009900; }\n        .btn-sm { \n            padding: 6px 12px; \n            font-size: 11px; \n            width: auto;\n            border-radius: 6px;\n        }\n        \n        .btn-group { \n            display: flex; \n            gap: 8px; \n            flex-wrap: wrap; \n            margin-top: 8px;\n        }\n        .btn-group .btn { flex: 1; min-width: 60px; }\n        \n        .status {\n            padding: 12px;\n            border-radius: 8px;\n            margin: 10px 0;\n            text-align: center;\n            font-size: 13px;\n            font-weight: 500;\n        }\n        .status-running { background: #002200; color: #00ff00; border: 1px solid #00ff00; }\n        .status-done { background: #002200; color: #00ff00; border: 1px solid #00ff00; }\n        .status-error { background: #220000; color: #ff0000; border: 1px solid #ff0000; }\n        .status-stopped { background: #221100; color: #ff8800; border: 1px solid #ff8800; }\n        \n        .account-item {\n            background: #0a0a0a;\n            border: 1px solid #2a2a2a;\n            border-radius: 8px;\n            padding: 12px;\n            margin-bottom: 10px;\n            transition: all 0.2s;\n        }\n        .account-item.success { border-left: 3px solid #00cc00; }\n        .account-item.failed { border-left: 3px solid #cc0000; }\n        .account-item .info { \n            display: flex; \n            flex-wrap: wrap; \n            gap: 6px; \n            margin-bottom: 4px;\n            font-size: 13px;\n        }\n        .account-item .label { \n            color: #666; \n            font-size: 11px; \n            text-transform: uppercase;\n            letter-spacing: 0.3px;\n        }\n        .account-item .value { \n            color: #fff; \n            word-break: break-all;\n            font-size: 13px;\n        }\n        .account-item .badge {\n            display: inline-block;\n            padding: 2px 8px;\n            border-radius: 4px;\n            font-size: 10px;\n            font-weight: 600;\n            text-transform: uppercase;\n            letter-spacing: 0.3px;\n        }\n        .badge-email { background: #0044cc; color: #fff; }\n        .badge-number { background: #cc8800; color: #fff; }\n        .badge-auto { background: #00aa44; color: #fff; }\n        .badge-manual { background: #cc6600; color: #fff; }\n        .badge-success { background: #00aa44; color: #fff; }\n        .badge-failed { background: #cc0000; color: #fff; }\n        \n        .copy-btn {\n            background: #2a2a2a;\n            color: #fff;\n            border: none;\n            padding: 2px 10px;\n            border-radius: 4px;\n            cursor: pointer;\n            font-size: 11px;\n            -webkit-tap-highlight-color: transparent;\n        }\n        .copy-btn:active { background: #444; }\n        \n        .cookie-text {\n            font-size: 11px;\n            color: #666;\n            word-break: break-all;\n            max-height: 30px;\n            overflow: hidden;\n        }\n        .cookie-text.show { max-height: none; }\n        .toggle-cookie { \n            color: #ff6b6b; \n            cursor: pointer; \n            font-size: 11px;\n            text-decoration: underline;\n            -webkit-tap-highlight-color: transparent;\n        }\n        \n        .progress-bar {\n            width: 100%;\n            height: 6px;\n            background: #1a1a1a;\n            border-radius: 3px;\n            overflow: hidden;\n            margin: 8px 0;\n        }\n        .progress-fill {\n            height: 100%;\n            background: linear-gradient(90deg, #ff0000, #ff6b6b);\n            transition: width 0.5s ease;\n            border-radius: 3px;\n        }\n        .progress-text { \n            text-align: center; \n            color: #666; \n            font-size: 12px;\n        }\n        \n        .stats-grid {\n            display: grid;\n            grid-template-columns: repeat(3, 1fr);\n            gap: 8px;\n            text-align: center;\n        }\n        .stats-grid .stat-item {\n            background: #0a0a0a;\n            padding: 10px;\n            border-radius: 8px;\n            border: 1px solid #1a1a1a;\n        }\n        .stats-grid .stat-item .num { \n            font-size: 20px; \n            font-weight: 700;\n        }\n        .stats-grid .stat-item .num.green { color: #00cc00; }\n        .stats-grid .stat-item .num.red { color: #ff0000; }\n        .stats-grid .stat-item .num.white { color: #fff; }\n        .stats-grid .stat-item .lbl { \n            font-size: 10px; \n            color: #666;\n            text-transform: uppercase;\n            letter-spacing: 0.5px;\n            margin-top: 2px;\n        }\n        \n        .hidden { display: none !important; }\n        \n        .footer { \n            text-align: center; \n            padding: 16px; \n            color: #333; \n            font-size: 11px; \n            border-top: 1px solid #1a1a1a; \n            margin-top: 20px;\n            letter-spacing: 0.5px;\n        }\n        .footer span { color: #ff0000; }\n        \n        @media (max-width: 480px) {\n            body { padding: 8px; }\n            .header h1 { font-size: 26px; }\n            .card { padding: 12px; }\n            .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }\n            .stats-grid .stat-item { padding: 8px; }\n            .stats-grid .stat-item .num { font-size: 17px; }\n        }\n    </style>\n</head>\n<body>\n    <div class="container">\n        <div class="header">\n            <h1>\xf0\x9f\x94\xa5 FB CREATOR</h1>\n            <div class="sub">\xe2\x9a\xa1 Account Creator Tool</div>\n        </div>\n\n        <div class="card">\n            <h3>\xe2\x9a\x99\xef\xb8\x8f Configuration</h3>\n            <label>Password</label>\n            <input type="text" id="password" placeholder="Enter password" value="password123">\n            \n            <label>Mode</label>\n            <select id="mode">\n                <option value="auto">Auto Generate</option>\n                <option value="manual_email">Manual Email</option>\n                <option value="manual_number">Manual Number</option>\n            </select>\n            \n            <div id="manualInput" style="display:none;">\n                <label>Enter items (one per line)</label>\n                <textarea id="manualItems" placeholder="email1@domain.com&#10;email2@domain.com"></textarea>\n            </div>\n            \n            <div id="autoInput">\n                <label>Number of accounts</label>\n                <input type="number" id="autoCount" value="5" min="1" max="50">\n            </div>\n            \n            <button class="btn btn-primary" onclick="startCreation()" id="startBtn">\xe2\x96\xb6 Start Creating</button>\n            <button class="btn btn-danger" onclick="stopCreation()" id="stopBtn" style="display:none;">\xe2\x8f\xb9 Stop</button>\n            \n            <div id="status"></div>\n            <div id="progressContainer" style="display:none;">\n                <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>\n                <div class="progress-text" id="progressText">0 / 0</div>\n            </div>\n        </div>\n\n        <div class="card">\n            <h3>\xf0\x9f\x93\x8a Stats</h3>\n            <div class="stats-grid">\n                <div class="stat-item">\n                    <div class="num white" id="totalCount">0</div>\n                    <div class="lbl">Total</div>\n                </div>\n                <div class="stat-item">\n                    <div class="num green" id="successCount">0</div>\n                    <div class="lbl">Success</div>\n                </div>\n                <div class="stat-item">\n                    <div class="num red" id="failedCount">0</div>\n                    <div class="lbl">Failed</div>\n                </div>\n            </div>\n        </div>\n\n        <div class="card">\n            <h3>\xf0\x9f\x93\x8b Accounts <span id="accountCount">(0)</span></h3>\n            <div id="accountList">\n                <div style="color:#444;text-align:center;padding:30px;font-size:14px;">No accounts created yet</div>\n            </div>\n        </div>\n\n        <div class="footer">\n            <p>ARAFAT <span>\xe2\x9d\xa4</span> FB Creator v2.0</p>\n        </div>\n    </div>\n\n    <script>\n        let isRunning = false;\n\n        function updateManualInput() {\n            const mode = document.getElementById(\'mode\').value;\n            document.getElementById(\'manualInput\').style.display = (mode === \'manual_email\' || mode === \'manual_number\') ? \'block\' : \'none\';\n            document.getElementById(\'autoInput\').style.display = (mode === \'auto\') ? \'block\' : \'none\';\n        }\n        document.getElementById(\'mode\').onchange = updateManualInput;\n        updateManualInput();\n\n        function startCreation() {\n            const password = document.getElementById(\'password\').value;\n            const mode = document.getElementById(\'mode\').value;\n            \n            let data = { password, mode };\n            \n            if (mode === \'auto\') {\n                data.count = parseInt(document.getElementById(\'autoCount\').value) || 5;\n            } else {\n                const items = document.getElementById(\'manualItems\').value.split(\'\\n\').filter(s => s.trim());\n                if (items.length === 0) {\n                    alert(\'Please enter at least one email/number\');\n                    return;\n                }\n                data.items = items;\n            }\n            \n            document.getElementById(\'startBtn\').disabled = true;\n            document.getElementById(\'startBtn\').textContent = \'\xe2\x8f\xb3 Creating...\';\n            document.getElementById(\'stopBtn\').style.display = \'block\';\n            document.getElementById(\'status\').innerHTML = \'<div class="status status-running">\xf0\x9f\x94\x84 Creating accounts...</div>\';\n            document.getElementById(\'progressContainer\').style.display = \'block\';\n            document.getElementById(\'accountList\').innerHTML = \'<div style="color:#444;text-align:center;padding:20px;">Creating accounts...</div>\';\n            document.getElementById(\'totalCount\').textContent = \'0\';\n            document.getElementById(\'successCount\').textContent = \'0\';\n            document.getElementById(\'failedCount\').textContent = \'0\';\n            \n            isRunning = true;\n            \n            fetch(\'/create\', {\n                method: \'POST\',\n                headers: { \'Content-Type\': \'application/json\' },\n                body: JSON.stringify(data)\n            })\n            .then(response => response.json())\n            .then(result => {\n                document.getElementById(\'startBtn\').disabled = false;\n                document.getElementById(\'startBtn\').textContent = \'\xe2\x96\xb6 Start Creating\';\n                document.getElementById(\'stopBtn\').style.display = \'none\';\n                isRunning = false;\n                loadAccounts();\n                \n                if (result.success) {\n                    document.getElementById(\'status\').innerHTML = \'<div class="status status-done">\xe2\x9c\x85 Done! \' + result.success_count + \' accounts created</div>\';\n                } else {\n                    document.getElementById(\'status\').innerHTML = \'<div class="status status-error">\xe2\x9d\x8c \' + (result.error || \'Failed\') + \'</div>\';\n                }\n            })\n            .catch(err => {\n                document.getElementById(\'startBtn\').disabled = false;\n                document.getElementById(\'startBtn\').textContent = \'\xe2\x96\xb6 Start Creating\';\n                document.getElementById(\'stopBtn\').style.display = \'none\';\n                isRunning = false;\n                document.getElementById(\'status\').innerHTML = \'<div class="status status-error">\xe2\x9d\x8c Error: \' + err.message + \'</div>\';\n            });\n        }\n\n        function stopCreation() {\n            if (isRunning) {\n                fetch(\'/stop\', { method: \'POST\' })\n                .then(() => {\n                    document.getElementById(\'status\').innerHTML = \'<div class="status status-stopped">\xe2\x8f\xb9 Stopped</div>\';\n                    document.getElementById(\'startBtn\').disabled = false;\n                    document.getElementById(\'startBtn\').textContent = \'\xe2\x96\xb6 Start Creating\';\n                    document.getElementById(\'stopBtn\').style.display = \'none\';\n                    isRunning = false;\n                });\n            }\n        }\n\n        function loadAccounts() {\n            fetch(\'/accounts\')\n            .then(response => response.json())\n            .then(data => {\n                const list = document.getElementById(\'accountList\');\n                document.getElementById(\'accountCount\').textContent = \'(\' + data.length + \')\';\n                \n                let total = 0, success = 0, failed = 0;\n                \n                if (data.length === 0) {\n                    list.innerHTML = \'<div style="color:#444;text-align:center;padding:30px;font-size:14px;">No accounts created yet</div>\';\n                    document.getElementById(\'totalCount\').textContent = \'0\';\n                    document.getElementById(\'successCount\').textContent = \'0\';\n                    document.getElementById(\'failedCount\').textContent = \'0\';\n                    return;\n                }\n                \n                let html = \'\';\n                data.forEach((acc, i) => {\n                    if (acc.success) {\n                        success++;\n                        total++;\n                        const isEmail = acc.account && acc.account.includes(\'@\');\n                        const typeLabel = isEmail ? \'Email\' : \'Number\';\n                        const badge = isEmail ? \'badge-email\' : \'badge-number\';\n                        const modeLabel = acc.type === \'Auto Email\' ? \'badge-auto\' : \'badge-manual\';\n                        \n                        html += `\n                        <div class="account-item success">\n                            <div class="info">\n                                <span class="badge ${badge}">${typeLabel}</span>\n                                <span class="badge ${modeLabel}">${acc.type || \'Manual\'}</span>\n                                <span class="badge badge-success">\xe2\x9c\x93</span>\n                            </div>\n                            <div class="info">\n                                <span class="label">Account:</span>\n                                <span class="value">${acc.account}</span>\n                                <button class="copy-btn" onclick="copyText(\'${acc.account}\')">\xf0\x9f\x93\x8b</button>\n                            </div>\n                            <div class="info">\n                                <span class="label">UID:</span>\n                                <span class="value">${acc.uid}</span>\n                                <button class="copy-btn" onclick="copyText(\'${acc.uid}\')">\xf0\x9f\x93\x8b</button>\n                            </div>\n                            <div class="info">\n                                <span class="label">Password:</span>\n                                <span class="value">${acc.password}</span>\n                                <button class="copy-btn" onclick="copyText(\'${acc.password}\')">\xf0\x9f\x93\x8b</button>\n                            </div>\n                            <div class="info">\n                                <span class="label">Name:</span>\n                                <span class="value">${acc.name || \'N/A\'}</span>\n                            </div>\n                            <div class="info">\n                                <span class="label">Device:</span>\n                                <span class="value">${acc.device || \'N/A\'}</span>\n                            </div>\n                            <div class="info" style="flex-wrap:wrap;">\n                                <span class="label">Cookie:</span>\n                                <span class="cookie-text" id="cookie_${i}">${acc.cookies ? acc.cookies.substring(0, 60) + \'...\' : \'N/A\'}</span>\n                                ${acc.cookies ? `<span class="toggle-cookie" onclick="toggleCookie(${i})">[show]</span>` : \'\'}\n                                ${acc.cookies ? `<button class="copy-btn" onclick="copyText(document.getElementById(\'cookie_${i}\').textContent)">\xf0\x9f\x93\x8b</button>` : \'\'}\n                            </div>\n                            <div class="btn-group">\n                                <button class="btn btn-sm btn-success" onclick="copyText(\'${acc.account}\')">\xf0\x9f\x93\xa7 Copy</button>\n                                <button class="btn btn-sm btn-primary" onclick="copyText(\'${acc.uid}\')">\xf0\x9f\x86\x94 Copy</button>\n                                ${acc.cookies ? `<button class="btn btn-sm btn-primary" onclick="copyText(\'${acc.cookies.replace(/\'/g, "\\\'")}\')">\xf0\x9f\x8d\xaa Copy</button>` : \'\'}\n                            </div>\n                        </div>\n                        `;\n                    } else {\n                        failed++;\n                        html += `\n                        <div class="account-item failed">\n                            <div class="info">\n                                <span class="badge badge-failed">\xe2\x9c\x97 Failed</span>\n                            </div>\n                            <div class="info">\n                                <span class="label">Account:</span>\n                                <span class="value" style="color:#cc0000;">${acc.account}</span>\n                            </div>\n                        </div>\n                        `;\n                    }\n                });\n                \n                list.innerHTML = html;\n                document.getElementById(\'totalCount\').textContent = total + failed;\n                document.getElementById(\'successCount\').textContent = success;\n                document.getElementById(\'failedCount\').textContent = failed;\n            });\n        }\n\n        function toggleCookie(index) {\n            const el = document.getElementById(\'cookie_\' + index);\n            if (el.classList.contains(\'show\')) {\n                el.classList.remove(\'show\');\n                const full = el.getAttribute(\'data-full\') || el.textContent;\n                el.textContent = full.substring(0, 60) + \'...\';\n                el.closest(\'.account-item\').querySelector(\'.toggle-cookie\').textContent = \'[show]\';\n            } else {\n                const full = el.getAttribute(\'data-full\') || el.textContent;\n                el.setAttribute(\'data-full\', full);\n                el.textContent = full;\n                el.classList.add(\'show\');\n                el.closest(\'.account-item\').querySelector(\'.toggle-cookie\').textContent = \'[hide]\';\n            }\n        }\n\n        function copyText(text) {\n            if (navigator.clipboard && navigator.clipboard.writeText) {\n                navigator.clipboard.writeText(text).then(() => {\n                    showCopied();\n                }).catch(() => fallbackCopy(text));\n            } else {\n                fallbackCopy(text);\n            }\n        }\n\n        function fallbackCopy(text) {\n            const textarea = document.createElement(\'textarea\');\n            textarea.value = text;\n            textarea.style.position = \'fixed\';\n            textarea.style.opacity = \'0\';\n            document.body.appendChild(textarea);\n            textarea.select();\n            document.execCommand(\'copy\');\n            document.body.removeChild(textarea);\n            showCopied();\n        }\n\n        function showCopied() {\n            const btn = event && event.target ? event.target : document.querySelector(\'.copy-btn\');\n            if (btn) {\n                const original = btn.textContent;\n                btn.textContent = \'\xe2\x9c\x85\';\n                setTimeout(() => btn.textContent = original, 1000);\n            }\n        }\n\n        // Load on page load and refresh every 3 seconds\n        loadAccounts();\n        setInterval(loadAccounts, 3000);\n    </script>\n</body>\n</html>\n\xda\x02ONz\x0e/update_status\xda\x03GET)\x01\xda\x07methodsc\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x03\x00\x00\x00\xf3$\x00\x00\x00\x95\x00[\x01\x00\x00\x00\x00\x00\x00\x00\x00S\x01[\x02\x00\x00\x00\x00\x00\x00\x00\x000\x015\x01\x00\x00\x00\x00\x00\x00$\x00)\x02N\xda\x06status)\x02r\x07\x00\x00\x00\xda\rUPDATE_STATUSr}\x00\x00\x00r<\x00\x00\x00r\x14\x00\x00\x00\xda\x11get_update_statusr\xa2\x00\x00\x00\x18\x03\x00\x00s\x12\x00\x00\x00\x80\x00\xe4\x0b\x12\x90H\x9cm\xd0\x13,\xd3\x0b-\xd0\x04-r<\x00\x00\x00\xda\x01/c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\xf3 \x00\x00\x00\x95\x00[\x01\x00\x00\x00\x00\x00\x00\x00\x00[\x02\x00\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00$\x00r{\x00\x00\x00)\x02r\x05\x00\x00\x00\xda\rHTML_TEMPLATEr}\x00\x00\x00r<\x00\x00\x00r\x14\x00\x00\x00\xda\x05indexr\xa6\x00\x00\x00\x1d\x03\x00\x00s\r\x00\x00\x00\x80\x00\xe4\x0b!\xa4-\xd3\x0b0\xd0\x040r<\x00\x00\x00z\x07/create\xda\x04POSTc\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x03\x00\x00\x00\xf3\x9e\x02\x00\x00\x95\x00[\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00n\x00U\x00R\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x01S\x025\x02\x00\x00\x00\x00\x00\x00n\x01U\x00R\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x03S\x045\x02\x00\x00\x00\x00\x00\x00n\x02U\x01q\x03S\x05q\x04S\x06q\x05/\x00n\x03U\x02S\x04:X\x00\x00a@\x00\x00U\x00R\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x07S\x085\x02\x00\x00\x00\x00\x00\x00n\x04[\r\x00\x00\x00\x00\x00\x00\x00\x00U\x045\x01\x00\x00\x00\x00\x00\x00\x13\x00H\x1c\x00\x00n\x05U\x03R\x0f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[\x11\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00 \x00M\x1e\x00\x00\x0b\x00 \x00S\tn\x06ODU\x02S\n:X\x00\x00a\x15\x00\x00U\x00R\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x0b/\x005\x02\x00\x00\x00\x00\x00\x00n\x03S\x0cn\x06O)U\x02S\r:X\x00\x00a\x15\x00\x00U\x00R\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S\x0b/\x005\x02\x00\x00\x00\x00\x00\x00n\x03S\x0en\x06O\x0e[\x13\x00\x00\x00\x00\x00\x00\x00\x00S\x05S\x0fS\x10.\x025\x01\x00\x00\x00\x00\x00\x00$\x00U\x03(\x00\x00\x00\x00\x00\x00\x00d\x0e\x00\x00[\x13\x00\x00\x00\x00\x00\x00\x00\x00S\x05S\x11S\x10.\x025\x01\x00\x00\x00\x00\x00\x00$\x00/\x00q\nS\x12n\x07S\x12n\x08U\x03\x13\x00HL\x00\x00n\t[\x08\x00\x00\x00\x00\x00\x00\x00\x00(\x00\x00\x00\x00\x00\x00\x00a\x02\x00\x00 \x00O@[\x17\x00\x00\x00\x00\x00\x00\x00\x00U\t[\x06\x00\x00\x00\x00\x00\x00\x00\x00U\x065\x03\x00\x00\x00\x00\x00\x00n\nU\nS\x13\x05\x00\x00\x00(\x00\x00\x00\x00\x00\x00\x00a\x06\x00\x00U\x07S\x14-\r\x00\x00n\x07O\x05U\x08S\x14-\r\x00\x00n\x08[\x18\x00\x00\x00\x00\x00\x00\x00\x00R\x1a\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00S\x145\x01\x00\x00\x00\x00\x00\x00 \x00MN\x00\x00\x0b\x00 \x00S\x05q\x05[\x13\x00\x00\x00\x00\x00\x00\x00\x00S\x06U\x07U\x08[\x1d\x00\x00\x00\x00\x00\x00\x00\x00U\x035\x01\x00\x00\x00\x00\x00\x00S\x15.\x045\x01\x00\x00\x00\x00\x00\x00$\x00)\x16Nr\x98\x00\x00\x00\xda\x0bpassword123\xda\x04mode\xda\x04autoFT\xda\x05count\xe9\x05\x00\x00\x00z\nAuto Email\xda\x0cmanual_email\xda\x05itemsz\x0cManual Email\xda\rmanual_numberz\rManual Numberz\x0cInvalid mode)\x02\xda\x07success\xda\x05errorz\x11No items providedr\x02\x00\x00\x00r\xb1\x00\x00\x00r=\x00\x00\x00)\x04r\xb1\x00\x00\x00\xda\rsuccess_count\xda\x0cfailed_count\xda\x05total)\x0fr\x06\x00\x00\x00r\x12\x00\x00\x00r\x0e\x00\x00\x00\xda\rUSER_PASSWORD\xda\rstop_creation\xda\x0bis_creating\xda\x05range\xda\x06appendry\x00\x00\x00r\x07\x00\x00\x00\xda\x10created_accounts\xda\x17create_facebook_accountr\x94\x00\x00\x00\xda\x05sleep\xda\x03len)\x0br\x19\x00\x00\x00r\x98\x00\x00\x00r\xaa\x00\x00\x00r\xaf\x00\x00\x00r\xac\x00\x00\x00\xda\x01_\xda\tmode_namer\xb3\x00\x00\x00r\xb4\x00\x00\x00\xda\x04item\xda\x06results\x0b\x00\x00\x00           r\x14\x00\x00\x00\xda\x0fcreate_accountsr\xc3\x00\x00\x00!\x03\x00\x00sY\x01\x00\x00\x80\x00\xf4\x08\x00\x0c\x13\x8f<\x89<\x80D\xd8\x0f\x13\x8fx\x89x\x98\n\xa0M\xd3\x0f2\x80H\xd8\x0b\x0f\x8f8\x898\x90F\x98F\xd3\x0b#\x80D\xe0\x14\x1c\x80M\xd8\x14\x19\x80M\xd8\x12\x16\x80K\xe0\x0c\x0e\x80E\xd8\x07\x0b\x88v\x83~\xd8\x10\x14\x97\x08\x91\x08\x98\x17\xa0!\xd3\x10$\x88\x05\xdc\x11\x16\x90u\x96\x1c\x88A\xd8\x0c\x11\x8fL\x89L\xd4\x19.\xd3\x190\xd6\x0c1\xf1\x03\x00\x12\x1e\xe0\x14 \x89\t\xd8\t\r\x90\x1e\xd3\t\x1f\xd8\x10\x14\x97\x08\x91\x08\x98\x17\xa0"\xd3\x10%\x88\x05\xd8\x14"\x89\t\xd8\t\r\x90\x1f\xd3\t \xd8\x10\x14\x97\x08\x91\x08\x98\x17\xa0"\xd3\x10%\x88\x05\xd8\x14#\x89\t\xe4\x0f\x16\xa05\xb0>\xd1\x17B\xd3\x0fC\xd0\x08C\xe6\x0b\x10\xdc\x0f\x16\xa05\xd03F\xd1\x17G\xd3\x0fH\xd0\x08H\xe0\x17\x19\xd0\x04\x14\xd8\x14\x15\x80M\xd8\x13\x14\x80L\xe3\x10\x15\x88\x04\xdf\x0b\x18\x8a=\xd9\x0c\x11\xe4\x11(\xa8\x14\xac}\xb8i\xd3\x11H\x88\x06\xd8\x0b\x11\x90)\xd7\x0b\x1c\xd8\x0c\x19\x98Q\xd1\x0c\x1e\x89M\xe0\x0c\x18\x98A\xd1\x0c\x1d\x88L\xe4\x08\x0c\x8f\n\x8a\n\x901\x8e\r\xf1\x15\x00\x11\x16\xf0\x18\x00\x13\x18\x80K\xdc\x0b\x12\xd8\x13\x17\xd8\x19&\xd8\x18$\xdc\x11\x14\x90U\x93\x1a\xf1\t\x05\x14\x06\xf3\x00\x05\x0c\x07\xf0\x00\x05\x05\x07r<\x00\x00\x00z\x05/stopc\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x03\x00\x00\x00\xf3$\x00\x00\x00\x95\x00S\x01q\x00S\x02q\x01[\x05\x00\x00\x00\x00\x00\x00\x00\x00S\x03S\x010\x015\x01\x00\x00\x00\x00\x00\x00$\x00)\x04NTFr\xb1\x00\x00\x00)\x03r\xb7\x00\x00\x00r\xb8\x00\x00\x00r\x07\x00\x00\x00r}\x00\x00\x00r<\x00\x00\x00r\x14\x00\x00\x00\xda\x13stop_creation_router\xc5\x00\x00\x00W\x03\x00\x00s\x1e\x00\x00\x00\x80\x00\xf0\x06\x00\x15\x19\x80M\xd8\x12\x17\x80K\xdc\x0b\x12\x90I\x98t\xd0\x13$\xd3\x0b%\xd0\x04%r<\x00\x00\x00z\t/accountsc\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\xf3 \x00\x00\x00\x95\x00[\x01\x00\x00\x00\x00\x00\x00\x00\x00[\x02\x00\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00$\x00r{\x00\x00\x00)\x02r\x07\x00\x00\x00r\xbb\x00\x00\x00r}\x00\x00\x00r<\x00\x00\x00r\x14\x00\x00\x00\xda\x0cget_accountsr\xc7\x00\x00\x00^\x03\x00\x00s\x0e\x00\x00\x00\x80\x00\xe4\x0b\x12\xd4\x13#\xd3\x0b$\xd0\x04$r<\x00\x00\x00z\x07/statusc\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x03\x00\x00\x00\xf3@\x00\x00\x00\x95\x00[\x01\x00\x00\x00\x00\x00\x00\x00\x00[\x02\x00\x00\x00\x00\x00\x00\x00\x00[\x05\x00\x00\x00\x00\x00\x00\x00\x00[\x06\x00\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00S\x01.\x025\x01\x00\x00\x00\x00\x00\x00$\x00)\x02N)\x02r\xb8\x00\x00\x00r\xb5\x00\x00\x00)\x04r\x07\x00\x00\x00r\xb8\x00\x00\x00r\xbe\x00\x00\x00r\xbb\x00\x00\x00r}\x00\x00\x00r<\x00\x00\x00r\x14\x00\x00\x00\xda\nget_statusr\xc9\x00\x00\x00b\x03\x00\x00s \x00\x00\x00\x80\x00\xe4\x0b\x12\xdc\x17"\xdc\x11\x14\xd4\x15%\xd3\x11&\xf1\x05\x03\x14\x06\xf3\x00\x03\x0c\x07\xf0\x00\x03\x05\x07r<\x00\x00\x00c\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\r\x00\x00\x00\x03\x00\x00\x00\xf3R\x05\x00\x00\x95\x00[\x01\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00u\x03\x00\x00p4n\x05[\x03\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00u\x03\x00\x00pgn\x08[\x05\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00n\tU\tS\x01\x05\x00\x00\x00n\nU\tS\x02\x05\x00\x00\x00n\x0bU\tS\x03\x05\x00\x00\x00n\x0c0\x00S\x04U\n_\x01S\x05S\x06_\x01S\x07S\x08_\x01S\tS\n_\x01S\x0bS\x0c_\x01S\rS\x0e_\x01S\x0fS\x10_\x01S\x11S\x12_\x01S\x13S\x14_\x01S\x15S\x16_\x01S\x17S\x18_\x01S\x19S\x1a_\x01S\x1bS\x1c_\x01S\x1dS\x1e_\x01S\x1fS _\x01S!S"_\x01S#S$_\x01S%S&S\'S(S).\x04E\x01n\rS*R\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[\x08\x00\x00\x00\x00\x00\x00\x00\x00R\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00S+S,S-9\x025\x01\x00\x00\x00\x00\x00\x00n\x0e[\r\x00\x00\x00\x00\x00\x00\x00\x00[\x0e\x00\x00\x00\x00\x00\x00\x00\x00R\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x005\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00n\x0f[\r\x00\x00\x00\x00\x00\x00\x00\x00[\x0e\x00\x00\x00\x00\x00\x00\x00\x00R\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x005\x00\x00\x00\x00\x00\x00\x005\x01\x00\x00\x00\x00\x00\x00n\x100\x00S.S/_\x01S0U\x0e_\x01S1S2_\x01S3S*_\x01S4U\x0f_\x01S5S\x0e_\x01S6S*_\x01S7S8_\x01S9U\x10_\x01S:S;_\x01S;U\x03_\x01S<U\x04_\x01S=S>_\x01S?[\r\x00\x00\x00\x00\x00\x00\x00\x00U\x065\x01\x00\x00\x00\x00\x00\x00_\x01S@[\r\x00\x00\x00\x00\x00\x00\x00\x00U\x075\x01\x00\x00\x00\x00\x00\x00_\x01SA[\r\x00\x00\x00\x00\x00\x00\x00\x00U\x085\x01\x00\x00\x00\x00\x00\x00_\x01SBS*_\x010\x00SCSD_\x01SESF_\x01SFU\x00_\x01SGSH_\x01SHS/_\x01SIS*_\x01SJS*_\x01SKSL_\x01SMSD_\x01SNSD_\x01SOSD_\x01SPSD_\x01SQS*_\x01SRS*_\x01SLU\x01_\x01SSST_\x01SUSV_\x01E\x01SWS\x1cSXS*S*S*S*SYS\x0eSZS[S\\.\x0bE\x01n\x11S]n\x12\x1e\x00[\x12\x00\x00\x00\x00\x00\x00\x00\x00R\x14\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"\x00U\x12U\rU\x11S^S_9\x04n\x13U\x13R\x16\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00S`:X\x00\x00a\xcb\x00\x00U\x13R\x18\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00R\x1b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00n\x14SaU\x14;\x00\x00\x00a\x8e\x00\x00U\x14Sa\x05\x00\x00\x00n\x15[\x1d\x00\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x00n\x16/\x00n\x17Sb\x13\x00H4\x00\x00n\x18U\x18U\x14;\x00\x00\x00d\x02\x00\x00M\x0b\x00\x00U\x17R\x1f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00U\x18\x0e\x00ScU\x14U\x18\x05\x00\x00\x00R!\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00SdS*5\x02\x00\x00\x00\x00\x00\x00\x0e\x003\x035\x01\x00\x00\x00\x00\x00\x00 \x00M6\x00\x00\x0b\x00 \x00SeR\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00U\x175\x01\x00\x00\x00\x00\x00\x00n\x19U\x00U\x15U\x03\x0e\x00SdU\x04\x0e\x003\x03U\x01U\x19U\x0b\x0e\x00SfU\x0c\x0e\x00Sg3\x04U\x0cU\x02ShSi.\tn\x1a["\x00\x00\x00\x00\x00\x00\x00\x00R\x1f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00U\x1a5\x01\x00\x00\x00\x00\x00\x00 \x00U\x00ShU\x15Sj.\x03$\x00["\x00\x00\x00\x00\x00\x00\x00\x00R\x1f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00U\x00SkSl.\x025\x01\x00\x00\x00\x00\x00\x00 \x00U\x00SkSl.\x02$\x00["\x00\x00\x00\x00\x00\x00\x00\x00R\x1f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00U\x00SkSl.\x025\x01\x00\x00\x00\x00\x00\x00 \x00U\x00SkSl.\x02$\x00!\x00[$\x00\x00\x00\x00\x00\x00\x00\x00\x07\x00a\'\x00\x00n\x1b["\x00\x00\x00\x00\x00\x00\x00\x00R\x1f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00U\x00SkSl.\x025\x01\x00\x00\x00\x00\x00\x00 \x00U\x00SkSl.\x02s\x02\x1f\x00S\x00n\x1bA\x1b$\x00S\x00n\x1bA\x1bf\x01f\x00=\x03\x1f\x00f\x01)mNrA\x00\x00\x00r@\x00\x00\x00r \x00\x00\x00z\nUser-Agent\xda\x06Acceptz?text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8z\x0fAccept-Languagez\x17fr-FR,fr;q=0.9,en;q=0.8z\x0fAccept-Encodingz\x11gzip, deflate, br\xda\nConnectionz\nkeep-alivez\x19Upgrade-Insecure-Requests\xda\x011z\x0cContent-Typez!application/x-www-form-urlencodedz\x12sec-ch-ua-platformz\x05"iOS"z\tsec-ch-uaz("Chromium";v="133", "Not(A:Brand";v="99"z\x11x-response-format\xda\nJSONStreamz\x10sec-ch-ua-mobilez\x02?1z\tx-asbd-id\xda\x06359341z\x08x-fb-lsd\xda\x1bAdRg5ufqsQVcQXAYMc0sAcuMAYEz\x10x-requested-with\xda\x0eXMLHttpRequest\xda\x06originz\x1chttps://limited.facebook.comz\x0esec-fetch-sitez\x0bsame-originz\x0esec-fetch-mode\xda\x04cors\xda\x05emptyzYhttps://limited.facebook.com/reg/?is_two_steps_login=0&cid=103&refsrc=deprecated&soft=hjkz\x05fr-FRz\x06u=1, i)\x04z\x0esec-fetch-dest\xda\x07refererz\x0faccept-language\xda\x08priorityr>\x00\x00\x00\xda>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\xe9\x18\x00\x00\x00)\x01\xda\x01k\xda\x03ccp\xda\x012\xda\x0creg_instance\xda\x12submission_request\xda\x04true\xda\x06helper\xda\x11reg_impression_id\xda\x02ns\xda\x15zero_header_af_client\xda\x06app_id\xda\x03103\xda\tlogger_idz\x0efield_names[0]\xda\tfirstname\xda\x08lastnamez\x0efield_names[1]\xda\x10birthday_wrapper\xda\x0cbirthday_day\xda\x0ebirthday_month\xda\rbirthday_year\xda\x0eage_step_input\xda\x0bdid_use_age\xda\x05falsez\x0efield_names[2]\xda\x0breg_email__z\x0efield_names[3]\xda\x03sex\xda\x11preferred_pronoun\xda\rcustom_genderz\x0efield_names[4]\xda\x0creg_passwd__\xda\x11name_suggest_elig\xda\x1awas_shown_name_suggestions\xda\x16did_use_suggested_name\xda\x11use_custom_gender\xda\x04guid\xda\rpre_form_step\xda\x06submitz\x07Sign up\xda\x07fb_dtsgz;NAfx3wG1Lv9JqEl5Xo_k4IgVl9NOIczPI42MHjtMHwUlwIJPkjDwRQw:0:0\xda\x0524981z\x801Z3pawlEnwm8_Bg9ppoW5UdE4a2i5U4e0C86u7E39x60zU3ex608ewk9E4W0pKq0FE6S0x81vohw73wGwcq1GwqU2YwbK0oi0zE1jU1soG0hi0Lo6-0Co1kU1UU3jwea\xda\x018\xdacAYymJkTu3MjKRdbj2jW_7gIizCJhUNmlkYCYJBQVOatM47H8prXefL3xivtVr6wmHJxPhJeYnWZZg2vlGVC0unA0FC7Fs70fG2Yr\x8c\x00\x00\x00)\x0b\xda\x07jazoest\xda\x03lsd\xda\x05__dyn\xda\x05__csr\xda\x06__hsdp\xda\x06__hblp\xda\x06__sjsp\xda\x05__req\xda\x05__fmt\xda\x03__a\xda\x06__userzehttps://limited.facebook.com/reg/submit/?app_id=103&multi_step_form=1&skip_suma=0&shouldForceMTouch=1\xe9\x1e\x00\x00\x00)\x03\xda\x07headersr\x19\x00\x00\x00r\x0b\x00\x00\x00r\x0c\x00\x00\x00\xda\x06c_user)\t\xda\x04datr\xda\x02sb\xda\x04ps_l\xda\x04ps_n\xda\rm_pixel_ratio\xda\x02wdr\x0c\x01\x00\x00\xda\x02fr\xda\x02xs\xda\x01=\xda\x01 z\x02; z\x02 (\xda\x01)T)\t\xda\x07account\xda\x03uidr\x82\x00\x00\x00r\x98\x00\x00\x00\xda\x07cookiesr@\x00\x00\x00r \x00\x00\x00\xda\x04typer\xb1\x00\x00\x00)\x03r\x18\x01\x00\x00r\xb1\x00\x00\x00r\x19\x01\x00\x00F)\x02r\x18\x01\x00\x00r\xb1\x00\x00\x00)\x13r\x83\x00\x00\x00r\x8a\x00\x00\x00r~\x00\x00\x00\xda\x04joinrq\x00\x00\x00\xda\x07choicesr/\x00\x00\x00r0\x00\x00\x00\xda\x05uuid4r\r\x00\x00\x00\xda\x04postr\x11\x00\x00\x00r\x1a\x01\x00\x00\xda\x08get_dictr\x90\x00\x00\x00r\xba\x00\x00\x00\xda\x07replacer\xbb\x00\x00\x00\xda\tException)\x1cr\x18\x01\x00\x00r\x98\x00\x00\x00\xda\x0caccount_type\xda\x05fname\xda\x05lname\xda\x04flagr\x87\x00\x00\x00r\x88\x00\x00\x00r\x89\x00\x00\x00\xda\x07ua_data\xda\nuser_agentr@\x00\x00\x00\xda\x06os_verr\x0b\x01\x00\x00r\xdc\x00\x00\x00r\xe0\x00\x00\x00r\xe5\x00\x00\x00r\x19\x00\x00\x00\xda\x03urlr\x13\x00\x00\x00\xda\x0ccookies_dictr\x19\x01\x00\x00\xda\x0ccurrent_time\xda\x0ccookie_parts\xda\x03key\xda\rcookie_string\xda\x0caccount_info\xda\x01es\x1c\x00\x00\x00                            r\x14\x00\x00\x00r\xbc\x00\x00\x00r\xbc\x00\x00\x00j\x03\x00\x00s\xbc\x04\x00\x00\x80\x00\xf4\x06\x00\x1a.\xd3\x19/\xd1\x04\x16\x80E\x90$\xdc\x17#\x93~\xd1\x04\x14\x80C\x90\x04\xe4\x0e#\xd3\x0e%\x80G\xd8\x11\x18\x98\x1b\xd1\x11%\x80J\xd8\r\x14\x90X\xd1\r\x1e\x80F\xd8\r\x14\x90T\x89]\x80F\xf0\x04\x16\x0f\x06\xd8\x08\x14\x90j\xf0\x03\x16\x0f\x06\xe0\x08\x10\xd0\x12S\xf0\x05\x16\x0f\x06\xf0\x06\x00\t\x1a\xd0\x1b4\xf0\x07\x16\x0f\x06\xf0\x08\x00\t\x1a\xd0\x1b.\xf0\t\x16\x0f\x06\xf0\n\x00\t\x15\x90l\xf0\x0b\x16\x0f\x06\xf0\x0c\x00\t$\xa0S\xf0\r\x16\x0f\x06\xf0\x0e\x00\t\x17\xd0\x18;\xf0\x0f\x16\x0f\x06\xf0\x10\x00\t\x1d\x98g\xf0\x11\x16\x0f\x06\xf0\x12\x00\t\x14\xd0\x15?\xf0\x13\x16\x0f\x06\xf0\x14\x00\t\x1c\x98\\\xf0\x15\x16\x0f\x06\xf0\x16\x00\t\x1b\x98D\xf0\x17\x16\x0f\x06\xf0\x18\x00\t\x14\x90X\xf0\x19\x16\x0f\x06\xf0\x1a\x00\t\x13\xd0\x141\xf0\x1b\x16\x0f\x06\xf0\x1c\x00\t\x1b\xd0\x1c,\xf0\x1d\x16\x0f\x06\xf0\x1e\x00\t\x11\xd0\x120\xf0\x1f\x16\x0f\x06\xf0 \x00\t\x19\x98-\xf0!\x16\x0f\x06\xf0"\x00\t\x19\x98&\xf0#\x16\x0f\x06\xf0$\x00\x1b"\xd8\x13n\xd8\x1b"\xd8\x14\x1c\xf2+\x16\x0f\x06\x80G\xf00\x00\x14\x16\x977\x917\x9c6\x9f>\x9a>\xd0*j\xd0np\xd1\x1bq\xd3\x13r\x80L\xdc\x18\x1b\x9cD\x9fJ\x9aJ\x9bL\xd3\x18)\xd0\x04\x15\xdc\x10\x13\x94D\x97J\x92J\x93L\xd3\x10!\x80I\xf0\x04.\x0c\x06\xd8\x08\r\x88s\xf0\x03.\x0c\x06\xe0\x08\x16\x98\x0c\xf0\x05.\x0c\x06\xf0\x06\x00\t\x1d\x98f\xf0\x07.\x0c\x06\xf0\x08\x00\t\x11\x90"\xf0\t.\x0c\x06\xf0\n\x00\t\x1c\xd0\x1d.\xf0\x0b.\x0c\x06\xf0\x0c\x00\t\r\x88c\xf0\r.\x0c\x06\xf0\x0e\x00\t \xa0\x12\xf0\x0f.\x0c\x06\xf0\x10\x00\t\x11\x90%\xf0\x11.\x0c\x06\xf0\x12\x00\t\x14\x90Y\xf0\x13.\x0c\x06\xf0\x14\x00\t\x19\x98+\xf0\x15.\x0c\x06\xf0\x16\x00\t\x14\x90U\xf0\x17.\x0c\x06\xf0\x18\x00\t\x13\x90E\xf0\x19.\x0c\x06\xf0\x1a\x00\t\x19\xd0\x1a,\xf0\x1b.\x0c\x06\xf0\x1c\x00\t\x17\x9c\x03\x98C\x9b\x08\xf0\x1d.\x0c\x06\xf0\x1e\x00\t\x19\x9c#\x98e\x9b*\xf0\x1f.\x0c\x06\xf0 \x00\t\x18\x9c\x13\x98T\x9b\x19\xf0!.\x0c\x06\xf0"\x00\t\x19\x98"\xf1#.\x0c\x06\xf0$\x00\t\x16\x90w\xf0%.\x0c\x06\xf0&\x00\t\x19\x98-\xf0\'.\x0c\x06\xf0(\x00\t\x16\x90w\xf0).\x0c\x06\xf0*\x00\t\x19\x98%\xf0+.\x0c\x06\xf0,\x00\t\x0e\x88s\xf0-.\x0c\x06\xf0.\x00\t\x1c\x98R\xf0/.\x0c\x06\xf00\x00\t\x18\x98\x12\xf01.\x0c\x06\xf02\x00\t\x19\x98.\xf03.\x0c\x06\xf04\x00\t\x1c\x98W\xf05.\x0c\x06\xf06\x00\t%\xa0g\xf07.\x0c\x06\xf08\x00\t!\xa0\'\xf09.\x0c\x06\xf0:\x00\t\x1c\x98W\xf0;.\x0c\x06\xf0<\x00\t\x0f\x90\x02\xf0=.\x0c\x06\xf0>\x00\t\x18\x98\x12\xf0?.\x0c\x06\xf0@\x01\x00\t\x17\x98\x08\xf0A\x01.\x0c\x06\xf0B\x01\x00\t\x11\x90)\xf0C\x01.\x0c\x06\xf0D\x01\x00\t\x12\xd0\x13P\xf1E\x01.\x0c\x06\xf0F\x01\x00\x14\x1b\xd8\x0f,\xf0\x02\x00\x12T\x02\xd8\x11\x13\xd8\x12\x14\xd8\x12\x14\xd8\x12\x14\xd8\x11\x14\xd8\x11\x14\xd8\x0ft\xd8\x12\x15\xf2[\x01.\x0c\x06\x80D\xf0`\x01\x00\x0br\x01\x80C\xf0\x04\'\x056\xdc\x13\x1b\x97=\x92=\xa0\x13\xa8g\xb8D\xc8"\xd1\x13M\x88\x08\xe0\x0b\x13\xd7\x0b\x1f\xd1\x0b\x1f\xa03\xd3\x0b&\xd8\x1b#\xd7\x1b+\xd1\x1b+\xd7\x1b4\xd1\x1b4\xd3\x1b6\x88L\xe0\x0f\x17\x98<\xd3\x0f\'\xd8\x16"\xa08\xd1\x16,\x90\x03\xdc\x1f\'\x9bz\x90\x0c\xe0\x1f!\x90\x0c\xdb\x1bf\x90C\xd8\x17\x1a\x98l\xd5\x17*\xd8\x18$\xd7\x18+\xd1\x18+\xa8s\xa8e\xb01\xb0\\\xc0#\xd15F\xd75N\xd15N\xc8s\xd0TV\xd35W\xd04X\xd0,Y\xd6\x18Z\xf1\x05\x00\x1cg\x01\xf0\x08\x00!%\xa7\t\xa1\t\xa8,\xd3 7\x90\r\xf0\x06\x00 \'\xd8\x1b\x1e\xd8\x1f$\x98g\xa0Q\xa0u\xa0g\xd0\x1c.\xd8 (\xd8\x1f,\xd8!\'\xa0\x08\xa8\x02\xa86\xa8(\xb0!\xd0\x1e4\xd8\x1a \xd8\x1c(\xd8\x1f#\xf1\x13\n \x12\x90\x0c\xf4\x16\x00\x11!\xd7\x10\'\xd1\x10\'\xa8\x0c\xd4\x105\xd8#*\xb0t\xc0C\xd1\x17H\xd0\x10H\xe4\x10 \xd7\x10\'\xd1\x10\'\xb0G\xc8\x05\xd1(N\xd4\x10O\xd8#*\xb0u\xd1\x17=\xd0\x10=\xe4\x0c\x1c\xd7\x0c#\xd1\x0c#\xb0\x07\xc0E\xd1$J\xd4\x0cK\xd8\x1f&\xb05\xd1\x139\xd0\x0c9\xf8\xe4\x0b\x14\xf3\x00\x02\x056\xdc\x08\x18\xd7\x08\x1f\xd1\x08\x1f\xa8G\xc0\x05\xd1 F\xd4\x08G\xd8\x1b"\xa8u\xd1\x0f5\xd5\x085\xfb\xf0\x05\x02\x056\xfas2\x00\x00\x00\xc5&A!I5\x00\xc7\x0bA/I5\x00\xc8;\x1cI5\x00\xc9\x18\x1cI5\x00\xc95\nJ&\x03\xc9?\x1cJ!\x03\xca\x1b\x01J&\x03\xca!\x05J&\x03\xda\x08__main__ui\x04\x00\x00\n    \xe2\x95\x94\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x97\n    \xe2\x95\x91              \xf0\x9f\x94\xa5 FB ACCOUNT CREATOR                  \xe2\x95\x91\n    \xe2\x95\x91                                                     \xe2\x95\x91\n    \xe2\x95\x91   \xf0\x9f\x8c\x90 Open: http://localhost:5000                    \xe2\x95\x91\n    \xe2\x95\x91   \xf0\x9f\x93\xb1 Mobile friendly UI                             \xe2\x95\x91\n    \xe2\x95\x91                                                     \xe2\x95\x91\n    \xe2\x95\x91   Features:                                         \xe2\x95\x91\n    \xe2\x95\x91   \xe2\x80\xa2 Auto Generate Email                            \xe2\x95\x91\n    \xe2\x95\x91   \xe2\x80\xa2 Manual Email                                   \xe2\x95\x91\n    \xe2\x95\x91   \xe2\x80\xa2 Manual Number                                  \xe2\x95\x91\n    \xe2\x95\x91   \xe2\x80\xa2 Copy Account, UID, Cookies                     \xe2\x95\x91\n    \xe2\x95\x91                                                     \xe2\x95\x91\n    \xe2\x95\x91   Press CTRL+C to stop                              \xe2\x95\x91\n    \xe2\x95\x9a\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x9d\n    z\x070.0.0.0i\x88\x13\x00\x00T)\x04\xda\x04host\xda\x04port\xda\x05debug\xda\x08threaded)6r\r\x00\x00\x00r\x94\x00\x00\x00\xda\x03sysr \x00\x00\x00\xda\x02rerq\x00\x00\x00r*\x00\x00\x00r0\x00\x00\x00r\x95\x00\x00\x00r\x12\x00\x00\x00\xda\tthreadingr\x03\x00\x00\x00\xda\x05flaskr\x04\x00\x00\x00r\x05\x00\x00\x00r\x06\x00\x00\x00r\x07\x00\x00\x00\xda\x08__name__\xda\x03appr\x0f\x00\x00\x00r\x10\x00\x00\x00r\x18\x00\x00\x00r\x15\x00\x00\x00r\x1a\x00\x00\x00r8\x00\x00\x00r;\x00\x00\x00\xda\x04exitr\xb6\x00\x00\x00r\xbb\x00\x00\x00r\xb7\x00\x00\x00r\xb8\x00\x00\x00\xda\x0bMAX_THREADS\xda\x0fcurrent_threadsr|\x00\x00\x00r\x81\x00\x00\x00r\x80\x00\x00\x00ry\x00\x00\x00r~\x00\x00\x00r\x83\x00\x00\x00r\x8a\x00\x00\x00r\x90\x00\x00\x00r\x9b\x00\x00\x00r\xa5\x00\x00\x00r\xa1\x00\x00\x00\xda\x05router\xa2\x00\x00\x00r\xa6\x00\x00\x00r\xc3\x00\x00\x00r\xc5\x00\x00\x00r\xc7\x00\x00\x00r\xc9\x00\x00\x00r\xbc\x00\x00\x00r:\x00\x00\x00\xda\x03runr}\x00\x00\x00r<\x00\x00\x00r\x14\x00\x00\x00\xda\x08<module>rB\x01\x00\x00\x01\x00\x00\x00sy\x07\x00\x00\xf0\x03\x01\x01\x01\xf3\x06\x00\x01\x10\xdb\x00\x0b\xdb\x00\n\xdb\x00\t\xdb\x00\t\xdb\x00\r\xdb\x00\x0e\xdb\x00\x0b\xdb\x00\r\xdb\x00\x0b\xdb\x00\x10\xdd\x00\x1d\xdf\x00A\xd3\x00A\xe1\x06\x0b\x88H\x83o\x80\x03\xf0\x06\x00\x12`\x01\x80\x0e\xd8\x0e\x1b\x80\x0b\xd8\x0e\x1b\x80\x0b\xf2\x06\x07\x01\x10\xf2\x12\x08\x01\x0e\xf2\x16\x13\x01J\x01\xf2*\x0c\x01\x11\xf1\x1c\x00\x08\x1f\xd7\x07 \xd1\x07 \xd8\x04\x07\x87H\x82H\x88Q\x84K\xf0\x06\x00\x11\x13\x80\r\xd8\x13\x15\xd0\x00\x10\xd8\x10\x15\x80\r\xd8\x0e\x13\x80\x0b\xd8\x0e\x10\x80\x0b\xd8\x12\x13\x80\x0f\xf0\x063\x0f\x02\xd8\x0f"\xa8*\xf0\x00\x00D\x01M\x03\xf1\x00\x00\x05N\x03\xf0\x033\x0f\x02\xe0\x0f"\xa8*\xf0\x00\x00D\x01O\x03\xf1\x00\x00\x05P\x03\xf0\x053\x0f\x02\xf0\x06\x00\x10\x1b\xa0*\xf0\x00\x00<E\x03\xf1\x00\x00\x05F\x03\xf0\x073\x0f\x02\xf0\x08\x00\x10\x1b\xa0*\xf0\x00\x00<M\x03\xf1\x00\x00\x05N\x03\xf0\t3\x0f\x02\xf0\n\x00\x10#\xa8*\xf0\x00\x00D\x01M\x03\xf1\x00\x00\x05N\x03\xf0\x0b3\x0f\x02\xf0\x0c\x00\x10#\xa8*\xf0\x00\x00D\x01T\x03\xf1\x00\x00\x05U\x03\xf0\r3\x0f\x02\xf0\x0e\x00\x10\x1f\xa0j\xf0\x00\x00@\x01I\x03\xf1\x00\x00\x05J\x03\xf0\x0f3\x0f\x02\xf0\x10\x00\x10\x1f\xa0j\xf0\x00\x00@\x01K\x03\xf1\x00\x00\x05L\x03\xf0\x113\x0f\x02\xf0\x12\x00\x10 \xa0z\xf0\x00\x00A\x01J\x03\xf1\x00\x00\x05K\x03\xf0\x133\x0f\x02\xf0\x14\x00\x10 \xa0z\xf0\x00\x00A\x01R\x03\xf1\x00\x00\x05S\x03\xf0\x153\x0f\x02\xf0\x16\x00\x10\x1b\xa0*\xf0\x00\x00<E\x03\xf1\x00\x00\x05F\x03\xf0\x173\x0f\x02\xf0\x18\x00\x10\x1b\xa0*\xf0\x00\x00<L\x03\xf1\x00\x00\x05M\x03\xf0\x193\x0f\x02\xf0\x1a\x00\x10#\xa8*\xf0\x00\x00D\x01M\x03\xf1\x00\x00\x05N\x03\xf0\x1b3\x0f\x02\xf0\x1c\x00\x10#\xa8*\xf0\x00\x00D\x01O\x03\xf1\x00\x00\x05P\x03\xf0\x1d3\x0f\x02\xf0\x1e\x00\x10\x1f\xa0j\xf0\x00\x00@\x01I\x03\xf1\x00\x00\x05J\x03\xf0\x1f3\x0f\x02\xf0 \x00\x10\x1f\xa0j\xf0\x00\x00@\x01Q\x03\xf1\x00\x00\x05R\x03\xf0!3\x0f\x02\xf0"\x00\x10 \xa0z\xf0\x00\x00A\x01J\x03\xf1\x00\x00\x05K\x03\xf0#3\x0f\x02\xf0$\x00\x10 \xa0z\xf0\x00\x00A\x01Q\x03\xf1\x00\x00\x05R\x03\xf0%3\x0f\x02\xf0&\x00\x10\x1b\xa0*\xf0\x00\x00<E\x03\xf1\x00\x00\x05F\x03\xf0\'3\x0f\x02\xf0(\x00\x10\x1b\xa0*\xf0\x00\x00<G\x03\xf1\x00\x00\x05H\x03\xf0)3\x0f\x02\xf0*\x00\x10#\xa8*\xf0\x00\x00D\x01M\x03\xf1\x00\x00\x05N\x03\xf0+3\x0f\x02\xf0,\x00\x10#\xa8*\xf0\x00\x00D\x01U\x03\xf1\x00\x00\x05V\x03\xf0-3\x0f\x02\xf0.\x00\x10\x1f\xa0j\xf0\x00\x00@\x01I\x03\xf1\x00\x00\x05J\x03\xf0/3\x0f\x02\xf00\x00\x10\x1f\xa0j\xf0\x00\x00@\x01P\x03\xf1\x00\x00\x05Q\x03\xf013\x0f\x02\xf02\x00\x10\x1b\xa0*\xf0\x00\x00<E\x03\xf1\x00\x00\x05F\x03\xf033\x0f\x02\xf04\x00\x10\x1b\xa0*\xf0\x00\x00<G\x03\xf1\x00\x00\x05H\x03\xf053\x0f\x02\xf06\x00\x10 \xa0z\xf0\x00\x00A\x01J\x03\xf1\x00\x00\x05K\x03\xf073\x0f\x02\xf08\x00\x10 \xa0z\xf0\x00\x00A\x01R\x03\xf1\x00\x00\x05S\x03\xf093\x0f\x02\xf0:\x00\x10#\xa8*\xf0\x00\x00D\x01M\x03\xf1\x00\x00\x05N\x03\xf0;3\x0f\x02\xf0<\x00\x10#\xa8*\xf0\x00\x00D\x01T\x03\xf1\x00\x00\x05U\x03\xf0=3\x0f\x02\xf0>\x00\x10\x1f\xa0j\xf0\x00\x00@\x01I\x03\xf1\x00\x00\x05J\x03\xf0?3\x0f\x02\xf0@\x01\x00\x10\x1f\xa0j\xf0\x00\x00@\x01K\x03\xf1\x00\x00\x05L\x03\xf0A\x013\x0f\x02\xf0B\x01\x00\x10\x1b\xa0*\xf0\x00\x00<E\x03\xf1\x00\x00\x05F\x03\xf0C\x013\x0f\x02\xf0D\x01\x00\x10\x1b\xa0*\xf0\x00\x00<M\x03\xf1\x00\x00\x05N\x03\xf0E\x013\x0f\x02\xf0F\x01\x00\x10 \xa0z\xf0\x00\x00A\x01J\x03\xf1\x00\x00\x05K\x03\xf0G\x013\x0f\x02\xf0H\x01\x00\x10 \xa0z\xf0\x00\x00A\x01Q\x03\xf1\x00\x00\x05R\x03\xf0I\x013\x0f\x02\xf0J\x01\x00\x10#\xa8*\xf0\x00\x00D\x01M\x03\xf1\x00\x00\x05N\x03\xf0K\x013\x0f\x02\xf0L\x01\x00\x10#\xa8*\xf0\x00\x00D\x01O\x03\xf1\x00\x00\x05P\x03\xf0M\x013\x0f\x02\xf0N\x01\x00\x10\x1f\xa0j\xf0\x00\x00@\x01I\x03\xf1\x00\x00\x05J\x03\xf0O\x013\x0f\x02\xf0P\x01\x00\x10\x1f\xa0j\xf0\x00\x00@\x01Q\x03\xf1\x00\x00\x05R\x03\xf0Q\x013\x0f\x02\xf0R\x01\x00\x10\x1b\xa0*\xf0\x00\x00<E\x03\xf1\x00\x00\x05F\x03\xf0S\x013\x0f\x02\xf0T\x01\x00\x10\x1b\xa0*\xf0\x00\x00<L\x03\xf1\x00\x00\x05M\x03\xf0U\x013\x0f\x02\xf0V\x01\x00\x10%\xa8J\xf0\x00\x00F\x01O\x03\xf1\x00\x00\x05P\x03\xf0W\x013\x0f\x02\xf0X\x01\x00\x10%\xa8J\xf0\x00\x00F\x01Q\x03\xf1\x00\x00\x05R\x03\xf0Y\x013\x0f\x02\xf0Z\x01\x00\x10\x1f\xa0j\xf0\x00\x00@\x01I\x03\xf1\x00\x00\x05J\x03\xf0[\x013\x0f\x02\xf0\\\x01\x00\x10\x1f\xa0j\xf0\x00\x00@\x01Q\x03\xf1\x00\x00\x05R\x03\xf0]\x013\x0f\x02\xf0^\x01\x00\x10\x1b\xa0*\xf0\x00\x00<E\x03\xf1\x00\x00\x05F\x03\xf0_\x013\x0f\x02\xf0`\x01\x00\x10\x1b\xa0*\xf0\x00\x00<L\x03\xf1\x00\x00\x05M\x03\xf0a\x013\x0f\x02\xf0b\x01\x00\x10\x1b\xa0*\xf0\x00\x00<E\x03\xf1\x00\x00\x05F\x03\xf0c\x013\x0f\x02\xf0d\x01\x00\x10\x1b\xa0*\xf0\x00\x00<G\x03\xf1\x00\x00\x05H\x03\xf0e\x013\x0f\x02\x80\x0b\xf0n\x01\x00\x0f\x15\x988\xd1\x04$\xd8\x0e\x15\x98H\xd1\x04%\xd8\x0e\x16\x98X\xd1\x04&\xd8\x0e\x16\x98Z\xd1\x04(\xd8\x0e\x15\x98H\xd1\x04%\xd8\x0e\x14\x987\xd1\x04#\xd8\x0e\x15\x98F\xd1\x04#\xd8\x0e\x16\x98Y\xd1\x04\'\xd8\x0e\x14\x987\xd1\x04#\xd8\x0e\x15\x98I\xd1\x04&\xf0\x15\x0b\x10\x02\x80\x0c\xf0\x1c\x00\x0f\x17\x98\\\xd1\x04*\xd8\x0e\x18\x98~\xd1\x04.\xd8\x0e\x18\x98|\xd1\x04,\xd8\x0e\x18\x98~\xd1\x04.\xd8\x0e\x18\x98z\xd1\x04*\xd8\x0e\x18\x98z\xd1\x04*\xd8\x0e\x18\x98v\xd1\x04&\xd8\x0e\x18\x98|\xd1\x04,\xd8\x0e\x18\x98|\xd1\x04,\xd8\x0e\x1a\xa0\x1c\xd1\x04.\xf0\x15\x0b\x17\x02\xd0\x00\x13\xf2\x1c\n\x01!\xf2\x18\x01\x01&\xf2\x06\x06\x017\xf2\x10\x04\x01\x1c\xf2\x0c\x02\x010\xf2\x08\x03\x013\xf0\x0c\x7f\x08\x11\x04\x80\r\xf0D\x12\x00\x11\x15\x80\r\xe0\x01\x04\x87\x19\x81\x19\xd0\x0b\x1b\xa0e\xa0W\x80\x19\xd0\x01-\xf1\x02\x01\x01.\xf3\x03\x00\x02.\xf0\x02\x01\x01.\xf0\x08\x00\x02\x05\x87\x19\x81\x19\x883\x83\x1e\xf1\x02\x01\x011\xf3\x03\x00\x02\x10\xf0\x02\x01\x011\xf0\x06\x00\x02\x05\x87\x19\x81\x19\x889\x98v\x98h\x80\x19\xd0\x01\'\xf1\x023\x01\x07\xf3\x03\x00\x02(\xf0\x023\x01\x07\xf0j\x01\x00\x02\x05\x87\x19\x81\x19\x887\x98V\x98H\x80\x19\xd0\x01%\xf1\x02\x04\x01&\xf3\x03\x00\x02&\xf0\x02\x04\x01&\xf0\x0c\x00\x02\x05\x87\x19\x81\x19\x88;\xa0\x15\xa0\x07\x80\x19\xd0\x01(\xf1\x02\x01\x01%\xf3\x03\x00\x02)\xf0\x02\x01\x01%\xf0\x06\x00\x02\x05\x87\x19\x81\x19\x889\x98u\x98g\x80\x19\xd0\x01&\xf1\x02\x04\x01\x07\xf3\x03\x00\x02\'\xf0\x02\x04\x01\x07\xf2\x0e@\x02\x016\xf0X\x04\x00\x04\x0c\x88z\xd3\x03\x19\xd9\x04\t\xf0\x00\x0f\x0b\x08\xf4\x00\x0f\x05\t\xf0 \x00\x05\x08\x87G\x81G\x90\x19\xa0\x14\xa8U\xb8T\x80G\xd2\x04B\xf0#\x00\x04\x1ar<\x00\x00\x00'))
+#!/usr/bin/env python3
+import requests
+import ssl
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+ssl._create_default_https_context = ssl._create_unverified_context
+import time
+import threading
+import re
+import json
+import os
+import uuid
+import base64
+import random
+import sys
+from datetime import datetime
+import telebot
+from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+import pyotp
+
+# ============================================================
+# COLORFUL BUTTON SYSTEM (Style patch)
+# ============================================================
+_old_inline_dict = InlineKeyboardButton.to_dict
+def _new_inline_dict(self):
+    d = _old_inline_dict(self)
+    if hasattr(self, 'style'):
+        d['style'] = self.style
+    if hasattr(self, 'custom_copy_text') and self.custom_copy_text:
+        d['copy_text'] = {'text': str(self.custom_copy_text)}
+        if 'callback_data' in d:
+            del d['callback_data']
+    return d
+InlineKeyboardButton.to_dict = _new_inline_dict
+
+_old_kb_dict = KeyboardButton.to_dict
+def _new_kb_dict(self):
+    d = _old_kb_dict(self)
+    if hasattr(self, 'style'):
+        d['style'] = self.style
+    return d
+KeyboardButton.to_dict = _new_kb_dict
+
+def ibtn(text, callback_data=None, url=None, style=None, copy_text_str=None):
+    kwargs = {'text': text}
+    if copy_text_str:
+        kwargs['callback_data'] = "fake_copy_btn"
+    else:
+        if callback_data: kwargs['callback_data'] = callback_data
+        if url: kwargs['url'] = url
+    b = InlineKeyboardButton(**kwargs)
+    if style: b.style = style
+    if copy_text_str: b.custom_copy_text = copy_text_str
+    return b
+
+def rbtn(text, style=None):
+    b = KeyboardButton(text=text)
+    if style: b.style = style
+    return b
+# ============================================================
+
+# ==================== কনফিগারেশন ====================
+TELEGRAM_TOKEN = "8964436102:AAFBZGQet52TrBvH2tUpzsrgviGLafuNn6w"
+ADMIN_ID = 7787612625
+
+COOKIE_DATR = "3XA5at-YBOFaGHi2xPrg-wka"
+API_BASE_URL = "https://api.2oo9.cloud/MXS47FLFX0U/tnevs/@public/api"
+API_KEY = "M45X89QDZ7L"
+
+HEADERS = {
+    "mauthapi": API_KEY,
+    "Content-Type": "application/json"
+}
+
+LOG_GROUP_ID = "-1004485754663"
+OTP_GROUP_URL = "https://t.me/fyyyl677754"
+
+FRENCH_NAMES = [
+    {"prenom":"Jean","nom":"Dupont"}, {"prenom":"Marie","nom":"Martin"},
+    {"prenom":"Pierre","nom":"Durand"}, {"sophie":"Lefèvre","prenom":"Sophie","nom":"Lefèvre"},
+    {"prenom":"Lucas","nom":"Moreau"}, {"prenom":"Emma","nom":"Petit"},
+    {"prenom":"Louis","nom":"Roux"}, {"prenom":"Chloé","nom":"Richard"},
+    {"prenom":"Hugo","nom":"Simon"}, {"prenom":"Inès","nom":"Laurent"}
+]
+
+# ==================== ডাটাবেস ও হেল্পার্স ====================
+USER_DB = "users.json"
+USER_DATA_DB = "user_data.json"
+SETTINGS_DB = "settings.json"
+WITHDRAWALS_DB = "withdrawals.json"
+ACTIVE_NUMBERS_DB = "active_numbers.json"
+
+_ENCODED_NAME = ""
+
+def init_databases():
+    files = {
+        USER_DB: [],
+        USER_DATA_DB: {},
+        SETTINGS_DB: {"otp_price": 5.0, "min_withdraw": 50.0},
+        WITHDRAWALS_DB: [],
+        ACTIVE_NUMBERS_DB: {}
+    }
+    for file, default in files.items():
+        if not os.path.exists(file):
+            with open(file, "w") as f:
+                json.dump(default, f)
+
+init_databases()
+
+def get_user_balance(user_id):
+    with open(USER_DATA_DB, "r") as f:
+        data = json.load(f)
+    return data.get(str(user_id), {}).get("balance", 0.0)
+
+def update_user_balance(user_id, amount):
+    with open(USER_DATA_DB, "r") as f:
+        data = json.load(f)
+    uid = str(user_id)
+    if uid not in data:
+        data[uid] = {"balance": 0.0}
+    data[uid]["balance"] = round(data[uid]["balance"] + amount, 2)
+    with open(USER_DATA_DB, "w") as f:
+        json.dump(data, f)
+
+def get_all_users():
+    with open(USER_DB, "r") as f:
+        return json.load(f)
+
+def add_user(user_id):
+    with open(USER_DB, "r") as f:
+        users = json.load(f)
+    if user_id not in users:
+        users.append(user_id)
+        with open(USER_DB, "w") as f:
+            json.dump(users, f)
+    with open(USER_DATA_DB, "r") as f:
+        data = json.load(f)
+    if str(user_id) not in data:
+        data[str(user_id)] = {"balance": 0.0}
+        with open(USER_DATA_DB, "w") as f:
+            json.dump(data, f)
+
+def get_settings():
+    with open(SETTINGS_DB, "r") as f:
+        return json.load(f)
+
+def save_settings(settings):
+    with open(SETTINGS_DB, "w") as f:
+        json.dump(settings, f)
+
+def get_withdrawals():
+    with open(WITHDRAWALS_DB, "r") as f:
+        return json.load(f)
+
+def save_withdrawals(withdraws):
+    with open(WITHDRAWALS_DB, "w") as f:
+        json.dump(withdraws, f)
+
+def get_active_numbers():
+    with open(ACTIVE_NUMBERS_DB, "r") as f:
+        return json.load(f)
+
+def save_active_numbers(numbers):
+    with open(ACTIVE_NUMBERS_DB, "w") as f:
+        json.dump(numbers, f)
+
+def add_active_number(phone, chat_id, service, range_code):
+    data = get_active_numbers()
+    data[str(phone)] = {
+        "chat_id": chat_id,
+        "service": service,
+        "range": range_code,
+        "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+    save_active_numbers(data)
+
+def remove_active_number(phone):
+    data = get_active_numbers()
+    if str(phone) in data:
+        del data[str(phone)]
+        save_active_numbers(data)
+
+def mask_number(phone):
+    phone_str = str(phone)
+    if len(phone_str) >= 10:
+        return phone_str[:7] + "XXX" + phone_str[-2:]
+    return phone_str
+
+def extract_otp_from_text(text):
+    clean_text = re.sub(r'[-\s]', '', text)
+    patterns = [
+        r'\b(\d{8})\b', r'\b(\d{7})\b', r'\b(\d{6})\b',
+        r'\b(\d{5})\b', r'\b(\d{4})\b', r'\b(\d{3})\b',
+        r'code[:\s]*(\d+)', r'OTP[:\s]*(\d+)', r'(\d+)',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, clean_text, re.IGNORECASE)
+        if match and len(match.group(1)) >= 3:
+            return match.group(1)
+    return "N/A"
+
+def get_service_name_from_msg(msg):
+    msg_lower = msg.lower()
+    if 'facebook' in msg_lower: return "Facebook"
+    elif 'whatsapp' in msg_lower: return "WhatsApp"
+    elif 'instagram' in msg_lower: return "Instagram"
+    return "Unknown"
+
+def get_footer():
+    try:
+        decoded_name = base64.b64decode(_ENCODED_NAME).decode('utf-8')
+        return f"\n\n━━━━━━━━━━━━━━━━━━━━\n{decoded_name.replace(':', '')}"
+    except:
+        return ""
+
+def random_name():
+    name = random.choice(FRENCH_NAMES)
+    return name['prenom'], name['nom']
+
+def random_birth():
+    return random.randint(1, 28), random.randint(1, 12), random.randint(1980, 2005)
+
+def clean_phone(phone):
+    return re.sub(r'[^0-9]', '', phone)
+
+def extract_numbers(text):
+    numbers = re.findall(r'\d+', text)
+    return [num for num in numbers if len(num) >= 4]
+
+# ==================== FACEBOOK ACCOUNT CREATOR ====================
+def create_facebook_account(phone, password):
+    fname, lname = random_name()
+    day, month, year = random_birth()
+    phone = clean_phone(phone)
+    
+    android_ua = "Mozilla/5.0 (Linux; Android 12; itel S665L Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36"
+    headers = {
+        'User-Agent': android_ua,
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'fr-FR,fr;q=0.9,en;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br, zstd',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'sec-ch-ua-platform': '"Android"',
+        'sec-ch-ua': '"Android WebView";v="149", "Chromium";v="149", "Not)A;Brand";v="24"',
+        'x-response-format': 'JSONStream',
+        'sec-ch-ua-mobile': '?1',
+        'x-asbd-id': '359341',
+        'x-fb-lsd': 'AdRCh7SdER7Za5PotUuics5fFt0',
+        'x-requested-with': 'XMLHttpRequest',
+        'origin': 'https://limited.facebook.com',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        'referer': 'https://limited.facebook.com/reg/?is_two_steps_login=0&cid=103&refsrc=deprecated&soft=hjk',
+        'priority': 'u=1, i',
+        'Cookie': f'datr={COOKIE_DATR}'
+    }
+    
+    data = {
+        'ccp': '2', 'reg_instance': COOKIE_DATR, 'submission_request': 'true', 'helper': '',
+        'reg_impression_id': str(uuid.uuid4()), 'ns': '1', 'zero_header_af_client': '',
+        'app_id': '103', 'logger_id': str(uuid.uuid4()), 'field_names[0]': 'firstname',
+        'firstname': fname, 'lastname': lname, 'field_names[1]': 'birthday_wrapper',
+        'birthday_day': str(day), 'birthday_month': str(month), 'birthday_year': str(year),
+        'age_step_input': '', 'did_use_age': 'false', 'field_names[2]': 'reg_email__',
+        'reg_email__': phone, 'field_names[3]': 'sex', 'sex': '2', 'preferred_pronoun': '',
+        'custom_gender': '', 'reg_passwd__': password, 'name_suggest_elig': 'false',
+        'was_shown_name_suggestions': 'false', 'did_use_suggested_name': 'false',
+        'use_custom_gender': 'false', 'guid': '', 'pre_form_step': '', 'submit': 'Sign up',
+        'fb_dtsg': 'NAfx5UxG44eai86HC1iwiixBs1mUDFhn3ccN1fj3-SJJc64TeUsEAEg:0:0', 'jazoest': '24748',
+        'lsd': 'AdRCh7SdER7Za5PotUuics5fFt0', '__dyn': '1Z3pawlEnwm8_Bg9ppoW5UdE4a2i5U4e0C86u7E39x60zU3ex608ewk9E4W0pKq0FE6S0x81vohw73wGwcq1GwqU2YwbK0oi0zE1jU1soG0hi0Lo6-0Co1kU1UU3jwea',
+        '__csr': '', '__hsdp': '', '__hblp': '', '__sjsp': '', '__req': 'g', '__fmt': '1',
+        '__a': 'AYzJ_41FhHOHmeaJtz_y-NZ41BrpCkk8MZbenM7ATpRLY9c4d3QLNQW9sph6SN5jNJBH5tH1yvE_P-EybRqM6tZ_nqLEaV4b3ZU', '__user': '0'
+    }
+    
+    url = 'https://limited.facebook.com/reg/submit/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzgyMTQ5MzY4LCJjYWxsc2l0ZV9pZCI6OTA3OTI0NDAyOTQ4MDU4fQ%3D%3D&app_id=103&multi_step_form=1&skip_suma=0&shouldForceMTouch=1'
+    
+    try:
+        start_time = time.time()
+        response = requests.post(url, headers=headers, data=data, timeout=30)
+        elapsed_time = time.time() - start_time
+        
+        if response.status_code == 200 and elapsed_time >= 1:
+            cookies_dict = response.cookies.get_dict()
+            if 'c_user' in cookies_dict:
+                uid = cookies_dict['c_user']
+                cookie_parts = []
+                for key in ['datr', 'sb', 'ps_l', 'ps_n', 'm_pixel_ratio', 'wd', 'c_user', 'fr', 'xs']:
+                    if key in cookies_dict:
+                        cookie_parts.append(f"{key}={cookies_dict[key].replace(' ', '')}")
+                    elif key == 'datr' and key not in cookies_dict:
+                        cookie_parts.append(f"datr={COOKIE_DATR}")
+                cookie_string = "; ".join(cookie_parts)
+                return {
+                    'success': True, 'uid': uid, 'name': f"{fname} {lname}",
+                    'cookies': cookie_string, 'password': password, 'phone': phone
+                }
+            else:
+                return {'success': False, 'error': 'No c_user in cookies'}
+        else:
+            return {'success': False, 'error': f'HTTP {response.status_code}'}
+    except Exception as e:
+        return {'success': False, 'error': str(e)}
+
+# ==================== API FUNCTIONS ====================
+def voltx_get_live_services():
+    url = f"{API_BASE_URL}/liveaccess"
+    try:
+        res = requests.get(url, headers=HEADERS, timeout=15, verify=False)
+        if res.status_code == 200:
+            data = res.json()
+            if data.get("meta", {}).get("code") == 200:
+                services = data.get("data", {}).get("services", [])
+                if services: return services
+    except Exception as e:
+        print(f"Error loading live services: {e}")
+    return [
+        {"sid": "Facebook", "ranges": ["8801XXX", "22501XXX"]},
+        {"sid": "WhatsApp", "ranges": ["8801XXX", "447XXX"]}
+    ]
+
+def voltx_get_ranges_for_service(service_name):
+    services = voltx_get_live_services()
+    for s in services:
+        if s.get("sid", "").lower() == service_name.lower():
+            ranges = s.get("ranges", [])
+            if ranges: return ranges
+    return ["8801XXX", "22501XXX"]
+
+def voltx_fetch_number(range_code):
+    rid = range_code.replace("XXX", "").replace("X", "").strip()
+    if not rid: rid = "8801"
+    url = f"{API_BASE_URL}/getnum"
+    payload = {"rid": rid}
+    try:
+        res = requests.post(url, json=payload, headers=HEADERS, timeout=30, verify=False)
+        if res.status_code == 200:
+            data = res.json()
+            if data.get("meta", {}).get("code") == 200:
+                number_data = data.get("data", {})
+                full_number = number_data.get("full_number") or number_data.get("no_plus_number")
+                if full_number:
+                    return str(full_number).replace("+", "").strip()
+    except Exception as e:
+        print(f"Error fetching number: {e}")
+    return None
+
+def voltx_fetch_single_number(range_code):
+    number = voltx_fetch_number(range_code)
+    return [number] if number else []
+
+def voltx_check_otp():
+    url = f"{API_BASE_URL}/success-otp"
+    results = []
+    try:
+        res = requests.get(url, headers=HEADERS, timeout=15, verify=False)
+        if res.status_code == 200:
+            data = res.json()
+            if data.get("meta", {}).get("code") == 200:
+                otps = data.get("data", {}).get("otps", [])
+                active = get_active_numbers()
+                for phone in active:
+                    for otp_item in otps:
+                        otp_number = otp_item.get("number", "").replace("+", "").strip()
+                        if phone == otp_number:
+                            message = otp_item.get("message", "")
+                            if message:
+                                otp_code = extract_otp_from_text(message)
+                                service_name = get_service_name_from_msg(message)
+                                if service_name == "Unknown":
+                                    service_name = active[phone].get("service", "Unknown")
+                                if otp_code != "N/A":
+                                    results.append({
+                                        "phone": phone, "message": message,
+                                        "otp": otp_code, "service": service_name,
+                                    })
+                                    break
+    except Exception as e:
+        print(f"Error checking OTP: {e}")
+    return results
+
+# ==================== KEYBOARDS ====================
+def get_main_keyboard():
+    markup = ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.row(rbtn("🎲 GET NUMBER", "primary"), rbtn("🔐 2FA CODE", "success"))
+    markup.row(rbtn("🔑 Set Password", "primary"), rbtn("🚀 Create Now", "success"))
+    markup.row(rbtn("💰 BALANCE", "primary"), rbtn("💳 WITHDRAWAL", "success"))
+    markup.row(rbtn("📩 CONTACT ADMIN", "primary"), rbtn("⏹ Stop", "danger"))
+    return markup
+
+def get_admin_keyboard():
+    markup = ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.row(rbtn("📢 Broadcast", "primary"), rbtn("📊 Stats", "success"))
+    markup.row(rbtn("💵 Price Edit", "primary"), rbtn("📥 Pending Withdrawals", "success"))
+    markup.row(rbtn("🔙 Back Main Menu", "danger"))
+    return markup
+
+def get_service_keyboard():
+    markup = InlineKeyboardMarkup(row_width=2)
+    services = voltx_get_live_services()
+    for s in services[:4]:
+        sid = s.get("sid", "Unknown")
+        markup.add(ibtn(f"📘 {sid}", callback_data=f"service_{sid.lower()}", style="primary"))
+    markup.row(ibtn("🔄 Refresh Services", callback_data="refresh_services", style="success"))
+    markup.row(ibtn("🔙 Back Main Menu", callback_data="back_main_menu", style="danger"))
+    return markup
+
+# 240+ COUNTRY MAP DATA SYSTEM
+COUNTRY_MAP = {
+    "93": ("🇦🇫", "Afghanistan"), "355": ("🇦🇱", "Albania"), "213": ("🇩🇿", "Algeria"), "1684": ("🇦🇸", "American Samoa"), 
+    "376": ("🇦🇩", "Andorra"), "244": ("🇦☉", "Angola"), "1264": ("🇦🇮", "Anguilla"), "1268": ("🇦🇬", "Antigua & Barbuda"), 
+    "54": ("🇦🇷", "Argentina"), "374": ("🇦🇲", "Armenia"), "297": ("🇦🇼", "Aruba"), "61": ("🇦🇺", "Australia"), 
+    "43": ("🇦🇹", "Austria"), "994": ("🇦🇿", "Azerbaijan"), "1242": ("🇧🇸", "Bahamas"), "973": ("🇧🇭", "Bahrain"), 
+    "880": ("🇧🇩", "Bangladesh"), "1246": ("🇧🇧", "Barbados"), "375": ("🇧🇾", "Belarus"), "32": ("🇧🇪", "Belgium"), 
+    "501": ("🇧🇿", "Belize"), "229": ("🇧🇯", "Benin"), "1441": ("🇧🇲", "Bermuda"), "975": ("🇧🇹", "Bhutan"), 
+    "591": ("🇧🇴", "Bolivia"), "387": ("🇧🇦", "Bosnia"), "267": ("🇧🇼", "Botswana"), "55": ("🇧🇷", "Brazil"), 
+    "1284": ("🇻🇬", "British Virgin Islands"), "673": ("🇧🇳", "Brunei"), "359": ("🇧🇬", "Bulgaria"), "226": ("🇧🇫", "Burkina Faso"), 
+    "257": ("🇧🇮", "Burundi"), "238": ("🇨🇻", "Cape Verde"), "855": ("🇰🇭", "Cambodia"), "237": ("🇨🇲", "Cameroon"), 
+    "2376": ("🇨🇲", "Cameroon"), "1": ("🇺🇸", "United States/Canada"), "1345": ("🇰🇾", "Cayman Islands"), 
+    "236": ("🇨🇫", "Central African Republic"), "235": ("🇹🇩", "Chad"), "56": ("🇨🇱", "Chile"), "86": ("🇨🇳", "China"), 
+    "57": ("🇨🇴", "Colombia"), "269": ("🇰🇲", "Comoros"), "242": ("🇨🇬", "Congo"), "243": ("🇨🇩", "DR Congo"), 
+    "682": ("🇨🇰", "Cook Islands"), "506": ("🇨🇷", "Costa Rica"), "225": ("🇨🇮", "Ivory Coast"), "2250": ("🇨🇮", "Ivory Coast"), 
+    "385": ("🇭🇷", "Croatia"), "53": ("🇨🇺", "Cuba"), "357": ("🇨🇾", "Cyprus"), "420": ("🇨🇿", "Czechia"), 
+    "45": ("🇩🇰", "Denmark"), "253": ("🇩🇯", "Djibouti"), "1767": ("🇩🇲", "Dominica"), "1809": ("🇩🇴", "Dominican Republic"), 
+    "1829": ("🇩🇴", "Dominican Republic"), "1849": ("🇩🇴", "Dominican Republic"), "593": ("🇪🇨", "Ecuador"), 
+    "20": ("🇪🇬", "Egypt"), "503": ("🇸🇻", "El Salvador"), "240": ("🇬🇶", "Equatorial Guinea"), "291": ("🇪🇷", "Eritrea"), 
+    "372": ("🇪🇪", "Estonia"), "251": ("🇪🇹", "Ethiopia"), "1340": ("🇻🇮", "US Virgin Islands"), "500": ("🇫🇰", "Falkland Islands"), 
+    "298": ("🇫🇴", "Faroe Islands"), "679": ("🇫يج", "Fiji"), "358": ("🇫🇮", "Finland"), "33": ("🇫🇷", "France"), 
+    "594": ("🇬🇫", "French Guiana"), "689": ("🇵🇫", "French Polynesia"), "241": ("🇬🇦", "Gabon"), "220": ("🇬🇲", "Gambia"), 
+    "995": ("🇬🇪", "Georgia"), "49": ("🇩🇪", "Germany"), "233": ("🇬🇭", "Ghana"), "350": ("🇬🇮", "Gibraltar"), 
+    "30": ("🇬🇷", "Greece"), "299": ("🇬🇱", "Greenland"), "1473": ("🇬🇩", "Grenada"), "590": ("🇬🇵", "Guadeloupe"), 
+    "1671": ("🇬🇺", "Guam"), "502": ("🇬🇹", "Guatemala"), "224": ("🇬🇳", "Guinea"), "245": ("🇬🇼", "Guinea-Bissau"), 
+    "592": ("🇬🇾", "Guyana"), "509": ("🇭🇹", "Haiti"), "504": ("🇭🇳", "Honduras"), "852": ("🇭🇰", "Hong Kong"), 
+    "36": ("🇭🇺", "Hungary"), "354": ("🇮🇸", "Iceland"), "91": ("🇮🇳", "India"), "62": ("🇮🇩", "Indonesia"), 
+    "98": ("🇮🇷", "Iran"), "964": ("🇮🇶", "Iraq"), "353": ("🇮🇪", "Ireland"), "972": ("🇮🇱", "Israel"), 
+    "39": ("🇮🇹", "Italy"), "1876": ("🇯🇲", "Jamaica"), "81": ("🇯🇵", "Japan"), "962": ("🇯🇴", "Jordan"), 
+    "7": ("🇷🇺", "Russia/Kazakhstan"), "254": ("🇰🇪", "Kenya"), "686": ("🇰🇮", "Kiribati"), "965": ("🇰🇼", "Kuwait"), 
+    "996": ("🇰🇬", "Kyrgyzstan"), "856": ("🇱🇦", "Laos"), "371": ("🇱🇻", "Latvia"), "961": ("🇱🇧", "Lebanon"), 
+    "266": ("🇱🇸", "Lesotho"), "231": ("🇱🇷", "Liberia"), "218": ("🇱🇾", "Libya"), "423": ("🇱🇮", "Liechtenstein"), 
+    "370": ("🇱🇹", "Lithuania"), "352": ("🇱🇺", "Luxembourg"), "853": ("🇲🇴", "Macao"), "389": ("🇲🇰", "North Macedonia"), 
+    "261": ("🇲🇬", "Madagascar"), "2613": ("🇲🇬", "Madagascar"), "265": ("🇲🇼", "Malawi"), "60": ("🇲🇾", "Malaysia"), 
+    "960": ("🇲🇻", "Maldives"), "223": ("🇲🇱", "Mali"), "356": ("🇲🇹", "Malta"), "692": ("🇲🇭", "Marshall Islands"), 
+    "596": ("🇲🇶", "Martinique"), "222": ("🇲🇷", "Mauritania"), "230": ("🇲🇺", "Mauritius"), "262": ("🇾🇹", "Mayotte"), 
+    "52": ("🇲🇽", "Mexico"), "691": ("🇫🇲", "Micronesia"), "373": ("🇲🇩", "Moldova"), "377": ("🇲🇨", "Monaco"), 
+    "976": ("🇲🇳", "Mongolia"), "382": ("🇲 Montenegro"), "1664": ("🇲🇸", "Montserrat"), "212": ("🇲🇦", "Morocco"), 
+    "258": ("🇲🇿", "Mozambique"), "95": ("🇲🇲", "Myanmar"), "264": ("🇳🇦", "Namibia"), "674": ("🇳🇷", "Nauru"), 
+    "977": ("🇳🇵", "Nepal"), "31": ("🇳🇱", "Netherlands"), "687": ("🇳🇨", "New Caledonia"), "64": ("🇳🇿", "New Zealand"), 
+    "505": ("🇳🇮", "Nicaragua"), "227": ("🇳🇪", "Niger"), "234": ("🇳🇬", "Nigeria"), "683": ("🇳🇺", "Niue"), 
+    "1670": ("🇲🇵", "Northern Mariana Islands"), "47": ("🇳🇴", "Norway"), "968": ("🇴🇲", "Oman"), "92": ("🇵🇰", "Pakistan"), 
+    "680": ("🇵🇼", "Palau"), "970": ("🇵🇸", "Palestine"), "507": ("🇵🇦", "Panama"), "675": ("🇵🇬", "Papua New Guinea"), 
+    "595": ("🇵🇾", "Paraguay"), "51": ("🇵🇪", "Peru"), "63": ("🇵🇭", "Philippines"), "48": ("🇵🇱", "Poland"), 
+    "351": ("🇵🇹", "Portugal"), "1787": ("🇵🇷", "Puerto Rico"), "1939": ("🇵🇷", "Puerto Rico"), "974": ("🇶🇦", "Qatar"), 
+    "40": ("🇷🇴", "Romania"), "4077": ("🇷🇴", "Romania"), "250": ("🇷🇼", "Rwanda"), "290": ("🇸🇭", "Saint Helena"), 
+    "1869": ("🇰🇳", "Saint Kitts & Nevis"), "1758": ("🇱🇨", "Saint Lucia"), "1784": ("🇻🇨", "Saint Vincent"), 
+    "685": ("🇼🇸", "Samoa"), "378": ("🇸🇲", "San Marino"), "239": ("🇸🇹", "Sao Tome & Principe"), "966": ("🇸🇦", "Saudi Arabia"), 
+    "221": ("🇸🇳", "Senegal"), "381": ("🇷🇸", "Serbia"), "248": ("🇸🇨", "Seychelles"), "232": ("🇸🇱", "Sierra Leone"), 
+    "65": ("🇸🇬", "Singapore"), "421": ("🇸🇰", "Slovakia"), "386": ("🇸🇮", "Slovenia"), "677": ("🇸🇧", "Solomon Islands"), 
+    "252": ("🇸☉", "Somalia"), "27": ("🇿🇦", "South Africa"), "82": ("🇰🇷", "South Korea"), "211": ("🇸🇸", "South Sudan"), 
+    "34": ("🇪🇸", "Spain"), "94": ("🇱💖", "Sri Lanka"), "249": ("🇸🇩", "Sudan"), "597": ("🇸🇷", "Suriname"), 
+    "268": ("🇸🇿", "Eswatini"), "46": ("🇸🇪", "Sweden"), "41": ("🇨🇭", "Switzerland"), "963": ("🇸🇾", "Syria"), 
+    "886": ("🇹🇼", "Taiwan"), "992": ("🇹🇯", "Tajikistan"), "255": ("🇹🇿", "Tanzania"), "66": ("🇹🇭", "Thailand"), 
+    "228": ("🇹🇬", "Togo"), "690": ("🇹🇰", "Tokelau"), "676": ("🇹🇴", "Tonga"), "1868": ("🇹🇹", "Trinidad & Tobago"), 
+    "216": ("🇹🇳", "Tunisia"), "90": ("🇹🇷", "Turkey"), "993": ("🇹🇲", "Turkmenistan"), "1649": ("🇹🇨", "Turks & Caicos Islands"), 
+    "688": ("🇹🇻", "Tuvalu"), "256": ("🇺🇬", "Uganda"), "380": ("🇺🇦", "Ukraine"), "971": ("🇦🇪", "United Arab Emirates"), 
+    "44": ("🇬🇧", "United Kingdom"), "598": ("🇺🇾", "Uruguay"), "998": ("🇺🇿", "Uzbekistan"), "678": ("🇻🇺", "Vanuatu"), 
+    "58": ("🇻🇪", "Venezuela"), "84": ("🇻🇳", "Vietnam"), "681": ("🇼🇫", "Wallis & Futuna"), "967": ("🇾🇪", "Yemen"), 
+    "260": ("🇿🇲", "Zambia"), "263": ("🇿🇼", "Zimbabwe")
+}
+
+def get_country_info(range_code):
+    digits = re.sub(r'[^0-9]', '', range_code)
+    for length in (4, 3, 2, 1):
+        prefix = digits[:length]
+        if prefix in COUNTRY_MAP: return COUNTRY_MAP[prefix]
+    return ("📱", "")
+
+def get_range_keyboard(ranges, service):
+    markup = InlineKeyboardMarkup(row_width=2)
+    for r in ranges[:10]:
+        flag, country = get_country_info(r)
+        label = f"{flag} {r} {country}" if country else f"📱 {r}"
+        markup.add(ibtn(label, callback_data=f"get_number_{service}_{r}", style="primary"))
+    markup.row(ibtn("🔄 Refresh", callback_data=f"refresh_ranges_{service}", style="success"))
+    markup.row(ibtn("🔙 Back to Services", callback_data="back_to_services", style="danger"))
+    return markup
+
+def get_fb_creator_range_keyboard(ranges):
+    markup = InlineKeyboardMarkup(row_width=2)
+    for r in ranges[:12]:
+        flag, country = get_country_info(r)
+        label = f"{flag} {r} {country}" if country else f"📱 {r}"
+        markup.add(ibtn(label, callback_data=f"fbcreate_{r}", style="primary"))
+    markup.row(ibtn("🔙 Back Main Menu", callback_data="back_main_menu", style="danger"))
+    return markup
+
+def get_2fa_keyboard():
+    markup = ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.row(rbtn("🔄 Regenerate", "success"))
+    markup.row(rbtn("🔙 Back Main Menu", "danger"))
+    return markup
+
+# ==================== NOTIFICATIONS ====================
+def send_otp_notification(chat_id, phone, service, otp, message, price):
+    masked = mask_number(phone)
+    footer = get_footer()
+    active = get_active_numbers()
+    range_code = active.get(str(phone), {}).get("range", None)
+    country_line = range_line = ""
+    if range_code:
+        flag, country_name = get_country_info(range_code)
+        country_line = f"\n🌍 Country : {flag} {country_name}" if country_name else f"\n🌍 Country : {flag}"
+        range_line = f"\n🌀 Range : `{range_code}`"
+
+    dm_msg = f"✅ OTP RECEIVED!\n━━━━━━━━━━━━━━━━━━━━\n📱 Number: `{phone}`\n🎯 Service: {service}{country_line}{range_line}\n━━━━━━━━━━━━━━━━━━━━\n🔐 OTP Code: `{otp}`\n━━━━━━━━━━━━━━━━━━━━\n📩 Full SMS:\n`{message[:200]}`\n━━━━━━━━━━━━━━━━━━━━\n💰 Income: +{price} BDT{footer}"
+    group_msg = f"✅ OTP RECEIVED!\n━━━━━━━━━━━━━━━━━━━━\n📱 Number: `{masked}`\n🎯 Service: {service}{country_line}{range_line}\n━━━━━━━━━━━━━━━━━━━━\n🔐 OTP Code: `{otp}`\n━━━━━━━━━━━━━━━━━━━━\n📩 Full SMS:\n`{message[:200]}`\n━━━━━━━━━━━━━━━━━━━━\n💰 Income: +{price} BDT{footer}"
+    
+    otp_markup = InlineKeyboardMarkup(row_width=1)
+    otp_markup.row(ibtn(f"📋 {otp} (OTP Copy)", copy_text_str=str(otp), style="success"))
+    otp_markup.row(ibtn("💬 OTP GROUP 🔗", url=OTP_GROUP_URL, style="primary"))
+    try:
+        bot.send_message(chat_id, dm_msg, parse_mode="Markdown", reply_markup=otp_markup)
+        bot.send_message(LOG_GROUP_ID, group_msg, parse_mode="Markdown")
+    except Exception as e: print(f"Send error: {e}")
+
+def send_number_received_notification(chat_id, numbers, service_name, range_code=None):
+    for number in numbers:
+        country_line = range_line = ""
+        if range_code:
+            flag, country_name = get_country_info(range_code)
+            country_line = f"\n🌍 Country : {flag} {country_name}" if country_name else f"\n🌍 Country : {flag}"
+            range_line = f"\n🌀 Range : `{range_code}`"
+
+        markup = InlineKeyboardMarkup(row_width=1)
+        markup.row(ibtn(f"📋 {number} (Tap to Copy)", copy_text_str=number, style="primary"))
+        markup.row(ibtn("🔄 Change Number", callback_data=f"change_number_{service_name}", style="success"))
+        markup.row(ibtn("🌍 Change Country", callback_data=f"back_to_ranges", style="primary"))
+        markup.row(ibtn("💬 OTP GROUP 🔗", url=OTP_GROUP_URL, style="primary"))
+
+        msg = f"🎯 NEW NUMBER RECEIVED!\n━━━━━━━━━━━━━━━━━━━━\n📱 Number: `{number}`\n🎯 Service: {service_name}{country_line}{range_line}\n━━━━━━━━━━━━━━━━━━━━\n💡 OTP will appear here automatically!\n\n👆 নাম্বার বাটনে চাপ দিলে কপি হবে!"
+        bot.send_message(chat_id, msg, parse_mode="Markdown", reply_markup=markup)
+
+# ==================== BOT ENGINE & STATE ====================
+bot = telebot.TeleBot(TELEGRAM_TOKEN)
+user_service = {}
+user_last_range = {}
+user_data_store = {}
+bot_states = {} # Stores temporary flow states per user
+
+@bot.message_handler(commands=['start'])
+def start_cmd(message):
+    add_user(message.chat.id)
+    if message.from_user.id == ADMIN_ID:
+        bot.send_message(message.chat.id, "👋 Welcome Admin!", reply_markup=get_admin_keyboard())
+    else:
+        bot.send_message(
+            message.chat.id,
+            f"✨ Welcome {message.from_user.first_name}! ✨\n\n💰 Balance: {get_user_balance(message.chat.id)} BDT\n\n"
+            f"🤖 <b>ARAFAAT FB Creator + VOLTX OTP System</b>\n\n"
+            f"📌 <b>কিভাবে ব্যবহার করবেন (Auto Creator):</b>\n"
+            f"1️⃣ প্রথমে '🔑 Set Password' বাটনে ক্লিক করে পাসওয়ার্ড সেট করুন।\n"
+            f"2️⃣ এরপর '🚀 Create Now' বাটনে চাপ দিয়ে কাঙ্ক্ষিত লাইভ রেঞ্জ সিলেক্ট করুন।\n"
+            f"3️⃣ কয়টি অ্যাকাউন্ট তৈরি করবেন তা ইনপুট দিন (সর্বোচ্চ ৫)।\n"
+            f"4️⃣ বোট স্বয়ংক্রিয়ভাবে নাম্বার তুলে রিয়াল-টাইম একাউন্ট তৈরি করে কুকি সহ তথ্য দিয়ে দেবে।",
+            parse_mode="HTML",
+            reply_markup=get_main_keyboard()
+        )
+
+@bot.message_handler(commands=['admin'])
+def admin_panel(message):
+    if message.from_user.id == ADMIN_ID:
+        bot.send_message(message.chat.id, "🔧 Admin Panel", reply_markup=get_admin_keyboard())
+
+# ==================== CALLBACK CODES ====================
+@bot.callback_query_handler(func=lambda call: True)
+def handle_callback(call):
+    chat_id = call.message.chat.id
+    msg_id = call.message.message_id
+    data = call.data
+    
+    if data in ["approve_", "reject_", "reply_"] or data.startswith("approve_") or data.startswith("reject_") or data.startswith("reply_"):
+        admin_callback(call)
+        return
+
+    if data == "back_main_menu":
+        bot.answer_callback_query(call.id)
+        try: bot.delete_message(chat_id, msg_id)
+        except: pass
+        bot.send_message(chat_id, "🏠 Main Menu", reply_markup=get_main_keyboard())
+        return
+    
+    if data == "back_to_services":
+        bot.edit_message_text("🔍 Select Service:", chat_id, msg_id, reply_markup=get_service_keyboard())
+        bot.answer_callback_query(call.id)
+        return
+    
+    if data == "back_to_ranges":
+        service_name = user_service.get(chat_id, "facebook")
+        ranges = voltx_get_ranges_for_service(service_name)
+        bot.answer_callback_query(call.id)
+        try: bot.delete_message(chat_id, msg_id)
+        except: pass
+        if ranges:
+            bot.send_message(chat_id, f"🔥 Live Ranges for {service_name.capitalize()}:", reply_markup=get_range_keyboard(ranges, service_name))
+        else:
+            bot.send_message(chat_id, "❌ No live ranges found!", reply_markup=get_service_keyboard())
+        return
+    
+    if data == "refresh_services":
+        bot.edit_message_text("🔍 Select Service:", chat_id, msg_id, reply_markup=get_service_keyboard())
+        bot.answer_callback_query(call.id)
+        return
+    
+    if data.startswith("refresh_ranges_"):
+        service_name = data.replace("refresh_ranges_", "")
+        ranges = voltx_get_ranges_for_service(service_name)
+        if ranges:
+            bot.edit_message_text(f"🔥 Live Ranges for {service_name.capitalize()} (Refreshed):", chat_id, msg_id, reply_markup=get_range_keyboard(ranges, service_name))
+        else:
+            bot.edit_message_text("❌ No live ranges found!", chat_id, msg_id, reply_markup=get_service_keyboard())
+        bot.answer_callback_query(call.id)
+        return
+    
+    if data.startswith("service_"):
+        service_name = data.replace("service_", "")
+        user_service[chat_id] = service_name
+        ranges = voltx_get_ranges_for_service(service_name)
+        if ranges:
+            bot.edit_message_text(f"🔥 Live Ranges for {service_name.capitalize()}:", chat_id, msg_id, reply_markup=get_range_keyboard(ranges, service_name))
+        else:
+            bot.edit_message_text(f"❌ No live ranges found!", chat_id, msg_id, reply_markup=get_service_keyboard())
+        bot.answer_callback_query(call.id)
+        return
+    
+    if data.startswith("get_number_"):
+        parts = data.split("_")
+        service_name = parts[2]
+        range_code = parts[3]
+        user_last_range[chat_id] = range_code
+        user_service[chat_id] = service_name
+        
+        bot.edit_message_text(f"⏳ Requesting 1 number from `{range_code}`...\n\nPlease wait...", chat_id, msg_id, parse_mode="Markdown")
+        numbers_found = voltx_fetch_single_number(range_code)
+        if numbers_found:
+            for number in numbers_found:
+                add_active_number(number, chat_id, service_name.capitalize(), range_code)
+            bot.delete_message(chat_id, msg_id)
+            send_number_received_notification(chat_id, numbers_found, service_name.capitalize(), range_code)
+        else:
+            bot.edit_message_text(f"❌ No numbers available from `{range_code}`!\n\nPlease try another range.", chat_id, msg_id, parse_mode="Markdown", reply_markup=get_range_keyboard(voltx_get_ranges_for_service(service_name), service_name))
+        bot.answer_callback_query(call.id)
+        return
+    
+    if data.startswith("change_number_"):
+        service_name = data.replace("change_number_", "")
+        range_code = user_last_range.get(chat_id)
+        if not range_code:
+            bot.answer_callback_query(call.id, "Select range first!", show_alert=True)
+            return
+        bot.delete_message(chat_id, msg_id)
+        loading_msg = bot.send_message(chat_id, f"⏳ Requesting 1 new number from `{range_code}`...\n\nPlease wait...", parse_mode="Markdown")
+        numbers_found = voltx_fetch_single_number(range_code)
+        bot.delete_message(chat_id, loading_msg.message_id)
+        if numbers_found:
+            for number in numbers_found:
+                add_active_number(number, chat_id, service_name, range_code)
+            send_number_received_notification(chat_id, numbers_found, service_name, range_code)
+        else:
+            bot.send_message(chat_id, f"❌ No numbers available from `{range_code}`!\n\nPlease try another range.", parse_mode="Markdown", reply_markup=get_service_keyboard())
+        bot.answer_callback_query(call.id)
+        return
+
+    # ==================== NEW FB CREATOR VIA RANGE CALLBACK ====================
+    if data.startswith("fbcreate_"):
+        bot.answer_callback_query(call.id)
+        selected_range = data.replace("fbcreate_", "")
+        if chat_id not in bot_states:
+            bot_states[chat_id] = {}
+        bot_states[chat_id]['selected_fb_range'] = selected_range
+        
+        try: bot.delete_message(chat_id, msg_id)
+        except: pass
+        
+        msg = bot.send_message(
+            chat_id,
+            f"🎯 <b>নির্বাচিত রেঞ্জ:</b> <code>{selected_range}</code>\n\n"
+            "🔢 <b>কয়টি অ্যাকাউন্ট তৈরি করতে চান? (সর্বোচ্চ ৫টি):</b>\n"
+            "১ থেকে ৫ এর মধ্যে যেকোনো একটি সংখ্যা লিখে ইনপুট দিন।",
+            parse_mode='HTML'
+        )
+        bot_states[chat_id]['waiting_for_account_count'] = True
+        return
+
+# ==================== CONTROLLER & TEXT CODES ====================
+@bot.message_handler(func=lambda m: True)
+def handle_text_messages(message):
+    chat_id = message.chat.id
+    text = message.text.strip()
+    
+    if chat_id not in bot_states:
+        bot_states[chat_id] = {}
+
+    if text == "🔙 Back Main Menu":
+        bot_states[chat_id] = {}
+        if message.from_user.id == ADMIN_ID:
+            bot.send_message(chat_id, "🏠 Main Menu", reply_markup=get_admin_keyboard())
+        else:
+            bot.send_message(chat_id, "🏠 Main Menu", reply_markup=get_main_keyboard())
+        return
+
+    # Admin buttons routing
+    if message.from_user.id == ADMIN_ID and text in ["📢 Broadcast", "📊 Stats", "💵 Price Edit", "📥 Pending Withdrawals"]:
+        if text == "📢 Broadcast":
+            msg = bot.send_message(chat_id, "📢 Send broadcast:")
+            bot.register_next_step_handler(msg, broadcast_msg)
+        elif text == "📊 Stats":
+            users = len(get_all_users())
+            active = len(get_active_numbers())
+            settings = get_settings()
+            bot.send_message(chat_id, f"📊 Stats\n👥 Users: {users}\n📱 Active: {active}\n💰 Price: {settings['otp_price']} BDT\n💳 Min: {settings['min_withdraw']} BDT")
+        elif text == "💵 Price Edit":
+            msg = bot.send_message(chat_id, "💰 New OTP price:")
+            bot.register_next_step_handler(msg, edit_price)
+        elif text == "📥 Pending Withdrawals":
+            withdrawals = get_withdrawals()
+            pending = [w for w in withdrawals if w["status"] == "pending"]
+            if not pending:
+                bot.send_message(chat_id, "📭 No pending!")
+                return
+            for w in pending:
+                markup = InlineKeyboardMarkup()
+                markup.row(ibtn("✅ Approve", callback_data=f"approve_{w['id']}", style="success"), ibtn("❌ Reject", callback_data=f"reject_{w['id']}", style="danger"))
+                bot.send_message(chat_id, f"📥 Request\nID: {w['id']}\nUser: {w['user_id']}\nAmount: {w['amount']} BDT\nBkash: {w['bkash']}", reply_markup=markup)
+        return
+
+    if text == "🎲 GET NUMBER":
+        bot.send_message(chat_id, "🔍 Select Service:", reply_markup=get_service_keyboard())
+        return
+
+    if text == "🔐 2FA CODE":
+        msg = bot.send_message(chat_id, "🔐 Send 2FA Secret Key:\nExample: JBSWY3DPEHPK3PXP", parse_mode="Markdown")
+        bot.register_next_step_handler(msg, process_2fa)
+        return
+
+    if text == "🔄 Regenerate":
+        msg = bot.send_message(chat_id, "🔐 Send 2FA Secret Key:", parse_mode="Markdown")
+        bot.register_next_step_handler(msg, process_2fa)
+        return
+
+    if text == "💰 BALANCE":
+        bal = get_user_balance(chat_id)
+        bot.send_message(chat_id, f"💰 Balance: `{bal}` BDT", parse_mode="Markdown")
+        return
+
+    if text == "💳 WITHDRAWAL":
+        bal = get_user_balance(chat_id)
+        settings = get_settings()
+        if bal < settings["min_withdraw"]:
+            bot.send_message(chat_id, f"❌ Failed! Min: {settings['min_withdraw']} BDT\nYour balance: {bal} BDT", parse_mode="Markdown")
+        else:
+            msg = bot.send_message(chat_id, "💳 Enter Bkash number:", parse_mode="Markdown")
+            bot.register_next_step_handler(msg, process_withdraw_req, bal)
+        return
+
+    if text == "📩 CONTACT ADMIN":
+        msg = bot.send_message(chat_id, "📝 Write your message:", parse_mode="Markdown")
+        bot.register_next_step_handler(msg, forward_to_admin)
+        return
+
+    if text == "🔑 Set Password":
+        bot.send_message(
+            chat_id,
+            "🔑 <b>Set Account Password</b>\n\nPlease send your desired password.\nPassword must be at least 6 characters.\n\nExample: MyPass@123",
+            parse_mode='HTML', reply_markup=get_main_keyboard()
+        )
+        bot_states[chat_id]['waiting_for_password'] = True
+        return
+
+    if text == "⏹ Stop":
+        bot_states[chat_id]['creating_mode'] = False
+        bot_states[chat_id]['waiting_for_account_count'] = False
+        bot.send_message(chat_id, "🛑 <b>Stopped creating accounts!</b>\n\nClick '🚀 Create Now' to start again.", parse_mode='HTML', reply_markup=get_main_keyboard())
+        return
+
+    # ==================== UPDATED "CREATE NOW" BUTTON TRIGGER ====================
+    if text == "🚀 Create Now":
+        if chat_id not in user_data_store or 'password' not in user_data_store[chat_id]:
+            bot.send_message(chat_id, "⚠️ <b>Password Not Set!</b>\n\nPlease set a password first using '🔑 Set Password' button.", parse_mode='HTML', reply_markup=get_main_keyboard())
+            return
+        
+        fb_ranges = voltx_get_ranges_for_service("facebook")
+        if fb_ranges:
+            bot.send_message(
+                chat_id, 
+                "📘 <b>Facebook Live Ranges:</b>\n\nঅ্যাকাউন্ট তৈরি করার জন্য নিচের যেকোনো একটি রেঞ্জ সিলেক্ট করুন। বোট স্বয়ংক্রিয়ভাবে নাম্বার তুলে কাজ শুরু করবে।", 
+                parse_mode='HTML', 
+                reply_markup=get_fb_creator_range_keyboard(fb_ranges)
+            )
+        else:
+            bot.send_message(chat_id, "❌ No Facebook live ranges available at the moment!", reply_markup=get_main_keyboard())
+        return
+
+    # Handle Input Passwords
+    if bot_states[chat_id].get('waiting_for_password'):
+        if len(text) < 6:
+            bot.send_message(chat_id, "⚠️ Password must be at least 6 characters!\nPlease try again.", reply_markup=get_main_keyboard())
+            return
+        if chat_id not in user_data_store:
+            user_data_store[chat_id] = {}
+        user_data_store[chat_id]['password'] = text
+        bot_states[chat_id]['waiting_for_password'] = False
+        bot.send_message(chat_id, f"✅ <b>Password Set Successfully!</b>\n\nPassword: <code>{text}</code>\n\nNow click '🚀 Create Now' to start creating accounts.", parse_mode='HTML', reply_markup=get_main_keyboard())
+        return
+
+    # ==================== HANDLE ACCOUNT COUNT & AUTO AUTOMATION TRIGGER ====================
+    if bot_states[chat_id].get('waiting_for_account_count'):
+        if not text.isdigit() or int(text) < 1 or int(text) > 5:
+            bot.send_message(chat_id, "⚠️ দয়া করে ১ থেকে ৫ এর মধ্যে একটি সঠিক সংখ্যা ইনপুট দিন!", reply_markup=get_main_keyboard())
+            return
+        
+        total_accounts_needed = int(text)
+        bot_states[chat_id]['waiting_for_account_count'] = False
+        bot_states[chat_id]['creating_mode'] = True
+        
+        range_code = bot_states[chat_id].get('selected_fb_range')
+        password = user_data_store.get(chat_id, {}).get('password')
+        
+        bot.send_message(
+            chat_id, 
+            f"🚀 <b>Starting Auto Batch Creation...</b>\n\n"
+            f"🌀 <b>Selected Range:</b> <code>{range_code}</code>\n"
+            f"🔢 <b>Target Accounts:</b> {total_accounts_needed}\n\n"
+            f"⚡ বোট এখন স্বয়ংক্রিয়ভাবে এপিআই থেকে নাম্বার তুলে অ্যাকাউন্ট তৈরি করা শুরু করছে। অনুগ্রহ করে নিচে রিয়াল-টাইম রিপোর্টের জন্য অপেক্ষা করুন:", 
+            parse_mode='HTML'
+        )
+
+        # Multi-Thread Account Creator Engine logic mapped directly to auto-fetched numbers
+        def single_account_creator(phone, index, total, user_pass, target_chat, results_tracker):
+            if not bot_states.get(target_chat, {}).get('creating_mode', False):
+                return
+
+            processing_msg = bot.send_message(target_chat, f"⏳ <b>[Thread Active] Creating account {index}/{total}...</b>\n📱 Number: <code>{phone}</code>\n\n⏳ Please wait...", parse_mode='HTML')
+            result = create_facebook_account(phone, user_pass)
+            
+            if result.get('success'):
+                results_tracker['success'] += 1
+                account_text = (
+                    f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+                    f"✅ <b>ACCOUNT #{index} - CREATED!</b>\n"
+                    f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+                    f"📱 <b>Number:</b>\n"
+                    f"<code>{result['phone']}</code>\n\n"
+                    f"🆔 <b>UID:</b>\n"
+                    f"<code>{result['uid']}</code>\n\n"
+                    f"👤 <b>Name:</b>\n"
+                    f"<code>{result['name']}</code>\n\n"
+                    f"🔑 <b>Password:</b>\n"
+                    f"<code>{result['password']}</code>\n\n"
+                    f"🍪 <b>Cookies:</b>\n"
+                    f"<code>{result['cookies']}</code>\n"
+                    f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+                    f"📊 Progress: Complete"
+                )
+                bot.edit_message_text(account_text, target_chat, processing_msg.message_id, parse_mode='HTML')
+            else:
+                results_tracker['failed'] += 1
+                error = result.get('error', 'Unknown error')
+                bot.edit_message_text(f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n❌ <b>ACCOUNT #{index} - FAILED!</b>\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📱 Number: <code>{phone}</code>\n❌ Error: {error}\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━", target_chat, processing_msg.message_id, parse_mode='HTML')
+
+        def auto_fetch_and_schedule_batch(target_chat, fb_range, count, user_pass):
+            tracker = {'success': 0, 'failed': 0}
+            
+            for i in range(1, count + 1):
+                if not bot_states.get(target_chat, {}).get('creating_mode', False):
+                    break
+                
+                status_msg = bot.send_message(target_chat, f"⏳ <b>[{i}/{count}] Requesting number from API for range `{fb_range}`...</b>", parse_mode='HTML')
+                fetched_num = voltx_fetch_number(fb_range)
+                bot.delete_message(target_chat, status_msg.message_id)
+                
+                if not fetched_num:
+                    bot.send_message(target_chat, f"❌ <b>[{i}/{count}] Failed to fetch number from range `{fb_range}`!</b> Skipping...", parse_mode='HTML')
+                    tracker['failed'] += 1
+                    continue
+                
+                # Active DB তে নাম্বারটি যুক্ত করা হচ্ছে যাতে OTP ক্যাচ করতে পারে
+                add_active_number(fetched_num, target_chat, "Facebook", fb_range)
+                
+                # ব্যাকগ্রাউন্ড থ্রেডে অ্যাকাউন্ট ক্রিয়েশন রান করা হচ্ছে 
+                t = threading.Thread(
+                    target=single_account_creator, 
+                    args=(fetched_num, i, count, user_pass, target_chat, tracker)
+                )
+                t.start()
+                t.join() # প্রতিটি অ্যাকাউন্ট সিকোয়েন্সিয়ালি প্রসেস করার জন্য ওয়েট করবে 
+                time.sleep(1.5)
+
+            summary_text = (
+                f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+                f"🎉 <b>BATCH CREATION COMPLETE!</b>\n"
+                f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+                f"📊 <b>Summary:</b>\n"
+                f"📱 Total Requested: {count}\n"
+                f"✅ Success: {tracker['success']}\n"
+                f"❌ Failed: {tracker['failed']}\n"
+                f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n"
+                f"🏠 Click '🚀 Create Now' to launch another batch."
+            )
+            bot.send_message(target_chat, summary_text, parse_mode='HTML', reply_markup=get_main_keyboard())
+
+        # মাস্টার ব্যাকগ্রাউন্ড শিডিউলার রান করা হচ্ছে
+        threading.Thread(
+            target=auto_fetch_and_schedule_batch, 
+            args=(chat_id, range_code, total_accounts_needed, password), 
+            daemon=True
+        ).start()
+        return
+
+    bot.send_message(chat_id, "ℹ️ Please use the buttons below to get started!", reply_markup=get_main_keyboard())
+
+# ==================== STEP FUNCTIONS FOR HANDLERS ====================
+def process_withdraw_req(message, amount):
+    bkash = message.text.strip()
+    if len(bkash) < 11 or not bkash.isdigit():
+        bot.send_message(message.chat.id, "❌ Invalid Bkash number!", parse_mode="Markdown")
+        return
+    withdrawals = get_withdrawals()
+    req_id = len(withdrawals) + 1
+    new_req = {
+        "id": req_id, "user_id": message.chat.id, "bkash": bkash,
+        "amount": amount, "status": "pending", "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+    withdrawals.append(new_req)
+    save_withdrawals(withdrawals)
+    update_user_balance(message.chat.id, -amount)
+    bot.send_message(message.chat.id, f"✅ Withdrawal Request Submitted!\n💰 Amount: {amount} BDT\n📱 Bkash: {bkash}", parse_mode="Markdown")
+    bot.send_message(ADMIN_ID, f"🔔 New Withdrawal!\nUser: {message.chat.id}\nAmount: {amount} BDT\nBkash: {bkash}")
+
+def forward_to_admin(message):
+    if message.text:
+        markup = InlineKeyboardMarkup()
+        markup.row(ibtn("💬 Reply", callback_data=f"reply_{message.chat.id}", style="primary"))
+        bot.send_message(ADMIN_ID, f"📩 New Message from {message.from_user.first_name}\nID: {message.chat.id}\n\n{message.text}", reply_markup=markup)
+        bot.send_message(message.chat.id, "✅ Message sent to admin!")
+
+def process_2fa(message):
+    secret = message.text.strip().replace(" ", "")
+    try:
+        totp = pyotp.TOTP(secret)
+        otp = totp.now()
+        bot.send_message(message.chat.id, f"🔐 Your 2FA Code:\n\n`{otp}`", parse_mode="Markdown", reply_markup=get_2fa_keyboard())
+    except:
+        bot.send_message(message.chat.id, "❌ Invalid Secret Key!", reply_markup=get_main_keyboard())
+
+def broadcast_msg(message):
+    users = get_all_users()
+    success = 0
+    for uid in users:
+        try:
+            bot.send_message(uid, f"📢 Broadcast\n\n{message.text}")
+            success += 1
+            time.sleep(0.05)
+        except: pass
+    bot.send_message(ADMIN_ID, f"✅ Sent to {success} users!")
+
+def edit_price(message):
+    try:
+        price = float(message.text)
+        settings = get_settings()
+        settings["otp_price"] = price
+        save_settings(settings)
+        bot.send_message(message.chat.id, f"✅ Price set to {price} BDT!")
+    except:
+        bot.send_message(message.chat.id, "❌ Invalid!")
+
+def admin_callback(call):
+    if call.data.startswith("approve_"):
+        wd_id = int(call.data.split("_")[1])
+        withdrawals = get_withdrawals()
+        for w in withdrawals:
+            if w["id"] == wd_id and w["status"] == "pending":
+                w["status"] = "approved"
+                save_withdrawals(withdrawals)
+                bot.edit_message_text(f"✅ Approved! ID: {wd_id}", call.message.chat.id, call.message.message_id)
+                try: bot.send_message(w["user_id"], f"🎉 Withdrawal of {w['amount']} BDT approved!")
+                except: pass
+                break
+        bot.answer_callback_query(call.id)
+    elif call.data.startswith("reject_"):
+        wd_id = int(call.data.split("_")[1])
+        withdrawals = get_withdrawals()
+        for w in withdrawals:
+            if w["id"] == wd_id and w["status"] == "pending":
+                w["status"] = "rejected"
+                update_user_balance(w["user_id"], w["amount"])
+                save_withdrawals(withdrawals)
+                bot.edit_message_text(f"❌ Rejected! ID: {wd_id}", call.message.chat.id, call.message.message_id)
+                try: bot.send_message(w["user_id"], f"❌ Withdrawal rejected. Amount refunded.")
+                except: pass
+                break
+        bot.answer_callback_query(call.id)
+    elif call.data.startswith("reply_"):
+        user_id = int(call.data.split("_")[1])
+        msg = bot.send_message(call.message.chat.id, f"✍️ Reply to {user_id}:")
+        bot.register_next_step_handler(msg, send_reply, user_id)
+        bot.answer_callback_query(call.id)
+
+def send_reply(message, user_id):
+    try:
+        bot.send_message(user_id, f"👨‍💻 Admin Reply:\n\n{message.text}")
+        bot.send_message(message.chat.id, "✅ Reply sent!")
+    except Exception as e:
+        bot.send_message(message.chat.id, f"❌ Failed: {e}")
+
+# ==================== OTP MONITOR LOOP ====================
+sent_otps = set()
+
+def otp_monitor():
+    global sent_otps
+    print("🔄 OTP Monitor Loop Thread Active")
+    while True:
+        try:
+            settings = get_settings()
+            price = settings.get("otp_price", 5.0)
+            otps = voltx_check_otp()
+            for otp_data in otps:
+                phone = otp_data["phone"]
+                unique_key = f"{phone}_{otp_data['otp']}"
+                if unique_key not in sent_otps:
+                    sent_otps.add(unique_key)
+                    active = get_active_numbers()
+                    if str(phone) in active:
+                        chat_id = active[str(phone)]["chat_id"]
+                        update_user_balance(chat_id, price)
+                        send_otp_notification(chat_id, phone, otp_data["service"], otp_data["otp"], otp_data["message"], price)
+                        remove_active_number(phone)
+            if len(sent_otps) > 2000:
+                sent_otps.clear()
+        except Exception as e:
+            print(f"Monitor Error: {e}")
+        time.sleep(5)
+
+# ==================== MAIN CORE ====================
+if __name__ == "__main__":
+    print("=" * 60)
+    print("🤖 COMBINED ARAFAAT SYSTEM + VOLTX OTP BOT ENGINE")
+    print("🚀 Auto Verification Hook Enabled: Auto Fetch Numbers")
+    print("⚙️ Thread Pool Batch Optimization Configured!")
+    print("=" * 60)
+    
+    # Start monitor thread
+    threading.Thread(target=otp_monitor, daemon=True).start()
+    
+    print("✅ System Core Synchronized Successfully!")
+    bot.infinity_polling(timeout=60)
